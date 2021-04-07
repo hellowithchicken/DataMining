@@ -239,7 +239,7 @@ summary {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsb2FkIHBhY2thZ2VzXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmxpYnJhcnkocnN0dWRpb2FwaSlcbmxpYnJhcnkobHVicmlkYXRlKVxuXG4jIHNldCB3b3JraW5nIGRpcmVjdG9yeVxuc2V0d2QoZGlybmFtZShnZXRBY3RpdmVEb2N1bWVudENvbnRleHQoKSRwYXRoKSlcbiMgbG9hZCB0aGUgZGF0YVxuZGF0YSA8LSByZWFkX2NzdihcImRhdGEvT0RJLTIwMjEuY3N2XCIpXG5cbiMgcmVuYW1lIGNvbHVtbiBhbmQgbWFrZSBpdCB1cHBlclxuZGF0YSA8LSBkYXRhICU+JSBcbiAgcmVuYW1lKHByb2dyYW0gPSBgV2hhdCBwcm9ncmFtbWUgYXJlIHlvdSBpbj9gKSAlPiUgXG4gIG11dGF0ZShpZCA9IHJvd19udW1iZXIoKSkgJT4lIFxuICBtdXRhdGUocHJvZ3JhbSA9IHRvdXBwZXIocHJvZ3JhbSkpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsb2FkIHBhY2thZ2VzXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmxpYnJhcnkocnN0dWRpb2FwaSlcbmxpYnJhcnkobHVicmlkYXRlKVxuXG4jIHNldCB3b3JraW5nIGRpcmVjdG9yeVxuc2V0d2QoZGlybmFtZShnZXRBY3RpdmVEb2N1bWVudENvbnRleHQoKSRwYXRoKSlcbiMgbG9hZCB0aGUgZGF0YVxuZGF0YSA8LSByZWFkX2NzdihcImRhdGEvT0RJLTIwMjEuY3N2XCIpXG5gYGAifQ== -->
 <pre class="r"><code># load packages
 library(tidyverse)
 library(rstudioapi)
@@ -248,9 +248,33 @@ library(lubridate)
 # set working directory
 setwd(dirname(getActiveDocumentContext()$path))
 # load the data
-data &lt;- read_csv(&quot;data/ODI-2021.csv&quot;)
-
-# rename column and make it upper
+data &lt;- read_csv(&quot;data/ODI-2021.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBXaGF0IHByb2dyYW1tZSBhcmUgeW91IGluP2AgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBIYXZlIHlvdSB0YWtlbiBhIGNvdXJzZSBvbiBtYWNoaW5lIGxlYXJuaW5nP2AgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBIYXZlIHlvdSB0YWtlbiBhIGNvdXJzZSBvbiBpbmZvcm1hdGlvbiByZXRyaWV2YWw/YCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYEhhdmUgeW91IHRha2VuIGEgY291cnNlIG9uIHN0YXRpc3RpY3M/YCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYEhhdmUgeW91IHRha2VuIGEgY291cnNlIG9uIGRhdGFiYXNlcz9gID0gY29sX2NoYXJhY3RlcigpLFxuICBgV2hhdCBpcyB5b3VyIGdlbmRlcj9gID0gY29sX2NoYXJhY3RlcigpLFxuICBgQ2hvY29sYXRlIG1ha2VzIHlvdS4uLi4uYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYFdoZW4gaXMgeW91ciBiaXJ0aGRheSAoZGF0ZSk/YCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYE51bWJlciBvZiBuZWlnaGJvcnMgc2l0dGluZyBhcm91bmQgeW91P2AgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBEaWQgeW91IHN0YW5kIHVwP2AgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBXaGF0IGlzIHlvdXIgc3RyZXNzIGxldmVsICgwLTEwMCk/YCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYFlvdSBjYW4gZ2V0IDEwMCBldXJvcyBpZiB5b3Ugd2luIGEgbG9jYWwgRE0gY29tcGV0aXRpb24sIG9yIHdlIGRvbuKAmXQgaG9sZCBhbnkgY29tcGV0aXRpb25zIGFuZCBJIGdpdmUgZXZlcnlvbmUgc29tZSBtb25leSAobm90IHRoZSBzYW1lIGFtb3VudCEpLiBIb3cgbXVjaCBkbyB5b3UgdGhpbmsgeW91IHdvdWxkIGRlc2VydmUgdGhlbj9gID0gY29sX2NoYXJhY3RlcigpLFxuICBgR2l2ZSBhIHJhbmRvbSBudW1iZXJgID0gY29sX2NoYXJhY3RlcigpLFxuICBgVGltZSB5b3Ugd2VudCB0byBiZSBZZXN0ZXJkYXlgID0gY29sX2NoYXJhY3RlcigpLFxuICBgV2hhdCBtYWtlcyBhIGdvb2QgZGF5IGZvciB5b3UgKDEpP2AgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBXaGF0IG1ha2VzIGEgZ29vZCBkYXkgZm9yIHlvdSAoMik/YCA9IGNvbF9jaGFyYWN0ZXIoKVxuKVxuIn0= -->
+<pre><code>
+── Column specification ───────────────────────────────────────────────────────────────────
+cols(
+  Timestamp = col_character(),
+  `What programme are you in?` = col_character(),
+  `Have you taken a course on machine learning?` = col_character(),
+  `Have you taken a course on information retrieval?` = col_character(),
+  `Have you taken a course on statistics?` = col_character(),
+  `Have you taken a course on databases?` = col_character(),
+  `What is your gender?` = col_character(),
+  `Chocolate makes you.....` = col_character(),
+  `When is your birthday (date)?` = col_character(),
+  `Number of neighbors sitting around you?` = col_character(),
+  `Did you stand up?` = col_character(),
+  `What is your stress level (0-100)?` = col_character(),
+  `You can get 100 euros if you win a local DM competition, or we don’t hold any competitions and I give everyone some money (not the same amount!). How much do you think you would deserve then?` = col_character(),
+  `Give a random number` = col_character(),
+  `Time you went to be Yesterday` = col_character(),
+  `What makes a good day for you (1)?` = col_character(),
+  `What makes a good day for you (2)?` = col_character()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZW5hbWUgY29sdW1uIGFuZCBtYWtlIGl0IHVwcGVyXG5kYXRhIDwtIGRhdGEgJT4lIFxuICByZW5hbWUocHJvZ3JhbSA9IGBXaGF0IHByb2dyYW1tZSBhcmUgeW91IGluP2ApICU+JSBcbiAgbXV0YXRlKGlkID0gcm93X251bWJlcigpKSAlPiUgXG4gIG11dGF0ZShwcm9ncmFtID0gdG91cHBlcihwcm9ncmFtKSlcbmBgYCJ9 -->
+<pre class="r"><code># rename column and make it upper
 data &lt;- data %&gt;% 
   rename(program = `What programme are you in?`) %&gt;% 
   mutate(id = row_number()) %&gt;% 
