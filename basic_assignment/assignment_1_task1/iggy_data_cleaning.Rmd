@@ -1,0 +1,100 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+# load packages
+library(tidyverse)
+library(rstudioapi)
+library(lubridate)
+
+# set working directory
+setwd(dirname(getActiveDocumentContext()$path))
+# load the data
+data <- read_csv("data/ODI-2021.csv")
+
+# rename column and make it upper
+data <- data %>% 
+  rename(program = `What programme are you in?`) %>% 
+  mutate(id = row_number()) %>% 
+  mutate(program = toupper(program))
+```
+
+# Cleaning the programs columns
+
+## Grouping the programs
+
+```{r}
+# group the data by the program name to see biggest groups
+grouped <- data %>% 
+  group_by(`program`) %>% 
+  summarise(n = n()) %>%
+  arrange(-n)
+
+head(grouped)
+```
+
+## Cleaning the program names
+
+```{r}
+### clean artificial inteligence
+
+# check if looking for AI is a good idea
+check <- data %>% 
+  mutate(detect_ai = str_detect(program, "AI")) %>% 
+  select(program, detect_ai)
+
+only_program <- data %>% 
+  select(id, program)
+
+clean <- only_program %>% 
+  mutate(clean_program = case_when(
+    str_detect(program, "AI") ~ "ARTIFICIAL INTELLIGENCE",
+    str_detect(program, "ARTIFICIAL INTEL") ~ "ARTIFICIAL INTELLIGENCE",
+    program == "CS" ~ "COMPUTER SCIENCE",
+    str_detect(program, "BIG DATA") ~ "COMPUTER SCIENCE",
+    program == "BA" ~ "BUSINESS ANALYTICS",
+    str_detect(program, "ECONOMETRICS") ~ "ECONOMETRICS",
+    str_detect(program, "BIOINFORMATICS") ~ "BIOINFORMATICS",
+    str_detect(program, "COMPUTATIONAL SCIENCE") ~ "COMPUTATIONAL SCIENCE",
+    program == "CLS" ~ "COMPUTATIONAL SCIENCE",
+    str_detect(program, "QRM") ~ "QUANTITATIVE RISK MANAGEMENT",
+    str_detect(program, "QUANTATIVE RISK MANAGEMENT") ~ "QUANTITATIVE RISK MANAGEMENT",
+    program == "BIOINFROMATICS" ~ "BIOINFORMATICS",
+    str_detect(program, "DATA SCIENCE") ~ "DATA SCIENCE",
+    str_detect(program, "FINANCE & TECHNOLOGY") ~ "FINANCE AND TECHNOLOGY",
+    str_detect(program, "FINANCE AND TECHNOLOGY") ~ "FINANCE AND TECHNOLOGY",
+    str_detect(program, "F&T") ~ "FINANCE AND TECHNOLOGY",
+    str_detect(program, "FINTECH") ~ "FINANCE AND TECHNOLOGY",
+    str_detect(program, "HUMAN LANGUAGE TECHNOLOGY") ~ "HUMAN LANGUAGE TECHNOLOGY",
+    str_detect(program, "LINGUISTICS") ~ "LINGUISTICS",
+    str_detect(program, "E&OR") | str_detect(program, "EOR") ~ "ECONOMETRICS",
+    TRUE ~ program
+  ))
+
+grouped <- clean %>% 
+  group_by(`clean_program`) %>% 
+  summarise(n = n()) %>%
+  arrange(-n)
+
+head(grouped)
+```
+
+
+```{r}
+grouped <- clean %>% 
+  group_by(`clean_program`) %>% 
+  summarise(n = n()) %>%
+  arrange(-n)
+
+head(grouped)
+```
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
