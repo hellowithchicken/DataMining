@@ -17,7 +17,7 @@ data <- cat_data %>%
   left_join(program_data, by = c("X1" = "id")) %>% 
   select(-X1, -What.programme.are.you.in.)
 
-data_rename <- data %>% 
+data_clean <- data %>% 
   rename(ml = Have.you.taken.a.course.on.machine.learning.,
          ir = Have.you.taken.a.course.on.information.retrieval.,
          stats = Have.you.taken.a.course.on.statistics.,
@@ -30,3 +30,5 @@ data_rename <- data %>%
          good_day_2 = What.makes.a.good.day.for.you..2..,
          program = clean_program) %>% 
   relocate(program)
+
+write_csv(data_clean, "data/final/data_clean.csv")
