@@ -3,24 +3,38 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
-
 ```{r}
 # load packages
 library(tidyverse)
 library(rstudioapi)
 library(lubridate)
+library(arules)
 
 # set working directory
 setwd(dirname(getActiveDocumentContext()$path))
 # load the data
-data <- read_csv("data/final/data_clean.csv")
+data <- read_delim("data/final/data_clean.csv", delim = ",")
 ```
 
 ```{r}
-summary(data)
+# extracting extra information
+
+# extract hour from the bed time answer
+data <- data %>% 
+  mutate(bed_time_parsed = hms(bed_time))
+
+         bed_hour = hour(bed_time),
+         bed_minutes = minute(bed_time))
+```
+
+
+```{r}
+## creating extra variables 
+
+extra_var <- data %>% 
+  mutate(exact_time = case_when(
+    
+  ))
 ```
 
 

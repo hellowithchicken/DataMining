@@ -237,68 +237,82 @@ summary {
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Cmd+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsb2FkIHBhY2thZ2VzXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmxpYnJhcnkocnN0dWRpb2FwaSlcbmxpYnJhcnkobHVicmlkYXRlKVxuXG4jIHNldCB3b3JraW5nIGRpcmVjdG9yeVxuc2V0d2QoZGlybmFtZShnZXRBY3RpdmVEb2N1bWVudENvbnRleHQoKSRwYXRoKSlcbiMgbG9hZCB0aGUgZGF0YVxuZGF0YSA8LSByZWFkX2NzdihcImRhdGEvZmluYWwvZGF0YV9jbGVhbi5jc3ZcIilcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsb2FkIHBhY2thZ2VzXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmxpYnJhcnkocnN0dWRpb2FwaSlcbmxpYnJhcnkobHVicmlkYXRlKVxubGlicmFyeShhcnVsZXMpXG5cbiMgc2V0IHdvcmtpbmcgZGlyZWN0b3J5XG5zZXR3ZChkaXJuYW1lKGdldEFjdGl2ZURvY3VtZW50Q29udGV4dCgpJHBhdGgpKVxuIyBsb2FkIHRoZSBkYXRhXG5kYXRhIDwtIHJlYWRfZGVsaW0oXCJkYXRhL2ZpbmFsL2RhdGFfY2xlYW4uY3N2XCIsIGRlbGltID0gXCIsXCIpXG5gYGAifQ== -->
 <pre class="r"><code># load packages
 library(tidyverse)
 library(rstudioapi)
 library(lubridate)
+library(arules)
 
 # set working directory
 setwd(dirname(getActiveDocumentContext()$path))
 # load the data
-data &lt;- read_csv(&quot;data/final/data_clean.csv&quot;)</code></pre>
+data &lt;- read_delim(&quot;data/final/data_clean.csv&quot;, delim = &quot;,&quot;)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShkYXRhKVxuXG5gYGAifQ== -->
-<pre class="r"><code>summary(data)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgcHJvZ3JhbSAgICAgICAgICAgVGltZXN0YW1wICAgICAgICAgICAgICBtbCAgICAgICAgICAgICAgICAgaXIgICAgICAgICAgIFxuIExlbmd0aDozMTMgICAgICAgICBMZW5ndGg6MzEzICAgICAgICAgTGVuZ3RoOjMxMyAgICAgICAgIExlbmd0aDozMTMgICAgICAgIFxuIENsYXNzIDpjaGFyYWN0ZXIgICBDbGFzcyA6Y2hhcmFjdGVyICAgQ2xhc3MgOmNoYXJhY3RlciAgIENsYXNzIDpjaGFyYWN0ZXIgIFxuIE1vZGUgIDpjaGFyYWN0ZXIgICBNb2RlICA6Y2hhcmFjdGVyICAgTW9kZSAgOmNoYXJhY3RlciAgIE1vZGUgIDpjaGFyYWN0ZXIgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgIHN0YXRzICAgICAgICAgICAgICAgIGRiICAgICAgICAgICAgICAgZ2VuZGVyICAgICAgICAgICBjaG9jb2xhdGUgICAgICAgIFxuIExlbmd0aDozMTMgICAgICAgICBMZW5ndGg6MzEzICAgICAgICAgTGVuZ3RoOjMxMyAgICAgICAgIExlbmd0aDozMTMgICAgICAgIFxuIENsYXNzIDpjaGFyYWN0ZXIgICBDbGFzcyA6Y2hhcmFjdGVyICAgQ2xhc3MgOmNoYXJhY3RlciAgIENsYXNzIDpjaGFyYWN0ZXIgIFxuIE1vZGUgIDpjaGFyYWN0ZXIgICBNb2RlICA6Y2hhcmFjdGVyICAgTW9kZSAgOmNoYXJhY3RlciAgIE1vZGUgIDpjaGFyYWN0ZXIgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgIGJpcnRoZGF5ICAgICAgICAgICAgbmVpZ2hib3JzICAgICAgICAgIHN0YW5kICAgICAgICAgICAgICAgc3RyZXNzICAgICAgIFxuIE1pbi4gICA6MDAwMC0wMS0wMSAgIE1pbi4gICA6ICAgICAgMCAgIExlbmd0aDozMTMgICAgICAgICBNaW4uICAgOiAgICAgLTIgIFxuIDFzdCBRdS46MTk5NS0wNy0yMCAgIDFzdCBRdS46ICAgICAgMCAgIENsYXNzIDpjaGFyYWN0ZXIgICAxc3QgUXUuOiAgICAgMjEgIFxuIE1lZGlhbiA6MTk5Ny0wMS0wMSAgIE1lZGlhbiA6ICAgICAgMCAgIE1vZGUgIDpjaGFyYWN0ZXIgICBNZWRpYW4gOiAgICAgNTAgIFxuIE1lYW4gICA6MTk4NC0wNi0wMSAgIE1lYW4gICA6ICAyODg3OSAgICAgICAgICAgICAgICAgICAgICBNZWFuICAgOiAgIDM5NjUgIFxuIDNyZCBRdS46MTk5OC0wNC0wNCAgIDNyZCBRdS46ICAgICAgMSAgICAgICAgICAgICAgICAgICAgICAzcmQgUXUuOiAgICAgNzUgIFxuIE1heC4gICA6MjAyMC0wOS0wMSAgIE1heC4gICA6ODk3OTkzNyAgICAgICAgICAgICAgICAgICAgICBNYXguICAgOjExMDAxMDAgIFxuIE5BJ3MgICA6NzQgICAgICAgICAgIE5BJ3MgICA6MiAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSdzICAgOjQgICAgICAgIFxuICAgICBnYWluICAgICAgICAgICAgICAgICBybiAgICAgICAgICBiZWRfdGltZSAgICAgICAgICBnb29kX2RheV8xICAgICAgICAgZ29vZF9kYXlfMiAgICAgICBcbiBMZW5ndGg6MzEzICAgICAgICAgTWluLiAgIDogMS4wMCAgIExlbmd0aDozMTMgICAgICAgICBMZW5ndGg6MzEzICAgICAgICAgTGVuZ3RoOjMxMyAgICAgICAgXG4gQ2xhc3MgOmNoYXJhY3RlciAgIDFzdCBRdS46IDQuMDAgICBDbGFzcyA6Y2hhcmFjdGVyICAgQ2xhc3MgOmNoYXJhY3RlciAgIENsYXNzIDpjaGFyYWN0ZXIgIFxuIE1vZGUgIDpjaGFyYWN0ZXIgICBNZWRpYW4gOiA2LjAwICAgTW9kZSAgOmNoYXJhY3RlciAgIE1vZGUgIDpjaGFyYWN0ZXIgICBNb2RlICA6Y2hhcmFjdGVyICBcbiAgICAgICAgICAgICAgICAgICAgTWVhbiAgIDogNS44OSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgIDNyZCBRdS46IDguMDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICBNYXguICAgOjEwLjAwICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgTkEncyAgIDoxMjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4ifQ== -->
-<pre><code>   program           Timestamp              ml                 ir           
- Length:313         Length:313         Length:313         Length:313        
- Class :character   Class :character   Class :character   Class :character  
- Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-                                                                            
-                                                                            
-                                                                            
-                                                                            
-    stats                db               gender           chocolate        
- Length:313         Length:313         Length:313         Length:313        
- Class :character   Class :character   Class :character   Class :character  
- Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-                                                                            
-                                                                            
-                                                                            
-                                                                            
-    birthday            neighbors          stand               stress       
- Min.   :0000-01-01   Min.   :      0   Length:313         Min.   :     -2  
- 1st Qu.:1995-07-20   1st Qu.:      0   Class :character   1st Qu.:     21  
- Median :1997-01-01   Median :      0   Mode  :character   Median :     50  
- Mean   :1984-06-01   Mean   :  28879                      Mean   :   3965  
- 3rd Qu.:1998-04-04   3rd Qu.:      1                      3rd Qu.:     75  
- Max.   :2020-09-01   Max.   :8979937                      Max.   :1100100  
- NA&#39;s   :74           NA&#39;s   :2                            NA&#39;s   :4        
-     gain                 rn          bed_time          good_day_1         good_day_2       
- Length:313         Min.   : 1.00   Length:313         Length:313         Length:313        
- Class :character   1st Qu.: 4.00   Class :character   Class :character   Class :character  
- Mode  :character   Median : 6.00   Mode  :character   Mode  :character   Mode  :character  
-                    Mean   : 5.89                                                           
-                    3rd Qu.: 8.00                                                           
-                    Max.   :10.00                                                           
-                    NA&#39;s   :122                                                             </code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5jb2xzKFxuICBwcm9ncmFtID0gY29sX2NoYXJhY3RlcigpLFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIG1sID0gY29sX2NoYXJhY3RlcigpLFxuICBpciA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgc3RhdHMgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGRiID0gY29sX2NoYXJhY3RlcigpLFxuICBnZW5kZXIgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGNob2NvbGF0ZSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgYmlydGhkYXkgPSBjb2xfY2hhcmFjdGVyKCksXG4gIG5laWdoYm9ycyA9IGNvbF9kb3VibGUoKSxcbiAgc3RhbmQgPSBjb2xfY2hhcmFjdGVyKCksXG4gIHN0cmVzcyA9IGNvbF9kb3VibGUoKSxcbiAgZ2FpbiA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgcm4gPSBjb2xfZG91YmxlKCksXG4gIGJlZF90aW1lID0gY29sX2NoYXJhY3RlcigpLFxuICBnb29kX2RheV8xID0gY29sX2NoYXJhY3RlcigpLFxuICBnb29kX2RheV8yID0gY29sX2NoYXJhY3RlcigpXG4pXG4ifQ== -->
+<pre><code>
+── Column specification ───────────────────────────────────────────────────────────────────
+cols(
+  program = col_character(),
+  Timestamp = col_character(),
+  ml = col_character(),
+  ir = col_character(),
+  stats = col_character(),
+  db = col_character(),
+  gender = col_character(),
+  chocolate = col_character(),
+  birthday = col_character(),
+  neighbors = col_double(),
+  stand = col_character(),
+  stress = col_double(),
+  gain = col_character(),
+  rn = col_double(),
+  bed_time = col_character(),
+  good_day_1 = col_character(),
+  good_day_2 = col_character()
+)</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBleHRyYWN0aW5nIGV4dHJhIGluZm9ybWF0aW9uXG5cbiMgZXh0cmFjdCBob3VyIGZyb20gdGhlIGJlZCB0aW1lIGFuc3dlclxuZGF0YSA8LSBkYXRhICU+JSBcbiAgbXV0YXRlKGJlZF90aW1lX3BhcnNlZCA9IGhtcyhiZWRfdGltZSkpXG5gYGAifQ== -->
+<pre class="r"><code># extracting extra information
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KIyBsb2FkIHBhY2thZ2VzCmxpYnJhcnkodGlkeXZlcnNlKQpsaWJyYXJ5KHJzdHVkaW9hcGkpCmxpYnJhcnkobHVicmlkYXRlKQoKIyBzZXQgd29ya2luZyBkaXJlY3RvcnkKc2V0d2QoZGlybmFtZShnZXRBY3RpdmVEb2N1bWVudENvbnRleHQoKSRwYXRoKSkKIyBsb2FkIHRoZSBkYXRhCmRhdGEgPC0gcmVhZF9jc3YoImRhdGEvZmluYWwvZGF0YV9jbGVhbi5jc3YiKQpgYGAKCmBgYHtyfQpzdW1tYXJ5KGRhdGEpCmBgYAoKCg==</div>
+# extract hour from the bed time answer
+data &lt;- data %&gt;% 
+  mutate(bed_time_parsed = hms(bed_time))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUHJvYmxlbSB3aXRoIGBtdXRhdGUoKWAgaW5wdXQgYGJlZF90aW1lX3BhcnNlZGAuXG7ihLkgU29tZSBzdHJpbmdzIGZhaWxlZCB0byBwYXJzZSwgb3IgYWxsIHN0cmluZ3MgYXJlIE5Bc1xu4oS5IElucHV0IGBiZWRfdGltZV9wYXJzZWRgIGlzIGBobXMoYmVkX3RpbWUpYC5cbiJ9 -->
+<pre><code>Problem with `mutate()` input `bed_time_parsed`.
+ℹ Some strings failed to parse, or all strings are NAs
+ℹ Input `bed_time_parsed` is `hms(bed_time)`.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAgICAgICAgYmVkX2hvdXIgPSBob3VyKGJlZF90aW1lKSxcbmBgYCJ9 -->
+<pre class="r"><code>         bed_hour = hour(bed_time),</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IHVuZXhwZWN0ZWQgJywnIGluIFwiICAgICAgICAgYmVkX2hvdXIgPSBob3VyKGJlZF90aW1lKSxcIlxuIn0= -->
+<pre><code>Error: unexpected &#39;,&#39; in &quot;         bed_hour = hour(bed_time),&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgY3JlYXRpbmcgZXh0cmEgdmFyaWFibGVzIFxuXG5leHRyYV92YXIgPC0gZGF0YSAlPiUgXG4gIG11dGF0ZShleGFjdF90aW1lID0gY2FzZV93aGVuKFxuICAgIFxuICApKVxuYGBgIn0= -->
+<pre class="r"><code>## creating extra variables 
+
+extra_var &lt;- data %&gt;% 
+  mutate(exact_time = case_when(
+    
+  ))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CiMgbG9hZCBwYWNrYWdlcwpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShyc3R1ZGlvYXBpKQpsaWJyYXJ5KGx1YnJpZGF0ZSkKbGlicmFyeShhcnVsZXMpCgojIHNldCB3b3JraW5nIGRpcmVjdG9yeQpzZXR3ZChkaXJuYW1lKGdldEFjdGl2ZURvY3VtZW50Q29udGV4dCgpJHBhdGgpKQojIGxvYWQgdGhlIGRhdGEKZGF0YSA8LSByZWFkX2RlbGltKCJkYXRhL2ZpbmFsL2RhdGFfY2xlYW4uY3N2IiwgZGVsaW0gPSAiLCIpCmBgYAoKYGBge3J9CiMgZXh0cmFjdGluZyBleHRyYSBpbmZvcm1hdGlvbgoKIyBleHRyYWN0IGhvdXIgZnJvbSB0aGUgYmVkIHRpbWUgYW5zd2VyCmRhdGEgPC0gZGF0YSAlPiUgCiAgbXV0YXRlKGJlZF90aW1lX3BhcnNlZCA9IGhtcyhiZWRfdGltZSkpCgogICAgICAgICBiZWRfaG91ciA9IGhvdXIoYmVkX3RpbWUpLAogICAgICAgICBiZWRfbWludXRlcyA9IG1pbnV0ZShiZWRfdGltZSkpCmBgYAoKCmBgYHtyfQojIyBjcmVhdGluZyBleHRyYSB2YXJpYWJsZXMgCgpleHRyYV92YXIgPC0gZGF0YSAlPiUgCiAgbXV0YXRlKGV4YWN0X3RpbWUgPSBjYXNlX3doZW4oCiAgICAKICApKQpgYGAKCgo=</div>
 
 
 
