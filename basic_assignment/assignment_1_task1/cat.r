@@ -104,4 +104,46 @@ plot(associa_rules_ir, method = "paracoord",
      measure = "confidence", shading = "lift")
 
 
+##### stress and courses ####
+dataset_courses <- data %>%
+  mutate(stress_level = case_when(
+    stress >= 0 & stress <=33 ~ "low",
+    (stress > 33 & stress <=66) ~ "mid",
+    stress > 66 & stress <=100 ~ "high",
+    is.na(stress) ~ "NA",
+    TRUE ~ "Other"
+  )) %>% 
+  filter(ir!="unknown", stats !="unknown", db!="unknown")  %>% 
+  select(ml,ir,db,stats, stress_level)
+
+dataset_courses <- as(dataset_courses, "transactions")
+
+# Fitting model
+# Training Apriori on the dataset
+associa_rules = apriori(data = dataset_courses, 
+                        parameter = list(support = 0.01, confidence = 0.5),
+                        appearance = list (default="lhs", rhs="stress_level=mid"), control = list (verbose=F))
+
+itemFrequencyPlot(dataset_courses, topN = 10)
+# the highest frequency is taking statistcs, followed by not taking ir and taking ml
+
+
+# Visualising the results
+inspect(head(sort(associa_rules, by = 'lift')))
+plot(associa_rules, method = "graph", 
+     measure = "confidence", shading = "lift")
+
+associa_rules = apriori(data = dataset_courses, 
+                        parameter = list(support = 0.01, confidence = 0.5),
+                        appearance = list(default="lhs", rhs=c("stress_level=low", "stress_level=mid", "stress_level=high")))
+
+# Visualising the results
+inspect(sort(associa_rules, by = 'confidence'))
+
+plot(associa_rules, method = "graph", 
+     measure = "confidence", shading = "lift")
+
+
+
+
 
