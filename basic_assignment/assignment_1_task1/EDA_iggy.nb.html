@@ -274,45 +274,74 @@ cols(
   good_day_2 = col_character()
 )</code></pre>
 <!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0YSA8LSBkYXRhICU+JSBcbiAgbXV0YXRlKGdhaW4gPSBzdHJfcmVwbGFjZShnYWluLCBcIixcIiwgXCIuXCIpLFxuICAgICAgICAgZ2FpbiA9IGFzLm51bWVyaWMoZ2FpbikpXG5cbmBgYCJ9 -->
+<pre class="r"><code>data &lt;- data %&gt;% 
+  mutate(gain = str_replace(gain, &quot;,&quot;, &quot;.&quot;),
+         gain = as.numeric(gain))
+</code></pre>
+<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBleHRyYWN0aW5nIGV4dHJhIGluZm9ybWF0aW9uXG5cbiMgZXh0cmFjdCBob3VyIGZyb20gdGhlIGJlZCB0aW1lIGFuc3dlclxuZGF0YSA8LSBkYXRhICU+JSBcbiAgbXV0YXRlKGJlZF90aW1lX3BhcnNlZCA9IGhtcyhiZWRfdGltZSkpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBleHRyYWN0aW5nIGV4dHJhIGluZm9ybWF0aW9uXG5cbiMgZXh0cmFjdCBob3VyIGZyb20gdGhlIGJlZCB0aW1lIGFuc3dlclxuZGF0YSA8LSBkYXRhICU+JSBcbiAgbXV0YXRlKFRpbWVzdGFtcCA9IG1keV9obXMoVGltZXN0YW1wKSkgJT4lIFxuICBtdXRhdGUoYmVkX3RpbWUgPSBobXMoYmVkX3RpbWUpLFxuICAgICAgICAgYmVkX2hvdXIgPSBob3VyKGJlZF90aW1lKSxcbiAgICAgICAgIGJlZF9taW51dGVzID0gbWludXRlKGJlZF90aW1lKSlcbmBgYCJ9 -->
 <pre class="r"><code># extracting extra information
 
 # extract hour from the bed time answer
 data &lt;- data %&gt;% 
-  mutate(bed_time_parsed = hms(bed_time))</code></pre>
+  mutate(Timestamp = mdy_hms(Timestamp)) %&gt;% 
+  mutate(bed_time = hms(bed_time),
+         bed_hour = hour(bed_time),
+         bed_minutes = minute(bed_time))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUHJvYmxlbSB3aXRoIGBtdXRhdGUoKWAgaW5wdXQgYGJlZF90aW1lX3BhcnNlZGAuXG7ihLkgU29tZSBzdHJpbmdzIGZhaWxlZCB0byBwYXJzZSwgb3IgYWxsIHN0cmluZ3MgYXJlIE5Bc1xu4oS5IElucHV0IGBiZWRfdGltZV9wYXJzZWRgIGlzIGBobXMoYmVkX3RpbWUpYC5cbiJ9 -->
-<pre><code>Problem with `mutate()` input `bed_time_parsed`.
+<!-- rnb-output-begin eyJkYXRhIjoiUHJvYmxlbSB3aXRoIGBtdXRhdGUoKWAgaW5wdXQgYGJlZF90aW1lYC5cbuKEuSBTb21lIHN0cmluZ3MgZmFpbGVkIHRvIHBhcnNlLCBvciBhbGwgc3RyaW5ncyBhcmUgTkFzXG7ihLkgSW5wdXQgYGJlZF90aW1lYCBpcyBgaG1zKGJlZF90aW1lKWAuXG4ifQ== -->
+<pre><code>Problem with `mutate()` input `bed_time`.
 ℹ Some strings failed to parse, or all strings are NAs
-ℹ Input `bed_time_parsed` is `hms(bed_time)`.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAgICAgICAgYmVkX2hvdXIgPSBob3VyKGJlZF90aW1lKSxcbmBgYCJ9 -->
-<pre class="r"><code>         bed_hour = hour(bed_time),</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IHVuZXhwZWN0ZWQgJywnIGluIFwiICAgICAgICAgYmVkX2hvdXIgPSBob3VyKGJlZF90aW1lKSxcIlxuIn0= -->
-<pre><code>Error: unexpected &#39;,&#39; in &quot;         bed_hour = hour(bed_time),&quot;</code></pre>
+ℹ Input `bed_time` is `hms(bed_time)`.</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgY3JlYXRpbmcgZXh0cmEgdmFyaWFibGVzIFxuXG5leHRyYV92YXIgPC0gZGF0YSAlPiUgXG4gIG11dGF0ZShleGFjdF90aW1lID0gY2FzZV93aGVuKFxuICAgIFxuICApKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgY3JlYXRpbmcgZXh0cmEgdmFyaWFibGVzIFxuXG4jIHRpbWUgdGhleSB3ZW50IHRvIHNsZWVwXG5leHRyYV92YXIgPC0gZGF0YSAlPiUgXG4gIG11dGF0ZSh3ZW50X3RvX2JlZCA9IGNhc2Vfd2hlbihcbiAgICBiZWRfaG91ciA+PSAxOSAmIGJlZF9ob3VyIDw9MjEgfiBcImVhcmx5XCIsXG4gICAgKGJlZF9ob3VyID4gMjEgJiBiZWRfaG91ciA8PTI0KSB8IChiZWRfaG91ciA+PSAwICYgYmVkX2hvdXIgPD0xKSAgfiBcIm5vcm1hbFwiLFxuICAgIGJlZF9ob3VyID4gMSAmIGJlZF9ob3VyIDw9NSB+IFwibGF0ZVwiLFxuICAgIGlzLm5hKGJlZF9ob3VyKSB+IFwiTkFcIixcbiAgICBUUlVFIH4gXCJPdGhlclwiXG4gICkpICU+JSBcbiAgIyB3ZWVrIGRheSBvZiB0aGUgZm9ybVxuICBtdXRhdGUod2Vla2RheV9mb3JtID0gd2RheShUaW1lc3RhbXAsIHdlZWtfc3RhcnQgPSAxKSkgJT4lIFxuICAjIHN0cmVzcyBsZXZlbFxuICBtdXRhdGUoc3RyZXNzX2xldmVsID0gY2FzZV93aGVuKFxuICAgIHN0cmVzcyA+PSAwICYgc3RyZXNzIDw9MzMgfiBcImxvd1wiLFxuICAgIChzdHJlc3MgPiAzMyAmIHN0cmVzcyA8PTY2KSB+IFwibWlkXCIsXG4gICAgc3RyZXNzID4gNjYgJiBzdHJlc3MgPD0xMDAgfiBcImhpZ2hcIixcbiAgICBpcy5uYShzdHJlc3MpIH4gXCJOQVwiLFxuICAgIFRSVUUgfiBcIk90aGVyXCJcbiAgKSlcblxuYGBgIn0= -->
 <pre class="r"><code>## creating extra variables 
 
+# time they went to sleep
 extra_var &lt;- data %&gt;% 
-  mutate(exact_time = case_when(
-    
-  ))</code></pre>
+  mutate(went_to_bed = case_when(
+    bed_hour &gt;= 19 &amp; bed_hour &lt;=21 ~ &quot;early&quot;,
+    (bed_hour &gt; 21 &amp; bed_hour &lt;=24) | (bed_hour &gt;= 0 &amp; bed_hour &lt;=1)  ~ &quot;normal&quot;,
+    bed_hour &gt; 1 &amp; bed_hour &lt;=5 ~ &quot;late&quot;,
+    is.na(bed_hour) ~ &quot;NA&quot;,
+    TRUE ~ &quot;Other&quot;
+  )) %&gt;% 
+  # week day of the form
+  mutate(weekday_form = wday(Timestamp, week_start = 1)) %&gt;% 
+  # stress level
+  mutate(stress_level = case_when(
+    stress &gt;= 0 &amp; stress &lt;=33 ~ &quot;low&quot;,
+    (stress &gt; 33 &amp; stress &lt;=66) ~ &quot;mid&quot;,
+    stress &gt; 66 &amp; stress &lt;=100 ~ &quot;high&quot;,
+    is.na(stress) ~ &quot;NA&quot;,
+    TRUE ~ &quot;Other&quot;
+  ))
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGlzdChkYXRhJGdhaW4pXG5gYGAifQ== -->
+<pre class="r"><code>hist(data$gain)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gaGlzdC5kZWZhdWx0KGRhdGEkZ2FpbikgOiAneCcgbXVzdCBiZSBudW1lcmljXG4ifQ== -->
+<pre><code>Error in hist.default(data$gain) : &#39;x&#39; must be numeric</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CiMgbG9hZCBwYWNrYWdlcwpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShyc3R1ZGlvYXBpKQpsaWJyYXJ5KGx1YnJpZGF0ZSkKbGlicmFyeShhcnVsZXMpCgojIHNldCB3b3JraW5nIGRpcmVjdG9yeQpzZXR3ZChkaXJuYW1lKGdldEFjdGl2ZURvY3VtZW50Q29udGV4dCgpJHBhdGgpKQojIGxvYWQgdGhlIGRhdGEKZGF0YSA8LSByZWFkX2RlbGltKCJkYXRhL2ZpbmFsL2RhdGFfY2xlYW4uY3N2IiwgZGVsaW0gPSAiLCIpCmBgYAoKYGBge3J9CiMgZXh0cmFjdGluZyBleHRyYSBpbmZvcm1hdGlvbgoKIyBleHRyYWN0IGhvdXIgZnJvbSB0aGUgYmVkIHRpbWUgYW5zd2VyCmRhdGEgPC0gZGF0YSAlPiUgCiAgbXV0YXRlKGJlZF90aW1lX3BhcnNlZCA9IGhtcyhiZWRfdGltZSkpCgogICAgICAgICBiZWRfaG91ciA9IGhvdXIoYmVkX3RpbWUpLAogICAgICAgICBiZWRfbWludXRlcyA9IG1pbnV0ZShiZWRfdGltZSkpCmBgYAoKCmBgYHtyfQojIyBjcmVhdGluZyBleHRyYSB2YXJpYWJsZXMgCgpleHRyYV92YXIgPC0gZGF0YSAlPiUgCiAgbXV0YXRlKGV4YWN0X3RpbWUgPSBjYXNlX3doZW4oCiAgICAKICApKQpgYGAKCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CiMgbG9hZCBwYWNrYWdlcwpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShyc3R1ZGlvYXBpKQpsaWJyYXJ5KGx1YnJpZGF0ZSkKbGlicmFyeShhcnVsZXMpCgojIHNldCB3b3JraW5nIGRpcmVjdG9yeQpzZXR3ZChkaXJuYW1lKGdldEFjdGl2ZURvY3VtZW50Q29udGV4dCgpJHBhdGgpKQojIGxvYWQgdGhlIGRhdGEKZGF0YSA8LSByZWFkX2RlbGltKCJkYXRhL2ZpbmFsL2RhdGFfY2xlYW4uY3N2IiwgZGVsaW0gPSAiLCIpCgpkYXRhIDwtIGRhdGEgJT4lIAogIG11dGF0ZShnYWluID0gc3RyX3JlcGxhY2UoZ2FpbiwgIiwiLCAiLiIpLAogICAgICAgICBnYWluID0gYXMubnVtZXJpYyhnYWluKSkKYGBgCgpgYGB7cn0KIyBleHRyYWN0aW5nIGV4dHJhIGluZm9ybWF0aW9uCgojIGV4dHJhY3QgaG91ciBmcm9tIHRoZSBiZWQgdGltZSBhbnN3ZXIKZGF0YSA8LSBkYXRhICU+JSAKICBtdXRhdGUoVGltZXN0YW1wID0gbWR5X2htcyhUaW1lc3RhbXApKSAlPiUgCiAgbXV0YXRlKGJlZF90aW1lID0gaG1zKGJlZF90aW1lKSwKICAgICAgICAgYmVkX2hvdXIgPSBob3VyKGJlZF90aW1lKSwKICAgICAgICAgYmVkX21pbnV0ZXMgPSBtaW51dGUoYmVkX3RpbWUpKQpgYGAKCgpgYGB7cn0KIyMgY3JlYXRpbmcgZXh0cmEgdmFyaWFibGVzIAoKIyB0aW1lIHRoZXkgd2VudCB0byBzbGVlcApleHRyYV92YXIgPC0gZGF0YSAlPiUgCiAgbXV0YXRlKHdlbnRfdG9fYmVkID0gY2FzZV93aGVuKAogICAgYmVkX2hvdXIgPj0gMTkgJiBiZWRfaG91ciA8PTIxIH4gImVhcmx5IiwKICAgIChiZWRfaG91ciA+IDIxICYgYmVkX2hvdXIgPD0yNCkgfCAoYmVkX2hvdXIgPj0gMCAmIGJlZF9ob3VyIDw9MSkgIH4gIm5vcm1hbCIsCiAgICBiZWRfaG91ciA+IDEgJiBiZWRfaG91ciA8PTUgfiAibGF0ZSIsCiAgICBpcy5uYShiZWRfaG91cikgfiAiTkEiLAogICAgVFJVRSB+ICJPdGhlciIKICApKSAlPiUgCiAgIyB3ZWVrIGRheSBvZiB0aGUgZm9ybQogIG11dGF0ZSh3ZWVrZGF5X2Zvcm0gPSB3ZGF5KFRpbWVzdGFtcCwgd2Vla19zdGFydCA9IDEpKSAlPiUgCiAgIyBzdHJlc3MgbGV2ZWwKICBtdXRhdGUoc3RyZXNzX2xldmVsID0gY2FzZV93aGVuKAogICAgc3RyZXNzID49IDAgJiBzdHJlc3MgPD0zMyB+ICJsb3ciLAogICAgKHN0cmVzcyA+IDMzICYgc3RyZXNzIDw9NjYpIH4gIm1pZCIsCiAgICBzdHJlc3MgPiA2NiAmIHN0cmVzcyA8PTEwMCB+ICJoaWdoIiwKICAgIGlzLm5hKHN0cmVzcykgfiAiTkEiLAogICAgVFJVRSB+ICJPdGhlciIKICApKQoKYGBgCgpgYGB7cn0KaGlzdChkYXRhJGdhaW4pCmBgYAoKCgo=</div>
 
 
 

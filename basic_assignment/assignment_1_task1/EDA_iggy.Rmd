@@ -14,6 +14,10 @@ library(arules)
 setwd(dirname(getActiveDocumentContext()$path))
 # load the data
 data <- read_delim("data/final/data_clean.csv", delim = ",")
+
+data <- data %>% 
+  mutate(gain = str_replace(gain, ",", "."),
+         gain = as.numeric(gain))
 ```
 
 ```{r}
@@ -21,8 +25,8 @@ data <- read_delim("data/final/data_clean.csv", delim = ",")
 
 # extract hour from the bed time answer
 data <- data %>% 
-  mutate(bed_time_parsed = hms(bed_time))
-
+  mutate(Timestamp = mdy_hms(Timestamp)) %>% 
+  mutate(bed_time = hms(bed_time),
          bed_hour = hour(bed_time),
          bed_minutes = minute(bed_time))
 ```
@@ -31,10 +35,31 @@ data <- data %>%
 ```{r}
 ## creating extra variables 
 
+# time they went to sleep
 extra_var <- data %>% 
-  mutate(exact_time = case_when(
-    
+  mutate(went_to_bed = case_when(
+    bed_hour >= 19 & bed_hour <=21 ~ "early",
+    (bed_hour > 21 & bed_hour <=24) | (bed_hour >= 0 & bed_hour <=1)  ~ "normal",
+    bed_hour > 1 & bed_hour <=5 ~ "late",
+    is.na(bed_hour) ~ "NA",
+    TRUE ~ "Other"
+  )) %>% 
+  # week day of the form
+  mutate(weekday_form = wday(Timestamp, week_start = 1)) %>% 
+  # stress level
+  mutate(stress_level = case_when(
+    stress >= 0 & stress <=33 ~ "low",
+    (stress > 33 & stress <=66) ~ "mid",
+    stress > 66 & stress <=100 ~ "high",
+    is.na(stress) ~ "NA",
+    TRUE ~ "Other"
   ))
+
 ```
+
+```{r}
+hist(data$gain)
+```
+
 
 

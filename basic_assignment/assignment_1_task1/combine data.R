@@ -31,4 +31,4 @@ data_clean <- data %>%
          program = clean_program) %>% 
   relocate(program)
 
-write_csv(data_clean, "data/final/data_clean.csv")
+#write_csv(data_clean, "data/final/data_clean.csv")
