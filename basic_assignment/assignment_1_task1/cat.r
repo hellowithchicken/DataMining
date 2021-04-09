@@ -1,5 +1,7 @@
 library(tidyverse)
-data <- read.csv2("/Users/caterina/Desktop/Data Mining/Assignment/DataMining/basic_assignment/assignment_1_task1/data/final/data_clean.csv", sep=",")
+# set working directory
+setwd(dirname(getActiveDocumentContext()$path))
+data <- read.csv2("data/final/data_clean.csv", sep=",")
 attach(data)
 summary(data)
 
