@@ -41,12 +41,13 @@ library(arules)
 library(arulesViz)
 
 dataset_courses <- data %>%
-  select(ml,ir,db,stats)
+  select(ml,ir,db,stats) %>% 
+  filter(ir!="unknown", stats !="unknown", db!="unknown")
+
 dataset_courses <- as(dataset_courses, "transactions")
 
 # Fitting model
 # Training Apriori on the dataset
-set.seed = 220 # Setting seed
 associa_rules = apriori(data = dataset_courses, 
                         parameter = list(support = 0.01, 
                                          confidence = 0.5))
@@ -60,14 +61,27 @@ itemFrequencyPlot(dataset_courses, topN = 10)
 
 
 # Visualising the results
-inspect(sort(associa_rules, by = 'lift')[1:10])
+inspect(sort(associa_rules, by = 'lift'))
 plot(associa_rules, method = "graph", 
      measure = "confidence", shading = "lift")
 
 
-# what led to have not followed an ir course
+# ir=0 led to follow what other courses
 associa_rules_ir <-  apriori(data = dataset_courses, 
-                             parameter = list(support = 0.01, confidence = 0.5),
+                             parameter = list(support = 0.02, confidence = 0.5),
+                             appearance = list(default="rhs", lhs="ir=0"), control = list (verbose=F))
+
+rules_conf <- sort(associa_rules_ir, by="confidence", decreasing=TRUE) # 'high-confidence' rules.
+inspect(head(rules_conf))
+plot(associa_rules_ir, method = "graph", 
+     measure = "confidence", shading = "lift")
+plot(associa_rules_ir, method = "paracoord", 
+     measure = "confidence", shading = "lift")
+plot(associa_rules_ir)
+
+# what other courses where followed for having ir=0
+associa_rules_ir <-  apriori(data = dataset_courses, 
+                             parameter = list(support = 0.2, confidence = 0.5),
                              appearance = list (rhs="ir=0"), control = list (verbose=F))
 
 rules_conf <- sort(associa_rules_ir, by="confidence", decreasing=TRUE) # 'high-confidence' rules.
@@ -77,10 +91,10 @@ plot(associa_rules_ir, method = "graph",
 plot(associa_rules_ir, method = "paracoord", 
      measure = "confidence", shading = "lift")
 
-# what not following an ir course lead to
+# what other courses where followed for having stats = yes
 associa_rules_ir <-  apriori(data = dataset_courses, 
-                             parameter = list(support = 0.01, confidence = 0.5),
-                             appearance = list (lhs="ml=yes",rhs="ir=0"), control = list (verbose=F))
+                             parameter = list(support = 0.2, confidence = 0.5),
+                             appearance = list (default="lhs", rhs="ml=yes"), control = list (verbose=F))
 
 rules_conf <- sort(associa_rules_ir, by="confidence", decreasing=TRUE) # 'high-confidence' rules.
 inspect(head(rules_conf))
@@ -88,8 +102,6 @@ plot(associa_rules_ir, method = "graph",
      measure = "confidence", shading = "lift")
 plot(associa_rules_ir, method = "paracoord", 
      measure = "confidence", shading = "lift")
-
-
 
 
 
