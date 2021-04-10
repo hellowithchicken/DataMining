@@ -1,22 +1,25 @@
 library(tidyverse)
+library(rstudioapi)
 # set working directory
 setwd(dirname(getActiveDocumentContext()$path))
 data <- read.csv2("data/final/data_clean.csv", sep=",")
 attach(data)
 summary(data)
+dim(data)
 
 # univariate EDA
-pie(table(program), labels = names(program))
-pie(table(ml), labels = names(ml))
-pie(table(ir), labels = names(ir))
-pie(table(stats), labels = names(stats))
-pie(table(db), labels = names(db))
-pie(table(gender), labels = names(gender))
-hist(table(chocolate), labels = names(chocolate))
+pie(table(program))
+pie(table(ml))
+pie(table(ir))
+pie(table(stats))
+pie(table(db))
+pie(table(gender))
+hist(table(chocolate))
 hist(stress)
 
 # bivariate EDA
 boxplot(stress~gender)
+boxplot(stress~stats)
 boxplot(stress~ml)
 boxplot(stress~ir)
 boxplot(stress~db)
@@ -106,15 +109,24 @@ plot(associa_rules_ir, method = "paracoord",
 
 ##### stress and courses ####
 dataset_courses <- data %>%
+  filter(ir!="unknown", stats !="unknown", db!="unknown")  %>%
   mutate(stress_level = case_when(
     stress >= 0 & stress <=33 ~ "low",
     (stress > 33 & stress <=66) ~ "mid",
     stress > 66 & stress <=100 ~ "high",
     is.na(stress) ~ "NA",
     TRUE ~ "Other"
-  )) %>% 
-  filter(ir!="unknown", stats !="unknown", db!="unknown")  %>% 
-  select(ml,ir,db,stats, stress_level)
+  ),
+  IR = case_when(
+    ir =="0"~"no",
+    ir=="1"~"yes"),
+  DB = case_when(
+    db =="nee"~"no",
+    db=="ja"~"yes"),
+  Stat = case_when(
+    stats =="sigma"~"no",
+    stats=="mu"~"yes")) %>% 
+  select(ML=ml,IR,DB,Stat, stress_level)
 
 dataset_courses <- as(dataset_courses, "transactions")
 
@@ -133,6 +145,7 @@ inspect(head(sort(associa_rules, by = 'lift')))
 plot(associa_rules, method = "graph", 
      measure = "confidence", shading = "lift")
 
+# what  courses were followed for having a specific stress level
 associa_rules = apriori(data = dataset_courses, 
                         parameter = list(support = 0.01, confidence = 0.5),
                         appearance = list(default="lhs", rhs=c("stress_level=low", "stress_level=mid", "stress_level=high")))
@@ -142,6 +155,36 @@ inspect(sort(associa_rules, by = 'confidence'))
 
 plot(associa_rules, method = "graph", 
      measure = "confidence", shading = "lift")
+
+
+
+#### Regression ####
+library(VGAM)
+
+dataset_courses <- data %>%
+  filter(ir!="unknown", stats !="unknown", db!="unknown")  %>%
+  mutate(stress_level = case_when(
+    stress >= 0 & stress <=33 ~ "low",
+    (stress > 33 & stress <=66) ~ "mid",
+    stress > 66 & stress <=100 ~ "high",
+    is.na(stress) ~ "NA",
+    TRUE ~ "Other"
+  ),
+  IR = case_when(
+    ir =="0"~"no",
+    ir=="1"~"yes"),
+  DB = case_when(
+    db =="nee"~"no",
+    db=="ja"~"yes"),
+  Stat = case_when(
+    stats =="sigma"~"no",
+    stats=="mu"~"yes")) %>% 
+  select(ML=ml,IR,DB,Stat, stress_level)
+
+vglm1 <- vglm(stress_level~1, data = dataset_courses, family=cumulative(parallel=TRUE))
+summary(vglm1)
+
+
 
 
 
