@@ -184,6 +184,7 @@ dataset_courses <- data %>%
 vglm1 <- vglm(stress_level~1, data = dataset_courses, family=cumulative(parallel=TRUE))
 summary(vglm1)
 
+# https://www.kirenz.com/post/2020-05-14-r-association-rule-mining/
 
 
 

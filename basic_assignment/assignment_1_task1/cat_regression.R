@@ -36,9 +36,29 @@ abline(a,b, col="red")
 
 
 # split dataset
-ind = sample(2, nrow(spotify_songs), replace=TRUE, prob=c(0.7,0.3))
-trainData = spotify_songs[ind==1,]
-testData = spotify_songs[ind==2,]
+library(caret)
+
+indxTrain <- createDataPartition(y = spotify_songs$track_popularity, p = 0.6, list = FALSE)
+training <- spotify_songs[indxTrain,]
+testing <- spotify_songs[-indxTrain,]
+par(mfrow=c(3,1))
+hist(training$track_popularity, prob=T)
+hist(testing$track_popularity, prob=T)
+hist(spotify_songs$track_popularity, prob=T)
+par(mfrow=c(1,1))
+
+fit <- lm(track_popularity~playlist_genre+
+             danceability+energy+loudness+acousticness+instrumentalness+
+             liveness+tempo+duration_ms, data=training)
+pred <- predict(fit, newdata=testing)
+sqrt(mean((pred-testing$track_popularity)^2))
+plot(pred)
+points(testing$track_popularity, col=2)
+
+
+
+
+
 
 
 

@@ -1,314 +1,308 @@
-program,Timestamp,ml,ir,stats,db,gender,chocolate,birthday,neighbors,stand,stress,gain,rn,bed_time,good_day_1,good_day_2
-MASTER TAX LAW - TAX AND TECHNOLOGY,3/16/2021 14:37:20,yes,0,mu,ja,male,neither,NA,2,no,85,50,8,22H 15M 0S,Having completed a set task.,Happy people
-ARTIFICIAL INTELLIGENCE,3/24/2021 17:28:48,no,0,sigma,nee,male,I have no idea what you are talking about,NA,0,no,0,100,3,22H 0M 0S,Coffee,Sun
-NA,3/25/2021 12:31:29,no,0,mu,nee,male,fat,23/09/1997,4,no,40,5,NA,0H 0M 0S  ,Be Happy,Having a very productive day
-COMPUTER SCIENCE,3/25/2021 15:56:30,no,1,mu,ja,male,I have no idea what you are talking about,30/07/1999,NA,no,42,5,NA,NA  ,If you give me a 10,If you give my team a 10
-ARTIFICIAL INTELLIGENCE,3/25/2021 17:41:04,yes,0,mu,ja,female,neither,08/03/1998,1,no,20,50,4,2H 0M 0S,nice weather,having good food
-SYSTEM SECURITY,3/26/2021 11:31:46,no,1,sigma,ja,male,neither,13/01/1995,0,no,20,30,5,NA  ,weather,free day
-QUANTITATIVE RISK MANAGEMENT,3/26/2021 13:59:32,yes,0,mu,nee,male,fat,28/07/1997,0,no,20,0,NA,1H 30M 0S,Classical music,Data mining :-P
-COMPUTATIONAL SCIENCE,3/26/2021 14:30:47,no,0,sigma,nee,male,neither,14/11/1993,0,no,20,"0,2",7,12H 0M 0S,Making progress in a tough course,"Watching the game, smoking some bud"
-ARTIFICIAL INTELLIGENCE,3/26/2021 15:31:08,no,0,mu,ja,male,neither,08/02/1997,0,no,99,1,6,1H 45M 0S,Drum,Bass
-ARTIFICIAL INTELLIGENCE,3/26/2021 22:29:30,no,0,mu,ja,male,neither,NA,1,no,50,2,4,1H 0M 0S,Meeting a friend,Being productive
-COMPUTATIONAL SCIENCE,3/26/2021 23:46:34,no,0,mu,nee,male,fat,NA,2,no,90,30,7,1H 0M 0S,Good coffe,Get motivated
-ARTIFICIAL INTELLIGENCE,3/27/2021 16:02:34,yes,0,mu,nee,male,fat,15/04/1998,3,no,60,5,7,1H 0M 0S,Start studying early,Finishing everything that I proposed for that day
-COMPUTER SCIENCE,3/27/2021 19:31:57,no,1,mu,nee,male,neither,02/07/1977,4,unknown,75,500,7,12H 0M 0S,feel of achievement ,"go out, talk to people "
-BIOINFORMATICS,3/27/2021 20:59:51,yes,0,mu,nee,female,neither,11/07/1997,0,no,50,10,7,2H 0M 0S,relaxing and chill schedule,nice weather
-HUMAN LANGUAGE TECHNOLOGY,3/27/2021 21:19:34,yes,0,mu,nee,female,neither,07/04/1998,2,no,20,5,NA,2H 0M 0S,sunny wheather outside,coronavirus restrictions lifted
-ARTIFICIAL INTELLIGENCE,3/28/2021 10:27:38,yes,0,mu,ja,female,fat,30/07/1997,0,no,10,"0,1",7,23H 10M 0S,Socialize a bit,Tidy environment
-COMPUTATIONAL SCIENCE,3/28/2021 10:58:31,no,0,mu,nee,female,fat,NA,0,yes,0,50,8,0H 45M 0S ,get up,food
-ARTIFICIAL INTELLIGENCE,3/28/2021 11:22:44,no,0,mu,nee,female,neither,03/09/1966,0,no,70,5,7,23H 0M 0S,nice weather,surprising things happen
-QUANTITATIVE RISK MANAGEMENT,3/28/2021 12:40:57,yes,0,mu,ja,male,slim,NA,0,yes,77,"2,5",7,5H 0M 0S,Food,Beer
-BUSINESS ANALYTICS,3/28/2021 20:21:27,yes,1,mu,ja,male,slim,06/01/1998,0,no,10,10,NA,23H 30M 0S,No stress,Doing sports
-ARTIFICIAL INTELLIGENCE,3/28/2021 21:38:59,yes,unknown,mu,nee,female,neither,04/08/1995,0,no,40,12,4,13H 0M 0S,food,sleep
-COMPUTATIONAL SCIENCE,3/28/2021 23:23:22,no,0,mu,ja,male,slim,31/07/1996,5,no,7,8,NA,NA  ,Sleeping to a good movie,Food
-COMPUTER SCIENCE,3/29/2021 0:12:18,no,0,mu,ja,male,fat,01/09/2020,10,yes,93,93,10,22H 0M 0S,happy,very happy
-COMPUTATIONAL SCIENCE,3/29/2021 6:09:27,no,0,mu,nee,male,fat,11/11/1995,0,no,100,0,2,23H 0M 0S,Good sleep,Good food
-COMPUTER SCIENCE,3/29/2021 6:39:25,yes,0,mu,ja,female,fat,29/10/1997,0,no,50,30,NA,1H 23M 0S,Everything is under control.,Delicious food.
-ARTIFICIAL INTELLIGENCE,3/29/2021 8:32:53,yes,0,mu,ja,male,slim,01/12/1998,1,no,NA,0,3,23H 0M 0S,Sun,Good weather
-LINGUISTICS,3/29/2021 9:41:50,yes,0,mu,nee,female,neither,13/02/1998,4,unknown,70,50,NA,2H 0M 0S,A productive study/work day,Inner peace
-BIOINFORMATICS,3/29/2021 10:09:42,no,0,mu,nee,female,fat,04/11/1997,0,no,12,2,6,22H 54M 0S,Nice wheather,Seeing my boyfriend
-BUSINESS ANALYTICS,3/29/2021 10:29:23,yes,1,mu,nee,male,neither,13/07/1999,0,no,30,1,6,23H 30M 0S,Sunny weather,Coffee
-BIOINFORMATICS,3/29/2021 10:39:02,yes,0,mu,nee,male,slim,20/05/1989,1,no,30,100,NA,22H 0M 0S,Enjoy the sun.,Share some laughts.
-COMPUTATIONAL SCIENCE,3/29/2021 10:49:15,yes,1,mu,ja,male,fat,18/12/1996,0,no,90,20,NA,0H 0M 0S  ,sun,no rain
-NA,3/29/2021 11:00:34,yes,0,mu,ja,male,fat,30/10/1997,0,no,70,50,8,0H 30M 0S ,laughing,working out
-ECONOMETRICS,3/29/2021 11:16:17,no,1,mu,nee,male,fat,26/01/1998,0,no,0,20,10,0H 0M 0S  ,sunny weather,wake up happy
-COMPUTATIONAL SCIENCE,3/29/2021 11:19:21,no,0,mu,ja,male,neither,11/11/1997,0,no,5,70,NA,12H 30M 0S,Sunshine,Friends
-COMPUTATIONAL SCIENCE,3/29/2021 11:22:24,yes,0,mu,ja,female,slim,NA,1,no,10,5,3,23H 30M 0S,Meeting with friends,Coffee to go in corona times
-COMPUTATIONAL SCIENCE,3/29/2021 11:30:19,yes,0,sigma,ja,male,fat,NA,3,no,67,1,NA,22H 45M 0S,Doing physical activities (games) with friends in a park on sunny day with some alcoholic beverages.,Winning a competitive korfbal match after putting in a good performance.
-HUMAN LANGUAGE TECHNOLOGY,3/29/2021 11:39:25,yes,0,mu,nee,female,I have no idea what you are talking about,14/08/1995,1,no,50,10,7,23H 0M 0S,Take a walk in nature,Good chat with friends and drinks
-HUMAN LANGUAGE TECHNOLOGY,3/29/2021 12:45:18,yes,0,mu,nee,female,neither,27/03/1999,0,no,40,5,7,23H 30M 0S,Sunshine,Good night's sleep
-ECONOMETRICS,3/29/2021 13:05:02,yes,0,mu,nee,male,fat,06/03/1999,0,no,30,8,6,1H 0M 0S,weather,girlfriend
-ECONOMETRICS,3/29/2021 13:06:57,yes,0,mu,nee,male,neither,08/04/1998,0,no,0,80,NA,2H 0M 0S,Being productive,Meeting friends
-ARTIFICIAL INTELLIGENCE,3/29/2021 13:16:49,yes,0,mu,nee,male,fat,17/06/1994,0,no,20,18,NA,23H 30M 0S,sunshine,sport
-ECONOMETRICS,3/29/2021 13:27:23,no,0,mu,ja,male,fat,NA,2,no,50,10,NA,23H 0M 0S,good weather,having a good breakfast
-ECONOMETRICS,3/29/2021 13:43:38,yes,0,mu,ja,male,neither,18/06/1996,0,no,12,"0,5",NA,11H 45M 0S,Good food,Sex
-QUANTITATIVE RISK MANAGEMENT,3/29/2021 13:47:45,no,0,mu,nee,female,fat,NA,0,no,60,NA,8,0H 3M 0S ,Getting all the work done that I've planned,Seeing my friends and family
-ARTIFICIAL INTELLIGENCE,3/29/2021 13:50:14,yes,1,mu,ja,male,fat,04/04/1998,2,no,55,NA,4,1H 0M 0S,music,music
-BUSINESS ANALYTICS,3/29/2021 13:53:03,yes,1,mu,nee,male,I have no idea what you are talking about,24/06/1993,0,no,78,0,NA,20H 0M 0S,Saturday,Monday
-ARTIFICIAL INTELLIGENCE,3/29/2021 13:53:38,no,0,mu,nee,male,I have no idea what you are talking about,01/01/1997,0,no,1,100,1,2H 0M 0S,food,more food
-COMPUTER SCIENCE,3/29/2021 13:56:26,yes,0,mu,nee,male,fat,16/11/1995,0,no,25,1,6,1H 0M 0S,Family,Rice/Pasta for dinner
-LINGUISTICS,3/29/2021 14:01:59,yes,1,sigma,nee,female,I have no idea what you are talking about,NA,0,no,90,50,9,22H 0M 0S,sun ,exercise
-ECONOMETRICS,3/29/2021 14:07:33,no,0,mu,nee,male,fat,NA,2,no,70,20,5,11H 3M 0S,Going out,not working
-ECONOMETRICS,3/29/2021 14:16:20,yes,unknown,mu,ja,male,fat,NA,0,no,12,1,7,23H 30M 0S,No stress,Holidays
-ECONOMETRICS,3/29/2021 14:30:16,yes,0,mu,nee,male,neither,06/10/1998,0,unknown,31,NA,4,22H 27M 0S,Sun,Sporting
-ARTIFICIAL INTELLIGENCE,3/29/2021 14:32:57,no,0,mu,ja,female,neither,20/11/1999,0,no,35,10,10,2H 30M 0S,Free time,Social activity
-ARTIFICIAL INTELLIGENCE,3/29/2021 14:35:19,yes,1,mu,ja,female,fat,15/11/1998,0,no,80,5,9,0H 20M 0S ,Getting everything done that needed to be done,Chilling in the sun
-ARTIFICIAL INTELLIGENCE,3/29/2021 14:40:38,yes,0,mu,nee,female,neither,NA,2,no,50,1,5,2H 0M 0S,Seeing friends and family that I love,"Calmth, positivity, learning/reading"
-BUSINESS ANALYTICS,3/29/2021 14:44:22,yes,1,mu,ja,male,fat,NA,2,no,10,20,3,22H 30M 0S,nice weather,walk on the beach
-FINANCE AND TECHNOLOGY,3/29/2021 14:49:24,yes,0,mu,nee,male,fat,28/01/1997,0,no,0,20,2,23H 0M 0S,Soccer,Sun
-BIOINFORMATICS,3/29/2021 15:00:11,yes,0,mu,ja,female,fat,03/02/1999,1,no,75,10,NA,23H 30M 0S,When I have seen/spoken to my loved ones,When I feel like my day has been productive but not too stresfull 
-ARTIFICIAL INTELLIGENCE,3/29/2021 15:03:24,no,0,mu,nee,male,fat,20/09/1992,0,no,100,1,NA,5H 25M 0S,Rest,Nothing
-QUANTITATIVE RISK MANAGEMENT,3/29/2021 15:04:18,no,0,unknown,nee,male,fat,16/05/1996,1,no,50,20,NA,23H 30M 0S,Efficiency,Accomplishment
-QUANTITATIVE RISK MANAGEMENT,3/29/2021 15:05:00,no,0,unknown,nee,male,fat,16/05/1996,1,no,50,20,NA,23H 30M 0S,Efficiency,Accomplishment
-ECONOMETRICS,3/29/2021 15:05:38,yes,1,mu,ja,male,neither,NA,0,yes,60,30,7,22H 30M 0S,8 hours of sleep,Friendly people
-QUANTITATIVE RISK MANAGEMENT,3/29/2021 15:09:54,no,0,mu,nee,male,fat,16/05/1996,1,no,50,20,7,23H 30M 0S,Efficiency,Accomplishment
-COMPUTER SCIENCE,3/29/2021 15:35:37,yes,0,mu,unknown,female,neither,NA,1,no,20,15,6,3H 0M 0S,swimming,beer
-ARTIFICIAL INTELLIGENCE,3/29/2021 15:41:09,yes,1,mu,ja,female,I have no idea what you are talking about,NA,0,no,40,0,1,3H 30M 0S,a good night's sleep,a relaxed morning
-NA,3/29/2021 16:23:33,no,0,mu,nee,male,neither,09/09/1996,0,no,77,5,4,2H 0M 0S,No work/free time,Beautiful weather
-BIOINFORMATICS,3/29/2021 16:35:14,yes,0,mu,nee,male,neither,NA,0,no,15,99,NA,0H 0M 0S  ,Fun activities,Good food
-FINANCE AND TECHNOLOGY,3/29/2021 16:35:49,yes,0,mu,nee,male,fat,15/08/1994,0,no,60,20,8,2H 0M 0S,Warm weather,enough food
-BUSINESS ANALYTICS,3/29/2021 16:35:57,yes,1,mu,ja,male,fat,27/10/1995,0,no,60,1000,7,23H 0M 0S,Hanging out with friends,watching sports
-ECONOMETRICS,3/29/2021 16:46:51,yes,0,mu,nee,male,neither,02/07/1998,0,no,38,NA,NA,1H 30M 0S,Good breakfast,Outdoor activity
-ECONOMETRICS,3/29/2021 16:49:13,yes,0,mu,nee,female,neither,01/02/1993,0,no,30,10,NA,23H 0M 0S,Walking in the sun,Eating good food
-COMPUTER SCIENCE,3/29/2021 16:51:39,no,0,mu,unknown,male,slim,10/05/1999,1,no,5,1,5,3H 0M 0S,sleep,people
-QUANTITATIVE RISK MANAGEMENT,3/29/2021 17:35:57,no,0,mu,nee,male,neither,22/09/1996,0,no,50,1,NA,0H 30M 0S ,No Stress,Be able to relax
-BUSINESS ANALYTICS,3/29/2021 17:47:11,yes,0,mu,nee,male,fat,13/12/1994,0,no,35,10,7,0M 3M 0S ,If I completed all my tasks which I set for the day.,When I have spoken with/seen at least some friends or relatives that day. 
-ARTIFICIAL INTELLIGENCE,3/29/2021 17:56:51,yes,0,mu,nee,male,neither,05/01/1998,0,no,0,NA,5,22H 30M 0S,Sun,Food
-MEDICAL INFORMATICS,3/29/2021 17:58:00,yes,1,mu,ja,male,fat,NA,0,no,10,5,NA,23H 0M 0S,sport,sun
-ARTIFICIAL INTELLIGENCE,3/29/2021 18:02:48,yes,1,mu,ja,male,neither,15/09/1999,0,no,10,1,6,1H 0M 0S,No obligations,A good night of sleep
-BUSINESS ANALYTICS,3/29/2021 18:21:02,yes,0,mu,ja,female,fat,01/07/1998,1,no,40,50,NA,22H 30M 0S,A long walk outside,Getting things done
-MATHEMATICS,3/29/2021 19:01:05,yes,0,mu,ja,female,neither,NA,0,no,60,10,7,23H 0M 0S,Sun,Social contacts
-BUSINESS ANALYTICS,3/29/2021 19:35:58,yes,unknown,mu,ja,male,fat,22/10/1994,0,no,60,1,NA,23H 30M 0S,Sun,Tennis
-BUSINESS ANALYTICS,3/29/2021 19:56:04,yes,0,mu,ja,male,neither,23/02/1999,NA,unknown,99,101,2,NA  ,Payday,The day that I paid my rent and don't have a red valued bank account.
-HUMAN LANGUAGE TECHNOLOGY,3/29/2021 19:57:32,yes,0,sigma,ja,male,fat,06/10/1995,0,no,40,70,6,0H 30M 0S ,Nice weather and a run,Playing music with friends
-BUSINESS ANALYTICS,3/29/2021 20:04:52,yes,0,mu,unknown,female,fat,20/01/1997,2,no,80,50,8,23H 40M 0S,weather ,Being with friends or family
-FINANCE AND TECHNOLOGY,3/29/2021 20:09:38,yes,unknown,unknown,nee,male,fat,03/12/1996,0,no,20,NA,6,23H 10M 0S,sports,good food
-ARTIFICIAL INTELLIGENCE,3/29/2021 20:33:29,yes,0,mu,ja,male,fat,22/02/1996,0,unknown,10,20,1,23H 0M 0S,Sun,Productivity
-BUSINESS ANALYTICS,3/29/2021 20:53:49,yes,0,mu,nee,male,slim,10/09/1998,0,no,5,0,9,0H 0M 0S  ,Sport,Progress towards a goal
-COMPUTATIONAL SCIENCE,3/29/2021 21:09:39,no,0,mu,nee,male,neither,21/03/1996,0,no,31,0,3,23H 59M 0S,Sun,Fun
-ECONOMETRICS,3/29/2021 21:16:04,yes,unknown,mu,nee,female,fat,02/06/1998,2,no,41,37,NA,23H 30M 0S,Sunshine ,Good food
-COMPUTATIONAL SCIENCE,3/29/2021 21:23:01,no,1,mu,ja,female,fat,26/03/1998,0,no,85,5,NA,0H 36M 0S ,a nice meal,the sun
-BUSINESS ANALYTICS,3/29/2021 21:30:30,yes,0,mu,nee,female,neither,17/09/1996,2,no,60,60,7,23H 15M 0S,Sun,Happy people/friends
-ARTIFICIAL INTELLIGENCE,3/29/2021 21:53:06,no,0,mu,nee,female,neither,16/12/1992,0,no,85,5,9,3H 0M 0S,Day off,Good company
-COMPUTATIONAL SCIENCE,3/29/2021 21:57:42,no,0,mu,nee,female,neither,NA,0,no,70,50,7,0H 0M 0S  ,sunny,enough sleep
-ARTIFICIAL INTELLIGENCE,3/29/2021 22:11:39,no,0,mu,ja,male,fat,17/01/1996,3,no,70,100,NA,0H 30M 0S ,get a good grade,a sunny day
-COMPUTATIONAL SCIENCE,3/29/2021 22:17:34,no,0,mu,nee,male,neither,11/12/1994,0,unknown,45,10,NA,22H 15M 0S,Talking and being around friends and loved ones,When $GME goes up 69%      HODL ON
-ARTIFICIAL INTELLIGENCE,3/29/2021 22:39:12,yes,1,mu,ja,male,I have no idea what you are talking about,27/01/1996,0,no,45,100,5,2H 0M 0S,productivity,good food
-ARTIFICIAL INTELLIGENCE,3/29/2021 22:50:20,no,0,mu,nee,male,neither,17/09/1997,0,no,30,0,1,23H 30M 0S,Good sleep,Meet friends
-ARTIFICIAL INTELLIGENCE,3/29/2021 22:58:34,no,unknown,mu,nee,female,fat,04/04/1998,0,no,65,1,10,1H 0M 0S,No stressing about deadlines,Take a nice walk
-ARTIFICIAL INTELLIGENCE,3/29/2021 22:58:38,no,0,mu,nee,male,fat,15/01/1996,1,no,25,50,8,3H 0M 0S,happy,productive
-ARTIFICIAL INTELLIGENCE,3/29/2021 23:02:41,yes,1,mu,ja,male,neither,03/12/1997,0,unknown,35,70,3,1H 0M 0S,good rest,social
-BUSINESS ANALYTICS,3/29/2021 23:03:17,yes,0,mu,ja,female,fat,13/10/1998,0,no,66,NA,7,0H 30M 0S ,Nice weather,Being with my friends
-ARTIFICIAL INTELLIGENCE,3/29/2021 23:24:53,no,1,mu,ja,male,fat,NA,0,no,30,70,8,1H 30M 0S,Low stresslevels,Hanging out with friends
-QUANTITATIVE RISK MANAGEMENT,3/29/2021 23:27:11,no,0,mu,nee,male,fat,08/10/1997,1,no,0,0,NA,2H 0M 0S,Good food,Good mood
-FINANCE AND TECHNOLOGY,3/29/2021 23:32:18,yes,0,mu,nee,male,slim,17/01/1996,0,no,50,25,5,3H 0M 0S,Ice cream,No deadlines for the subsequent days
-BUSINESS ANALYTICS,3/29/2021 23:41:02,yes,0,mu,nee,male,neither,NA,0,no,60,1,7,0H 15M 0S ,Enough sleep,Good food
-ECONOMETRICS,3/29/2021 23:53:22,no,0,mu,nee,male,I have no idea what you are talking about,29/07/1997,0,no,21,"0,22",5,22H 55M 0S,"wake up early, be productive and relax with friends in evening",Learning something new
-COMPUTER SCIENCE,3/30/2021 2:59:37,no,0,sigma,ja,male,neither,02/05/1999,5,no,75,0,7,4H 0M 0S,no stress,good weather
-BIOINFORMATICS,3/30/2021 3:36:10,yes,0,mu,ja,male,I have no idea what you are talking about,07/07/1998,1,no,65,0,NA,5H 0M 0S,1,2
-QUANTITATIVE RISK MANAGEMENT,3/30/2021 6:33:02,no,0,mu,ja,male,unknown,NA,0,no,20,0,9,7H 30M 0S,no exams or deadlines,plenty of sleep
-BIOINFORMATICS,3/30/2021 8:20:19,yes,0,mu,nee,male,neither,NA,0,no,80,1,4,0H 0M 0S  ,sunshine,music
-COMPUTER SCIENCE,3/30/2021 8:44:31,yes,1,mu,ja,male,neither,NA,1,no,17,65,NA,22H 45M 0S,odd jobs,sports
-RESEARCH MASTER HUMAN MOVEMENT SCIENCES (FGB),3/30/2021 9:16:58,no,0,mu,nee,female,neither,08/07/1993,1,no,10,0,8,23H 15M 0S,sun,exercise
-COMPUTATIONAL SCIENCE,3/30/2021 9:20:47,no,0,mu,ja,male,fat,NA,0,yes,50,60,7,1H 0M 0S,no lecture,beautiful scenery
-MATHEMATICS,3/30/2021 9:22:43,no,0,mu,nee,female,fat,27/11/1995,0,no,67,2,7,22H 45M 0S,tea,icecream
-BUSINESS ANALYTICS,3/30/2021 9:30:43,yes,1,mu,ja,unknown,slim,01/02/1997,0,no,50,1,NA,0H 0M 0S  ,sun,no deadlines
-ARTIFICIAL INTELLIGENCE,3/30/2021 9:30:59,yes,0,mu,nee,female,I have no idea what you are talking about,23/01/1998,1,no,55,0,NA,23H 0M 0S,Playing sports,Good food
-COMPUTER SCIENCE,3/30/2021 9:40:31,no,1,mu,ja,male,fat,NA,0,no,60,65,8,23H 50M 0S,Free time,Being outside
-FINANCE AND TECHNOLOGY,3/30/2021 9:44:01,yes,0,mu,nee,female,fat,26/03/1999,0,no,60,2,2,22H 0M 0S,Sun,Success
-ARTIFICIAL INTELLIGENCE,3/30/2021 9:48:32,yes,1,sigma,ja,male,neither,01/12/1996,1,no,50,63,NA,23H 30M 0S,Good weather,No stress
-DATA SCIENCE,3/30/2021 9:49:36,yes,0,sigma,nee,male,neither,26/10/1990,0,no,75,7,2,23H 45M 0S,sun,cycling
-MEDICAL INFORMATICS,3/30/2021 10:00:00,yes,0,mu,nee,female,fat,01/06/1997,0,no,75,20,8,22H 30M 0S,The sun shines,Meeting with friends
-ECONOMETRICS,3/30/2021 10:07:28,no,0,mu,nee,female,neither,02/01/1997,1,no,60,1,7,23H 30M 0S,Good weather,Good sleep the prior day
-ARTIFICIAL INTELLIGENCE,3/30/2021 10:09:56,yes,1,mu,nee,male,fat,26/01/1999,0,no,20,1,NA,22H 19M 0S,good night sleep,nice food
-ARTIFICIAL INTELLIGENCE,3/30/2021 10:13:11,yes,1,mu,nee,male,unknown,05/07/1995,0,no,50,"0,2",8,22H 30M 0S,Sun,25 degrees celsius
-COMPUTER SCIENCE,3/30/2021 10:31:21,no,0,mu,ja,female,neither,14/01/1996,0,no,77,70,3,23H 0M 0S,coffee,fulfill the plan
-COMPUTER SCIENCE,3/30/2021 10:32:04,yes,1,mu,ja,male,fat,28/08/1998,0,yes,30,NA,NA,0H 0M 0S  ,Sleeping well,Having a walk with my dog
-FINANCE AND TECHNOLOGY,3/30/2021 10:36:55,yes,0,sigma,nee,male,neither,28/12/1998,0,yes,10,5,NA,23H 54M 0S,Sun shining,Chatting with friends
-COMPUTER SCIENCE,3/30/2021 10:37:05,yes,1,mu,ja,male,fat,28/08/1998,0,yes,30,10,2,0H 0M 0S  ,Sleeping well,Having a walk with my dog
-FINANCE AND TECHNOLOGY,3/30/2021 10:39:11,yes,1,mu,nee,male,fat,03/05/1995,1,no,15,10,NA,23H 30M 0S,Sun,Beer
-BIOINFORMATICS,3/30/2021 10:45:18,yes,0,unknown,nee,female,slim,08/05/1994,4,no,20,20,8,23H 0M 0S,if the sun is shinning,Something adventurous took place
-BUSINESS ANALYTICS,3/30/2021 10:49:39,yes,1,mu,ja,male,fat,01/03/1995,0,no,40,5,2,23H 15M 0S,Good stock returns,Getting high grades back
-BUSINESS ANALYTICS,3/30/2021 10:49:50,yes,1,mu,ja,male,fat,17/12/1998,0,no,10,3,4,22H 30M 0S,Zoom meeting,Teams meeting
-BUSINESS ANALYTICS,3/30/2021 10:53:15,yes,unknown,mu,ja,male,neither,27/08/1997,0,unknown,60,1,3,21H 0M 0S,Good weather,Exercise
-COMPUTATIONAL SCIENCE,3/30/2021 10:53:49,no,0,mu,ja,female,fat,19/04/1997,1,no,40,100,3,23H 0M 0S,drinking cola zero,sunny weather
-ARTIFICIAL INTELLIGENCE,3/30/2021 10:55:13,no,0,mu,nee,male,neither,15/01/1996,0,no,70,5,5,0H 15M 0S ,Sun outside and no wind,Playing basketball
-ARTIFICIAL INTELLIGENCE,3/30/2021 10:55:42,no,0,mu,nee,female,neither,29/09/1996,0,no,50,20,2,14H 0M 0S,The sun,Friends
-COMPUTER SCIENCE,3/30/2021 10:55:44,no,0,mu,nee,male,fat,0000-01-01,0,no,NA,110,9,1H 30M 0S,pizza,sleeping in
-ARTIFICIAL INTELLIGENCE,3/30/2021 10:58:12,yes,0,mu,nee,female,neither,11/12/1995,0,no,30,12,NA,21H 45M 0S,Sun,Good sleep
-ECONOMETRICS,3/30/2021 10:58:32,yes,0,mu,ja,female,I have no idea what you are talking about,05/06/1996,1,no,70,20,7,22H 45M 0S,When the sun is shining ,Good night sleep 
-COMPUTER SCIENCE,3/30/2021 11:03:33,yes,1,mu,ja,male,unknown,23/01/1999,3,no,32,"99,99",4,23H 39M 0S,A nice suprise,A feeling of contentness
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:08:00,yes,0,mu,ja,female,neither,NA,1,no,40,70,3,23H 30M 0S,when it's sunny,when I can enjoy nature
-BUSINESS ADMINISTRATION,3/30/2021 11:09:42,no,0,mu,nee,male,fat,21/08/1998,3,no,10,10,8,22H 0M 0S,Tasteful food,Good weather
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:10:49,yes,0,mu,nee,male,fat,NA,1,no,80,10,8,1H 0M 0S,Sun,Beauty
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:11:47,no,0,mu,ja,female,unknown,NA,1,no,20,10,5,23H 0M 0S,Sun,Smile
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:28:20,no,0,mu,nee,female,neither,NA,1,no,0,70,5,23H 0M 0S,fun,sun
-HUMAN LANGUAGE TECHNOLOGY,3/30/2021 11:30:10,yes,1,mu,nee,female,neither,11/11/1997,0,no,30,25,7,23H 1M 0S,sunshine,love
-BUSINESS ANALYTICS,3/30/2021 11:30:34,yes,1,mu,ja,male,fat,25/07/1999,0,no,80,10,7,23H 0M 0S,Doing well on study,Feyenoord winning a game
-BIOINFORMATICS,3/30/2021 11:31:11,yes,0,sigma,nee,female,slim,08/03/1997,1,no,0,NA,8,0H 45M 0S ,Sun,My dog
-COMPUTATIONAL SCIENCE,3/30/2021 11:36:30,no,0,mu,unknown,male,neither,24/06/1999,0,no,20,1,7,23H 30M 0S,Friends,Sport
-MSC STOCHASTICS AND FINANCIAL MATHEMATICS,3/30/2021 11:40:04,yes,0,mu,nee,female,fat,26/12/1996,2,yes,70,0,6,23H 0M 0S,sun,free time
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:41:42,yes,1,mu,nee,male,slim,25/07/1999,4,no,10,60,2,0H 30M 0S ,good night sleep,things to do
-COMPUTATIONAL SCIENCE,3/30/2021 11:49:20,no,1,mu,nee,male,fat,27/09/1997,0,no,70,80,7,2H 0M 0S,Good weather,Good news
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:52:45,no,1,mu,ja,male,fat,05/08/1995,0,no,30,5,NA,1H 0M 0S,productivity,food
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:54:04,no,1,sigma,nee,female,fat,17/11/1997,0,no,50,5,8,23H 59M 0S,When I see my friends,Delicious food
-ARTIFICIAL INTELLIGENCE,3/30/2021 11:54:41,yes,0,mu,ja,female,neither,30/11/1993,3,no,10,20,8,1H 15M 0S,coffee,sunny weather
-ECONOMETRICS,3/30/2021 11:57:06,no,unknown,mu,ja,male,unknown,NA,2,unknown,80,NA,NA,1H 0M 0S,Progress ,Happiness 
-ECONOMETRICS,3/30/2021 11:58:45,no,0,mu,ja,male,unknown,06/07/1993,0,no,25,NA,NA,0H 0M 0S  ,Friends,Fulfillment
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:05:21,no,1,unknown,ja,male,neither,03/02/1998,0,no,80,50,NA,23H 10M 0S,Finishing a lot of work,Playing video games with friends
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:15:56,no,1,mu,nee,male,I have no idea what you are talking about,12/11/1996,0,no,20,0,NA,0H 0M 0S  ,sun,soccer
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:17:26,yes,1,mu,ja,male,fat,NA,0,no,20,50,7,1H 0M 0S,The sun,Being together with friends
-DATA SCIENCE,3/30/2021 12:18:44,yes,1,mu,ja,female,neither,19/02/1993,0,no,0,50,7,1H 30M 0S,surfing,sun
-COMPUTER SCIENCE,3/30/2021 12:20:44,yes,unknown,mu,ja,male,neither,09/07/1997,0,no,99,"0,05",NA,1H 30M 0S,Xtc,Weightlifting
-INFORMATION SCIENCES,3/30/2021 12:24:09,no,1,mu,ja,male,neither,NA,0,no,60,10,NA,0H 0M 0S  ,Sunny,Friends
-BUSINESS ANALYTICS,3/30/2021 12:26:34,yes,1,mu,nee,male,fat,NA,0,no,60,100,NA,NA  ,Doing Data Mining,Doing more Data Mining
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:28:12,no,0,mu,nee,unknown,neither,NA,1,no,50,5,7,2H 0M 0S,sun ,friends
-COMPUTATIONAL SCIENCE,3/30/2021 12:29:20,no,0,mu,nee,male,neither,10/02/1999,1,no,10,"0,2",10,23H 59M 0S,No obligations,Being at home
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:32:25,no,0,mu,ja,male,fat,06/08/1996,0,no,37,5,7,1H 0M 0S,snow,not messing up something
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:33:37,yes,unknown,mu,ja,female,fat,NA,0,no,50,40,8,0H 20M 0S ,"Hanging out with friend, some good food and a nice drink.",Riding my horse with some nice weather.
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:39:07,no,unknown,mu,nee,male,neither,30/09/1995,1,no,60,5,6,23H 30M 0S,completed todo tasks,real life social activity with friends
-BUSINESS ANALYTICS,3/30/2021 12:41:22,yes,0,mu,ja,female,neither,19/05/1999,0,no,50,75,8,22H 0M 0S,1,2
-ECONOMETRICS,3/30/2021 12:42:26,no,0,mu,nee,female,neither,14/04/1996,200,no,20,10,10,1H 2M 0S,Nice weather,Breaks and fun with friends
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:43:04,no,0,mu,nee,male,fat,05/08/1997,0,no,80,10,9,22H 0M 0S,good sleep,Me time
-INFORMATION SCIENCES,3/30/2021 12:46:03,no,unknown,mu,ja,female,neither,03/05/1996,8,no,2,50,3,22H 30M 0S,the sun,finishing the to-do list
-DATA SCIENCE,3/30/2021 12:46:26,yes,0,mu,nee,male,neither,NA,0,no,70,1,8,1H 0M 0S,sleeping well,nice breakfast
-COMPUTER SCIENCE,3/30/2021 12:48:30,yes,0,mu,ja,male,fat,05/11/1993,0,no,30,"2,75",NA,2H 30M 0S,Drinking coffee,Programming
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:49:50,no,0,mu,ja,male,fat,19/07/1996,1,no,10,0,4,0H 38M 0S ,sunny,cool
-ECONOMETRICS,3/30/2021 12:49:57,no,0,sigma,unknown,female,neither,16/05/1993,2,no,80,70,NA,11H 45M 0S,Shining sun,when being appreciated
-BIOINFORMATICS,3/30/2021 12:52:26,yes,1,unknown,ja,male,fat,15/10/1991,2,yes,70,5,NA,9H 0M 0S,Having friends come over,Spending time wth my brothers
-ECONOMETRICS,3/30/2021 12:53:52,no,0,mu,ja,female,neither,16/05/1993,2,no,80,5,NA,11H 45M 0S,Shining sun,being appeciated
-ARTIFICIAL INTELLIGENCE,3/30/2021 12:56:10,no,0,mu,nee,female,slim,01/05/1997,0,no,80,2,9,0H 0M 0S  ,My friends,Good grades
-ECONOMETRICS,3/30/2021 12:57:17,yes,0,mu,nee,male,I have no idea what you are talking about,NA,0,yes,60,69,8,1H 0M 0S,memes,money
-COMPUTATIONAL SCIENCE,3/30/2021 12:58:29,no,0,mu,ja,male,fat,NA,0,no,77,4321,NA,2H 0M 0S,Spend with Girlfriend,Dinner and game with best friend
-ECONOMETRICS,3/30/2021 12:59:30,yes,0,mu,ja,male,fat,02/07/1998,2,no,10,1,7,0H 30M 0S ,friends,beer
-BIOINFORMATICS,3/30/2021 13:06:45,yes,0,unknown,unknown,male,unknown,NA,1,no,90,101,NA,0H 0M 0S  ,21/Apr,01/Oct
-COMPUTATIONAL SCIENCE,3/30/2021 13:08:15,yes,0,mu,nee,male,fat,19/06/1995,0,no,10,10,10,0H 0M 0S  ,Football and Beer,Finalising a large project 
-"MANAGEMENT, POLICY-ANALYSIS AND ENTREPRENEURSHIP IN HEALTH & LIFE SCIENCES",3/30/2021 13:12:28,no,0,mu,ja,female,neither,29/01/1996,1,no,70,50,3,3H 50M 0S,Petting a dog ,Reaching the goals I set for the day
-ECONOMETRICS,3/30/2021 13:16:39,yes,0,mu,nee,male,neither,09/07/1998,0,no,80,60,2,2H 30M 0S,Sleep,Sun
-COMPUTER SCIENCE,3/30/2021 13:18:40,no,1,mu,ja,male,neither,NA,1,no,90,NA,4,0H 30M 0S ,family,exercise
-FINANCE AND TECHNOLOGY,3/30/2021 13:20:00,yes,0,mu,nee,male,slim,27/06/1996,1,no,80,50,8,0H 30M 0S ,Sunlight,Nice company
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:20:45,yes,1,mu,nee,male,I have no idea what you are talking about,29/06/1997,6,no,NA,100,NA,NA  ,Filling in a form about data mining,No ronas
-COMPUTATIONAL SCIENCE,3/30/2021 13:26:16,no,0,mu,nee,male,slim,NA,100,yes,66,"0,8",6,23H 0M 0S,Sun,Sports
-COMPUTATIONAL SCIENCE,3/30/2021 13:30:42,no,0,unknown,nee,male,fat,22/03/1994,0,no,50,0,NA,1H 0M 0S,Not being tired,Eating tasty food
-COMPUTATIONAL SCIENCE,3/30/2021 13:33:38,no,0,mu,nee,male,slim,NA,0,no,1,0,NA,3H 0M 0S,productivity,variety
-ECONOMETRICS,3/30/2021 13:40:00,no,0,mu,ja,male,fat,NA,2,yes,80,20,7,3H 30M 0S,sun,girls
-COMPUTATIONAL SCIENCE,3/30/2021 13:41:52,no,0,mu,nee,male,slim,20/07/1991,1,no,30,10,3,0H 0M 0S  ,good food,plenty of sleep
-BIOINFORMATICS,3/30/2021 13:45:25,yes,0,unknown,nee,female,I have no idea what you are talking about,09/02/1998,0,no,55,40,NA,20H 0M 0S,Sun,Cheese
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:46:26,yes,0,mu,nee,male,neither,26/05/1997,0,yes,15,NA,NA,23H 59M 0S,BBQ,Surf
-COMPUTATIONAL SCIENCE,3/30/2021 13:46:59,yes,1,sigma,ja,unknown,unknown,28/10/1992,0,no,99,NA,NA,22H 15M 0S,Running,Social activity
-BIOINFORMATICS,3/30/2021 13:47:18,yes,0,unknown,nee,female,I have no idea what you are talking about,NA,0,no,19,100,7,3H 50M 0S,Weather,food
-COMPUTATIONAL SCIENCE,3/30/2021 13:47:20,yes,0,mu,nee,female,fat,17/03/1997,0,no,50,110,9,22H 3M 0S,Kitesurfing,Sunshine
-COMPUTATIONAL SCIENCE,3/30/2021 13:47:21,no,0,mu,nee,male,neither,NA,0,no,92,NA,NA,0H 0M 0S  ,pizza,sun
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:47:31,no,0,mu,nee,female,neither,10/01/1998,0,no,30,NA,7,23H 30M 0S,When the sun is out,Nice plans for the day 
-HUMAN LANGUAGE TECHNOLOGY,3/30/2021 13:48:08,yes,0,unknown,nee,female,I have no idea what you are talking about,01/01/1997,1,no,60,NA,NA,1H 0M 0S,coffee,sunshine
-COMPUTER SCIENCE,3/30/2021 13:48:10,no,1,mu,ja,male,slim,08/06/1993,0,no,78,100,2,0H 0M 0S  ,Sunshine,More sunshine
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:48:56,yes,1,mu,ja,male,slim,04/06/1997,0,unknown,69,100,7,12H 0M 0S,fun,bright sun
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:49:10,yes,1,mu,ja,male,I have no idea what you are talking about,NA,0,no,10,1,NA,2H 0M 0S,Good feelings,A lot of fun
-DATA SCIENCE,3/30/2021 13:49:13,yes,unknown,unknown,ja,male,slim,20/05/1996,6,no,1,100,2,5H 15M 0S,Drinking Beer,Gaming with Friends
-BIOINFORMATICS,3/30/2021 13:49:29,yes,0,mu,ja,male,neither,04/06/1998,0,no,45,"0,5",3,23H 0M 0S,sun,freedom
-DATA SCIENCE,3/30/2021 13:49:45,yes,0,sigma,nee,male,fat,NA,0,no,0,NA,2,1H 0M 0S,enjoying the sun,spending time with my sons
-COMPUTATIONAL SCIENCE,3/30/2021 13:49:52,no,0,mu,nee,male,fat,01/12/1994,0,no,0,NA,NA,10H 0M 0S,Sports,Beer
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:49:54,yes,1,mu,nee,male,fat,06/05/1998,0,no,80,NA,NA,12H 30M 0S,friday,saturday
-COMPUTATIONAL SCIENCE,3/30/2021 13:50:06,no,0,mu,nee,female,neither,20/10/1993,0,no,35,3,NA,20H 3M 0S,Friends,completing tasks
-BUSINESS ANALYTICS,3/30/2021 13:50:07,no,0,mu,nee,male,neither,20/02/1999,0,yes,44,2,5,1H 0M 0S,football,running
-BUSINESS ANALYTICS,3/30/2021 13:50:37,yes,unknown,mu,ja,female,neither,01/01/1997,4,yes,8,NA,8,22H 0M 0S,Cats,Sunshine
-BUSINESS ANALYTICS,3/30/2021 13:51:02,yes,1,mu,ja,male,neither,27/08/1998,1,no,20,1,NA,NA  ,Beer and friends,No obligations
-COMPUTER SCIENCE,3/30/2021 13:51:08,yes,1,mu,ja,female,I have no idea what you are talking about,16/12/1996,0,no,50,100,NA,22H 0M 0S,sunshine,good food
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:51:09,yes,0,mu,nee,male,I have no idea what you are talking about,21/09/1995,0,no,80,"0,3",NA,20H 0M 0S,"If a spend my day usefull. Learned new things, improving myself",Good weather
-COMPUTATIONAL SCIENCE,3/30/2021 13:51:23,yes,0,mu,ja,male,slim,21/02/1990,50,yes,80,20,NA,22H 0M 0S,Ice cream,double ice cream
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:51:33,no,0,mu,nee,male,I have no idea what you are talking about,24/08/1996,0,unknown,25,25,NA,21H 37M 0S,No work,No stress
-BUSINESS ANALYTICS,3/30/2021 13:52:11,yes,1,mu,ja,male,I have no idea what you are talking about,NA,0,no,50,"0,69",6,0H 30M 0S ,Good grade,Not filling in excessively long forms
-COMPUTER SCIENCE,3/30/2021 13:53:02,yes,0,sigma,nee,male,fat,NA,0,no,70,5,NA,23H 0M 0S,coffee,jogging
-COMPUTATIONAL SCIENCE,3/30/2021 13:53:25,yes,1,mu,ja,male,neither,01/01/1991,0,yes,60,NA,NA,2H 0M 0S,Sunshine,Warm weather
-COMPUTER SCIENCE,3/30/2021 13:53:30,yes,1,mu,nee,female,I have no idea what you are talking about,NA,1,no,100,80,9,NA  ,Movements,Food
-BUSINESS ANALYTICS,3/30/2021 13:53:48,yes,0,mu,nee,male,neither,30/07/1997,0,no,20,20,NA,NA  ,Sun,Beer
-ECONOMETRICS,3/30/2021 13:54:12,yes,0,sigma,nee,male,neither,25/03/1995,1,no,99,50,NA,11H 11M 0S,Good company,Good food
-BIOINFORMATICS,3/30/2021 13:54:28,yes,unknown,unknown,nee,female,fat,NA,2,no,80,"0,5",7,NA  ,Nice weather,Food
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:56:54,no,0,mu,nee,female,slim,07/06/1992,0,no,60,20,5,23H 0M 0S,Doing something meaningful,sun
-DATA SCIENCE,3/30/2021 13:58:13,yes,0,unknown,ja,female,neither,02/10/1995,0,yes,75,10,5,NA  ,nothing,nothing
-BIOINFORMATICS,3/30/2021 13:59:04,yes,1,sigma,nee,male,neither,NA,0,no,80,50,NA,24H 0M 0S,good weather ,no body dies 
-ARTIFICIAL INTELLIGENCE,3/30/2021 13:59:37,yes,0,mu,nee,male,slim,14/10/1994,0,no,0,100,7,23H 34M 0S,Love,Happiness
-NA,3/30/2021 14:04:42,yes,0,mu,ja,male,I have no idea what you are talking about,10/02/1996,2,no,55,"1,00E+06",5,NA  ,Productivity,Fun
-DATA SCIENCE,3/30/2021 14:05:45,yes,0,mu,ja,female,fat,02/03/1998,0,no,100,70,NA,15H 0M 0S,nice food,good workout
-BUSINESS ANALYTICS,3/30/2021 14:10:58,yes,1,mu,ja,unknown,neither,NA,1,yes,40,5,8,NA  ,-,-
-COMPUTATIONAL SCIENCE,3/30/2021 14:21:35,no,0,mu,nee,male,slim,NA,100,yes,66,"0,8",6,23H 0M 0S,Sun,Sports
-BUSINESS ANALYTICS,3/30/2021 14:24:07,yes,1,mu,ja,male,fat,09/03/1998,0,no,20,1000,3,10H 0M 0S,Being productive,Relaxing after being productive
-ARTIFICIAL INTELLIGENCE,3/30/2021 14:24:10,no,0,mu,ja,male,fat,30/01/1996,1,no,80,100,NA,23H 0M 0S,Good sleep,No homework
-ARTIFICIAL INTELLIGENCE,3/30/2021 14:24:26,yes,0,mu,nee,female,I have no idea what you are talking about,NA,0,no,55,5,NA,10H 0M 0S,Sun,Good food
-ARTIFICIAL INTELLIGENCE,3/30/2021 14:24:33,yes,1,mu,ja,male,fat,27/10/1995,0,no,70,"99,99",NA,NA  ,"work, friends, play, food, sex","relaxation, laziness, ice cream"
-BIOINFORMATICS,3/30/2021 14:24:51,yes,0,mu,nee,male,fat,01/01/1901,0,no,NA,0,1,8H 0M 0S,FIFA2020,FIFA2021
-BIOINFORMATICS,3/30/2021 14:25:10,yes,0,mu,nee,male,fat,07/02/1999,0,no,60,5,8,1H 0M 0S,Sleeping in,No mandatory to do's 
-FINANCE,3/30/2021 14:26:11,no,0,mu,nee,male,fat,17/12/1998,0,yes,25,NA,NA,11H 31M 0S,happiness,general feelings of happiness caused by a multitude of factors
-BUSINESS ANALYTICS,3/30/2021 14:29:48,yes,0,mu,nee,male,I have no idea what you are talking about,27/06/1966,0,no,90,100,NA,23H 45M 0S,Universe is there,Universe is still there
-ARTIFICIAL INTELLIGENCE,3/30/2021 14:30:33,yes,1,mu,ja,female,I have no idea what you are talking about,01/03/1999,0,no,35,40,8,23H 45M 0S,Nice weather,Being able to do something fun without having to think about anything else 
-ARTIFICIAL INTELLIGENCE,3/30/2021 14:32:23,yes,1,mu,nee,male,neither,NA,0,no,57,100,NA,5H 0M 0S,cat 1,cat 2
-BUSINESS ANALYTICS,3/30/2021 14:32:59,yes,0,mu,ja,male,I have no idea what you are talking about,17/07/1999,0,no,33,399,3,NA  ,Girlfriend,Winning
-ARTIFICIAL INTELLIGENCE,3/30/2021 14:35:08,no,unknown,mu,nee,female,I have no idea what you are talking about,08/03/1995,2,no,68,13,NA,0H 30M 0S ,sleep,sun
-QUANTITATIVE RISK MANAGEMENT,3/30/2021 14:40:53,yes,0,mu,nee,male,fat,NA,100,no,50,10,4,23H 0M 0S,good weather,less stress
-ECONOMETRICS,3/30/2021 14:41:07,no,0,sigma,nee,female,fat,29/06/1997,1,yes,60,5,7,1H 0M 0S,Pancakes ,Sun
-ARTIFICIAL INTELLIGENCE,3/30/2021 14:44:53,yes,0,mu,ja,female,neither,23/04/1999,1,no,20,100,NA,NA  ,reading,no school
-BUSINESS ANALYTICS,3/30/2021 14:51:18,yes,1,mu,ja,male,fat,19/04/1999,3,no,75,100,6,2H 0M 0S,Good amount of sleep,Doing something new
-BIOINFORMATICS,3/30/2021 14:56:37,yes,0,sigma,nee,female,I have no idea what you are talking about,06/02/1988,1,no,70,30,3,0H 45M 0S ,Sunny and dry weather,having good conversations with friends
-FINANCE AND TECHNOLOGY,3/30/2021 15:01:20,yes,0,mu,nee,male,neither,05/05/1992,1,no,90,10,7,12H 47M 0S,sun is out,work out
-BIOINFORMATICS,3/30/2021 15:32:10,yes,unknown,mu,unknown,female,slim,04/09/1998,0,no,55,"0,1",4,23H 0M 0S,Sleep,Food
-BIOINFORMATICS,3/30/2021 15:45:22,no,0,unknown,ja,female,neither,01/05/1976,0,no,50,5,6,0H 1M 0S ,Getting stuff done,Trying something new
-COMPUTER SCIENCE,3/30/2021 15:46:56,no,0,mu,nee,female,fat,24/11/1995,0,no,60,20,4,22H 0M 0S,Coffee,Video game
-ECONOMETRICS,3/30/2021 16:00:00,no,0,sigma,nee,male,fat,30/09/1997,0,no,27,"0,5",8,0H 30M 0S ,Gym/sport ,Drinking 
-COMPUTATIONAL SCIENCE,3/30/2021 16:06:45,no,unknown,mu,nee,male,I have no idea what you are talking about,14/04/1995,4,no,30,0,NA,NA  ,a variety of activities,what i said before this question
-BUSINESS ANALYTICS,3/30/2021 17:22:43,yes,0,mu,nee,female,neither,26/11/1996,0,no,65,25,6,23H 0M 0S,Nice weather,Friends
-BIOINFORMATICS,3/30/2021 17:22:58,yes,unknown,mu,ja,female,fat,NA,2,no,75,5,7,23H 30M 0S,Sunny weather,Taking medicine
-ARTIFICIAL INTELLIGENCE,3/30/2021 17:31:48,no,0,mu,nee,male,fat,29/04/1993,2,no,76,35,3,0H 0M 0S  ,Health,Family
-BIOINFORMATICS,3/30/2021 17:32:22,yes,0,mu,ja,male,fat,NA,0,yes,65,40,2,23H 0M 0S,can relax,Can do some kind of activity (sports)
-BUSINESS ANALYTICS,3/30/2021 17:32:37,yes,1,mu,ja,male,slim,06/01/1998,0,no,10,10,5,23H 30M 0S,no stress,doing sports
-COMPUTER SCIENCE,3/30/2021 17:34:15,yes,1,mu,ja,male,fat,NA,0,no,50,10,6,23H 0M 0S,Free,Sports
-QUANTITATIVE RISK MANAGEMENT,3/30/2021 17:35:59,no,0,mu,nee,male,neither,26/02/1998,2,no,NA,"0,25",NA,2H 0M 0S,Not filling in pointless surveys,Seeing loved ones
-COMPUTATIONAL SCIENCE,3/30/2021 17:38:28,yes,1,mu,ja,female,neither,03/06/1997,0,unknown,80,30,NA,22H 15M 0S,Good food,Friends 
-ARTIFICIAL INTELLIGENCE,3/30/2021 17:45:04,yes,0,mu,nee,female,neither,23/09/1997,0,no,80,NA,5,NA  ,laughter,no homework
-ARTIFICIAL INTELLIGENCE,3/30/2021 17:46:28,yes,1,mu,ja,male,fat,1895-09-30,265,yes,NA,"2,5",NA,23H 23M 0S,Sunny weather,Women with sundresses on
-FINANCE AND TECHNOLOGY,3/30/2021 17:46:38,yes,0,mu,nee,male,neither,15/04/1988,7,yes,25,100,NA,24H 0M 0S,Fun,Sleep
-ARTIFICIAL INTELLIGENCE,3/30/2021 17:53:12,yes,1,mu,ja,male,slim,NA,8979937,unknown,NA,100,NA,NA  ,Sex,Sex * 2
-ARTIFICIAL INTELLIGENCE,3/30/2021 17:57:08,yes,1,mu,ja,male,neither,03/05/1995,0,no,99,"3,14",NA,NA  ,No deadlines,#ADATOTHEMOON
-BUSINESS ANALYTICS,3/30/2021 17:58:46,yes,1,mu,ja,female,I have no idea what you are talking about,04/09/1997,0,no,NA,2,5,2H 0M 0S,Hot temperature,Airco
-ARTIFICIAL INTELLIGENCE,3/30/2021 18:02:16,yes,1,mu,ja,male,fat,04/01/1995,1,no,10,"0,5",1,23H 15M 0S,Good sleep,Nice people
-BIOINFORMATICS,3/30/2021 18:02:50,no,0,mu,nee,male,neither,24/10/1995,0,no,100,10,NA,0H 0M 0S  ,Meeting a friend ,Having a good meal
-ARTIFICIAL INTELLIGENCE,3/30/2021 18:04:36,no,1,mu,ja,unknown,slim,NA,1,no,30,"1,00E+07",NA,1H 0M 0S,Making money and not being with my girlfriend,Not being with my girlfriend and making money
-ARTIFICIAL INTELLIGENCE,3/30/2021 18:11:57,yes,1,mu,ja,female,slim,05/08/1998,1,no,100,0,NA,23H 0M 0S,Sun,Chocolate
-BIOINFORMATICS,3/30/2021 18:12:21,no,0,mu,nee,male,neither,24/10/1995,0,no,100,10,NA,0H 0M 0S  ,Meeting a friend ,Having a good meal
-ARTIFICIAL INTELLIGENCE,3/30/2021 18:12:43,yes,0,sigma,ja,unknown,neither,1337-11-11,7,no,69,NA,NA,1H 30M 0S,Good food,Lots of sleep
-BIOINFORMATICS,3/30/2021 18:19:03,no,0,sigma,ja,female,fat,23/01/1997,14,no,NA,NA,5,NA  ,less hmw,clear instructions to get 10 from hmw!
-BIOINFORMATICS,3/30/2021 18:35:43,yes,0,sigma,ja,male,fat,20/06/1993,300,unknown,NA,100,6,1H 0M 0S,productive,funny
-ARTIFICIAL INTELLIGENCE,3/30/2021 18:39:26,yes,1,mu,nee,male,slim,16/06/2000,1,no,40,50,NA,NA  ,50,50
-BIOINFORMATICS,3/30/2021 18:39:31,yes,0,mu,nee,female,I have no idea what you are talking about,06/07/1996,0,no,100,30,10,16H 0M 0S,"No homework, no school","No school, no homework"
-ECONOMETRICS,3/30/2021 18:39:35,yes,0,mu,nee,male,fat,31/08/1997,0,no,50,50,9,2H 0M 0S,Good weather,No covid
-NA,3/30/2021 18:48:33,yes,1,mu,ja,unknown,slim,01/01/2001,6,yes,99,NA,NA,NA  ,1,2
-ECONOMETRICS,3/30/2021 18:56:08,no,0,mu,ja,male,I have no idea what you are talking about,01/01/2001,4,no,NA,100,NA,1H 11M 0S,Puthie,More puthie
-ARTIFICIAL INTELLIGENCE,3/30/2021 19:03:43,yes,0,mu,ja,male,I have no idea what you are talking about,28/07/1998,0,no,35,33,NA,23H 49M 0S,weather,full stomach
-QUANTITATIVE RISK MANAGEMENT,3/30/2021 19:05:48,yes,1,mu,ja,female,I have no idea what you are talking about,27/06/1996,1,no,22,75,5,2H 0M 0S,Surrounded with family,Food
-BIOINFORMATICS,3/30/2021 19:06:48,no,0,mu,nee,male,neither,24/10/1995,0,no,100,10,NA,0H 0M 0S  ,Meeting a friend ,Having a good meal
-ARTIFICIAL INTELLIGENCE,3/30/2021 19:36:23,yes,1,mu,ja,female,slim,05/08/1998,1,no,100,0,NA,23H 0M 0S,Sun,Chocolate
-ECONOMETRICS,3/30/2021 19:39:32,yes,1,mu,ja,male,neither,15/01/1998,2,yes,60,60,NA,4H 45M 0S,Sun,Girls
-COMPUTER SCIENCE,3/30/2021 19:59:03,yes,0,mu,ja,male,neither,NA,2,no,60,NA,7,12H 20M 0S,delicious food,relaxing atmosphere 
-DATA SCIENCE,3/30/2021 20:05:41,yes,0,mu,nee,female,neither,26/03/1997,1,yes,98,0,NA,23H 30M 0S,Finishing tasks,GME go brrrr
-BIOINFORMATICS,3/30/2021 20:05:56,yes,1,sigma,ja,male,slim,22/01/1996,1,yes,50,0,NA,0H 0M 0S  ,Sun,Wine
-ECONOMETRICS,3/30/2021 20:19:21,yes,0,mu,ja,female,fat,NA,0,no,80,100,10,1H 15M 0S,Good food,Sunny day
-DATA SCIENCE,3/30/2021 20:26:14,yes,1,mu,ja,male,fat,NA,0,no,100,100,NA,0H 0M 0S  ,Warhammer,Warhammer 40.000
-MATHEMATICS,3/30/2021 20:31:27,yes,0,sigma,nee,unknown,I have no idea what you are talking about,24/08/1997,0,unknown,45,0,NA,NA  ,you,also you
-ECONOMETRICS,3/30/2021 21:00:15,yes,0,mu,ja,male,neither,NA,3,yes,10,50,6,1H 0M 0S,love,sex
-ARTIFICIAL INTELLIGENCE,3/30/2021 21:02:22,no,0,sigma,unknown,male,I have no idea what you are talking about,22/04/1993,0,unknown,20,2,NA,NA  ,5,5
-QUANTITATIVE RISK MANAGEMENT,3/30/2021 21:06:27,yes,0,mu,ja,male,fat,08/05/1999,2,no,75,"0,25",5,NA  ,Sex,Good food
-ARTIFICIAL INTELLIGENCE,3/30/2021 21:24:56,yes,1,mu,ja,female,fat,16/12/1997,1,no,20,2,NA,0H 56M 0S ,Sun,Boyfriend
-BIOINFORMATICS,3/30/2021 21:25:13,yes,0,mu,nee,male,fat,02/09/1996,0,no,77,NA,NA,1H 30M 0S,Beer,Friends
-ARTIFICIAL INTELLIGENCE,3/30/2021 21:27:34,yes,1,mu,ja,male,neither,16/05/1999,1,no,10,100,NA,NA  ,having breakfast with pancakes and strawberries ,Chilling at the beach on a sunny day
-ECONOMETRICS,3/30/2021 21:27:46,yes,0,mu,nee,male,neither,18/02/1995,4,no,99,17,NA,0H 0M 0S  ,what,when
-ECONOMETRICS,3/30/2021 21:34:48,yes,0,mu,ja,female,fat,12/12/1995,3,no,80,"0,21",NA,23H 3M 0S,A bunch of laughing,Bingewatching my favourite shows
-ECONOMETRICS,3/30/2021 21:36:33,yes,1,unknown,nee,male,fat,NA,0,no,30,20,6,NA  ,saturday,sunday
-ARTIFICIAL INTELLIGENCE,3/30/2021 21:54:08,no,0,mu,ja,female,neither,19/12/1998,1,no,70,1,8,1H 0M 0S,sun,weekend
-FINANCE,3/30/2021 22:17:11,yes,1,mu,ja,male,I have no idea what you are talking about,23/11/1989,2,yes,55,NA,NA,4H 0M 0S,Bananas,Test
-ARTIFICIAL INTELLIGENCE,3/30/2021 22:19:48,no,1,mu,nee,male,neither,29/11/1987,0,no,95,10,NA,1H 30M 0S,progress,friends
-DATA SCIENCE,3/30/2021 22:30:34,yes,1,mu,ja,female,I have no idea what you are talking about,20/12/1989,0,no,70,99,NA,23H 30M 0S,Sunshine,Family and friends
-BIOINFORMATICS,3/30/2021 22:37:23,yes,0,mu,ja,male,I have no idea what you are talking about,NA,1,no,80,1,2,1H 30M 0S,Sunshine,Exercise
-ARTIFICIAL INTELLIGENCE,3/30/2021 22:42:18,yes,1,mu,nee,female,fat,NA,0,no,80,80,10,11H 0M 0S,sunshine,happiness
-FINANCE AND TECHNOLOGY,3/30/2021 22:58:28,yes,0,mu,nee,male,slim,NA,1,no,87,NA,3,NA  ,football,Sun
-FINANCE AND TECHNOLOGY,3/30/2021 23:12:08,yes,1,sigma,nee,female,fat,24/11/1994,20,yes,50,20,NA,2H 0M 0S,Weather,Good news
-QUANTITATIVE RISK MANAGEMENT,3/30/2021 23:14:42,no,0,mu,nee,male,neither,26/02/1998,3,no,0,"0,25",NA,1H 0M 0S,Good food,Good music
-BUSINESS ANALYTICS,3/30/2021 23:44:58,yes,0,mu,ja,male,I have no idea what you are talking about,27/05/1998,1,no,70,1,6,NA  ,You,Me
+"";"program";"Timestamp";"ml";"ir";"stats";"db";"gender";"chocolate";"birthday";"neighbors";"stand";"stress";"gain";"rn";"bed_time";"good_day_1";"good_day_2"
+"1";"MASTER TAX LAW - TAX AND TECHNOLOGY";"3/16/2021 14:37:20";"yes";"0";"mu";"ja";"male";"neither";NA;2;"no";85;50;8;"22H 15M 0S";"Having completed a set task.";"Happy people"
+"2";"ARTIFICIAL INTELLIGENCE";"3/24/2021 17:28:48";"no";"0";"sigma";"nee";"male";"I have no idea what you are talking about";NA;0;"no";0;100;3;"22H 0M 0S";"Coffee";"Sun"
+"3";NA;"3/25/2021 12:31:29";"no";"0";"mu";"nee";"male";"fat";"23/09/1997";4;"no";40;5;NA;"0H 0M 0S  ";"Be Happy";"Having a very productive day"
+"4";"COMPUTER SCIENCE";"3/25/2021 15:56:30";"no";"1";"mu";"ja";"male";"I have no idea what you are talking about";"30/07/1999";NA;"no";42;5;NA;"NA  ";"If you give me a 10";"If you give my team a 10"
+"5";"ARTIFICIAL INTELLIGENCE";"3/25/2021 17:41:04";"yes";"0";"mu";"ja";"female";"neither";"08/03/1998";1;"no";20;50;4;"2H 0M 0S";"nice weather";"having good food"
+"6";"SYSTEM SECURITY";"3/26/2021 11:31:46";"no";"1";"sigma";"ja";"male";"neither";"13/01/1995";0;"no";20;30;5;"NA  ";"weather";"free day"
+"7";"QUANTITATIVE RISK MANAGEMENT";"3/26/2021 13:59:32";"yes";"0";"mu";"nee";"male";"fat";"28/07/1997";0;"no";20;0;NA;"1H 30M 0S";"Classical music";"Data mining :-P"
+"8";"COMPUTATIONAL SCIENCE";"3/26/2021 14:30:47";"no";"0";"sigma";"nee";"male";"neither";"14/11/1993";0;"no";20;0,2;7;"12H 0M 0S";"Making progress in a tough course";"Watching the game, smoking some bud"
+"9";"ARTIFICIAL INTELLIGENCE";"3/26/2021 15:31:08";"no";"0";"mu";"ja";"male";"neither";"08/02/1997";0;"no";99;1;6;"1H 45M 0S";"Drum";"Bass"
+"10";"ARTIFICIAL INTELLIGENCE";"3/26/2021 22:29:30";"no";"0";"mu";"ja";"male";"neither";NA;1;"no";50;2;4;"1H 0M 0S";"Meeting a friend";"Being productive"
+"11";"COMPUTATIONAL SCIENCE";"3/26/2021 23:46:34";"no";"0";"mu";"nee";"male";"fat";NA;2;"no";90;30;7;"1H 0M 0S";"Good coffe";"Get motivated"
+"12";"ARTIFICIAL INTELLIGENCE";"3/27/2021 16:02:34";"yes";"0";"mu";"nee";"male";"fat";"15/04/1998";3;"no";60;5;7;"1H 0M 0S";"Start studying early";"Finishing everything that I proposed for that day"
+"13";"COMPUTER SCIENCE";"3/27/2021 19:31:57";"no";"1";"mu";"nee";"male";"neither";"02/07/1977";4;"unknown";75;500;7;"12H 0M 0S";"feel of achievement ";"go out, talk to people "
+"14";"BIOINFORMATICS";"3/27/2021 20:59:51";"yes";"0";"mu";"nee";"female";"neither";"11/07/1997";0;"no";50;10;7;"2H 0M 0S";"relaxing and chill schedule";"nice weather"
+"15";"HUMAN LANGUAGE TECHNOLOGY";"3/27/2021 21:19:34";"yes";"0";"mu";"nee";"female";"neither";"07/04/1998";2;"no";20;5;NA;"2H 0M 0S";"sunny wheather outside";"coronavirus restrictions lifted"
+"16";"ARTIFICIAL INTELLIGENCE";"3/28/2021 10:27:38";"yes";"0";"mu";"ja";"female";"fat";"30/07/1997";0;"no";10;0,1;7;"23H 10M 0S";"Socialize a bit";"Tidy environment"
+"17";"COMPUTATIONAL SCIENCE";"3/28/2021 10:58:31";"no";"0";"mu";"nee";"female";"fat";NA;0;"yes";0;50;8;"0H 45M 0S ";"get up";"food"
+"18";"ARTIFICIAL INTELLIGENCE";"3/28/2021 11:22:44";"no";"0";"mu";"nee";"female";"neither";"03/09/1966";0;"no";70;5;7;"23H 0M 0S";"nice weather";"surprising things happen"
+"19";"QUANTITATIVE RISK MANAGEMENT";"3/28/2021 12:40:57";"yes";"0";"mu";"ja";"male";"slim";NA;0;"yes";77;2,5;7;"5H 0M 0S";"Food";"Beer"
+"20";"BUSINESS ANALYTICS";"3/28/2021 20:21:27";"yes";"1";"mu";"ja";"male";"slim";"06/01/1998";0;"no";10;10;NA;"23H 30M 0S";"No stress";"Doing sports"
+"21";"ARTIFICIAL INTELLIGENCE";"3/28/2021 21:38:59";"yes";"unknown";"mu";"nee";"female";"neither";"04/08/1995";0;"no";40;12;4;"13H 0M 0S";"food";"sleep"
+"22";"COMPUTATIONAL SCIENCE";"3/28/2021 23:23:22";"no";"0";"mu";"ja";"male";"slim";"31/07/1996";5;"no";7;8;NA;"NA  ";"Sleeping to a good movie";"Food"
+"23";"COMPUTER SCIENCE";"3/29/2021 0:12:18";"no";"0";"mu";"ja";"male";"fat";"01/09/2020";10;"yes";93;93;10;"22H 0M 0S";"happy";"very happy"
+"24";"COMPUTATIONAL SCIENCE";"3/29/2021 6:09:27";"no";"0";"mu";"nee";"male";"fat";"11/11/1995";0;"no";100;0;2;"23H 0M 0S";"Good sleep";"Good food"
+"25";"COMPUTER SCIENCE";"3/29/2021 6:39:25";"yes";"0";"mu";"ja";"female";"fat";"29/10/1997";0;"no";50;30;NA;"1H 23M 0S";"Everything is under control.";"Delicious food."
+"26";"ARTIFICIAL INTELLIGENCE";"3/29/2021 8:32:53";"yes";"0";"mu";"ja";"male";"slim";"01/12/1998";1;"no";NA;0;3;"23H 0M 0S";"Sun";"Good weather"
+"27";"LINGUISTICS";"3/29/2021 9:41:50";"yes";"0";"mu";"nee";"female";"neither";"13/02/1998";4;"unknown";70;50;NA;"2H 0M 0S";"A productive study/work day";"Inner peace"
+"28";"BIOINFORMATICS";"3/29/2021 10:09:42";"no";"0";"mu";"nee";"female";"fat";"04/11/1997";0;"no";12;2;6;"22H 54M 0S";"Nice wheather";"Seeing my boyfriend"
+"29";"BUSINESS ANALYTICS";"3/29/2021 10:29:23";"yes";"1";"mu";"nee";"male";"neither";"13/07/1999";0;"no";30;1;6;"23H 30M 0S";"Sunny weather";"Coffee"
+"30";"BIOINFORMATICS";"3/29/2021 10:39:02";"yes";"0";"mu";"nee";"male";"slim";"20/05/1989";1;"no";30;100;NA;"22H 0M 0S";"Enjoy the sun.";"Share some laughts."
+"31";"COMPUTATIONAL SCIENCE";"3/29/2021 10:49:15";"yes";"1";"mu";"ja";"male";"fat";"18/12/1996";0;"no";90;20;NA;"0H 0M 0S  ";"sun";"no rain"
+"32";NA;"3/29/2021 11:00:34";"yes";"0";"mu";"ja";"male";"fat";"30/10/1997";0;"no";70;50;8;"0H 30M 0S ";"laughing";"working out"
+"33";"ECONOMETRICS";"3/29/2021 11:16:17";"no";"1";"mu";"nee";"male";"fat";"26/01/1998";0;"no";0;20;10;"0H 0M 0S  ";"sunny weather";"wake up happy"
+"34";"COMPUTATIONAL SCIENCE";"3/29/2021 11:19:21";"no";"0";"mu";"ja";"male";"neither";"11/11/1997";0;"no";5;70;NA;"12H 30M 0S";"Sunshine";"Friends"
+"35";"COMPUTATIONAL SCIENCE";"3/29/2021 11:22:24";"yes";"0";"mu";"ja";"female";"slim";NA;1;"no";10;5;3;"23H 30M 0S";"Meeting with friends";"Coffee to go in corona times"
+"36";"COMPUTATIONAL SCIENCE";"3/29/2021 11:30:19";"yes";"0";"sigma";"ja";"male";"fat";NA;3;"no";67;1;NA;"22H 45M 0S";"Doing physical activities (games) with friends in a park on sunny day with some alcoholic beverages.";"Winning a competitive korfbal match after putting in a good performance."
+"37";"HUMAN LANGUAGE TECHNOLOGY";"3/29/2021 11:39:25";"yes";"0";"mu";"nee";"female";"I have no idea what you are talking about";"14/08/1995";1;"no";50;10;7;"23H 0M 0S";"Take a walk in nature";"Good chat with friends and drinks"
+"38";"HUMAN LANGUAGE TECHNOLOGY";"3/29/2021 12:45:18";"yes";"0";"mu";"nee";"female";"neither";"27/03/1999";0;"no";40;5;7;"23H 30M 0S";"Sunshine";"Good night's sleep"
+"39";"ECONOMETRICS";"3/29/2021 13:05:02";"yes";"0";"mu";"nee";"male";"fat";"06/03/1999";0;"no";30;8;6;"1H 0M 0S";"weather";"girlfriend"
+"40";"ECONOMETRICS";"3/29/2021 13:06:57";"yes";"0";"mu";"nee";"male";"neither";"08/04/1998";0;"no";0;80;NA;"2H 0M 0S";"Being productive";"Meeting friends"
+"41";"ARTIFICIAL INTELLIGENCE";"3/29/2021 13:16:49";"yes";"0";"mu";"nee";"male";"fat";"17/06/1994";0;"no";20;18;NA;"23H 30M 0S";"sunshine";"sport"
+"42";"ECONOMETRICS";"3/29/2021 13:27:23";"no";"0";"mu";"ja";"male";"fat";NA;2;"no";50;10;NA;"23H 0M 0S";"good weather";"having a good breakfast"
+"43";"ECONOMETRICS";"3/29/2021 13:43:38";"yes";"0";"mu";"ja";"male";"neither";"18/06/1996";0;"no";12;0,5;NA;"11H 45M 0S";"Good food";"Sex"
+"44";"QUANTITATIVE RISK MANAGEMENT";"3/29/2021 13:47:45";"no";"0";"mu";"nee";"female";"fat";NA;0;"no";60;NA;8;"0H 3M 0S ";"Getting all the work done that I've planned";"Seeing my friends and family"
+"45";"ARTIFICIAL INTELLIGENCE";"3/29/2021 13:50:14";"yes";"1";"mu";"ja";"male";"fat";"04/04/1998";2;"no";55;NA;4;"1H 0M 0S";"music";"music"
+"46";"BUSINESS ANALYTICS";"3/29/2021 13:53:03";"yes";"1";"mu";"nee";"male";"I have no idea what you are talking about";"24/06/1993";0;"no";78;0;NA;"20H 0M 0S";"Saturday";"Monday"
+"47";"ARTIFICIAL INTELLIGENCE";"3/29/2021 13:53:38";"no";"0";"mu";"nee";"male";"I have no idea what you are talking about";"01/01/1997";0;"no";1;100;1;"2H 0M 0S";"food";"more food"
+"48";"COMPUTER SCIENCE";"3/29/2021 13:56:26";"yes";"0";"mu";"nee";"male";"fat";"16/11/1995";0;"no";25;1;6;"1H 0M 0S";"Family";"Rice/Pasta for dinner"
+"49";"LINGUISTICS";"3/29/2021 14:01:59";"yes";"1";"sigma";"nee";"female";"I have no idea what you are talking about";NA;0;"no";90;50;9;"22H 0M 0S";"sun ";"exercise"
+"50";"ECONOMETRICS";"3/29/2021 14:07:33";"no";"0";"mu";"nee";"male";"fat";NA;2;"no";70;20;5;"11H 3M 0S";"Going out";"not working"
+"51";"ECONOMETRICS";"3/29/2021 14:16:20";"yes";"unknown";"mu";"ja";"male";"fat";NA;0;"no";12;1;7;"23H 30M 0S";"No stress";"Holidays"
+"52";"ECONOMETRICS";"3/29/2021 14:30:16";"yes";"0";"mu";"nee";"male";"neither";"06/10/1998";0;"unknown";31;NA;4;"22H 27M 0S";"Sun";"Sporting"
+"53";"ARTIFICIAL INTELLIGENCE";"3/29/2021 14:32:57";"no";"0";"mu";"ja";"female";"neither";"20/11/1999";0;"no";35;10;10;"2H 30M 0S";"Free time";"Social activity"
+"54";"ARTIFICIAL INTELLIGENCE";"3/29/2021 14:35:19";"yes";"1";"mu";"ja";"female";"fat";"15/11/1998";0;"no";80;5;9;"0H 20M 0S ";"Getting everything done that needed to be done";"Chilling in the sun"
+"55";"ARTIFICIAL INTELLIGENCE";"3/29/2021 14:40:38";"yes";"0";"mu";"nee";"female";"neither";NA;2;"no";50;1;5;"2H 0M 0S";"Seeing friends and family that I love";"Calmth, positivity, learning/reading"
+"56";"BUSINESS ANALYTICS";"3/29/2021 14:44:22";"yes";"1";"mu";"ja";"male";"fat";NA;2;"no";10;20;3;"22H 30M 0S";"nice weather";"walk on the beach"
+"57";"FINANCE AND TECHNOLOGY";"3/29/2021 14:49:24";"yes";"0";"mu";"nee";"male";"fat";"28/01/1997";0;"no";0;20;2;"23H 0M 0S";"Soccer";"Sun"
+"58";"BIOINFORMATICS";"3/29/2021 15:00:11";"yes";"0";"mu";"ja";"female";"fat";"03/02/1999";1;"no";75;10;NA;"23H 30M 0S";"When I have seen/spoken to my loved ones";"When I feel like my day has been productive but not too stresfull "
+"59";"ARTIFICIAL INTELLIGENCE";"3/29/2021 15:03:24";"no";"0";"mu";"nee";"male";"fat";"20/09/1992";0;"no";100;1;NA;"5H 25M 0S";"Rest";"Nothing"
+"60";"QUANTITATIVE RISK MANAGEMENT";"3/29/2021 15:04:18";"no";"0";"unknown";"nee";"male";"fat";"16/05/1996";1;"no";50;20;NA;"23H 30M 0S";"Efficiency";"Accomplishment"
+"61";"ECONOMETRICS";"3/29/2021 15:05:38";"yes";"1";"mu";"ja";"male";"neither";NA;0;"yes";60;30;7;"22H 30M 0S";"8 hours of sleep";"Friendly people"
+"62";"COMPUTER SCIENCE";"3/29/2021 15:35:37";"yes";"0";"mu";"unknown";"female";"neither";NA;1;"no";20;15;6;"3H 0M 0S";"swimming";"beer"
+"63";"ARTIFICIAL INTELLIGENCE";"3/29/2021 15:41:09";"yes";"1";"mu";"ja";"female";"I have no idea what you are talking about";NA;0;"no";40;0;1;"3H 30M 0S";"a good night's sleep";"a relaxed morning"
+"64";NA;"3/29/2021 16:23:33";"no";"0";"mu";"nee";"male";"neither";"09/09/1996";0;"no";77;5;4;"2H 0M 0S";"No work/free time";"Beautiful weather"
+"65";"BIOINFORMATICS";"3/29/2021 16:35:14";"yes";"0";"mu";"nee";"male";"neither";NA;0;"no";15;99;NA;"0H 0M 0S  ";"Fun activities";"Good food"
+"66";"FINANCE AND TECHNOLOGY";"3/29/2021 16:35:49";"yes";"0";"mu";"nee";"male";"fat";"15/08/1994";0;"no";60;20;8;"2H 0M 0S";"Warm weather";"enough food"
+"67";"BUSINESS ANALYTICS";"3/29/2021 16:35:57";"yes";"1";"mu";"ja";"male";"fat";"27/10/1995";0;"no";60;1000;7;"23H 0M 0S";"Hanging out with friends";"watching sports"
+"68";"ECONOMETRICS";"3/29/2021 16:46:51";"yes";"0";"mu";"nee";"male";"neither";"02/07/1998";0;"no";38;NA;NA;"1H 30M 0S";"Good breakfast";"Outdoor activity"
+"69";"ECONOMETRICS";"3/29/2021 16:49:13";"yes";"0";"mu";"nee";"female";"neither";"01/02/1993";0;"no";30;10;NA;"23H 0M 0S";"Walking in the sun";"Eating good food"
+"70";"COMPUTER SCIENCE";"3/29/2021 16:51:39";"no";"0";"mu";"unknown";"male";"slim";"10/05/1999";1;"no";5;1;5;"3H 0M 0S";"sleep";"people"
+"71";"QUANTITATIVE RISK MANAGEMENT";"3/29/2021 17:35:57";"no";"0";"mu";"nee";"male";"neither";"22/09/1996";0;"no";50;1;NA;"0H 30M 0S ";"No Stress";"Be able to relax"
+"72";"BUSINESS ANALYTICS";"3/29/2021 17:47:11";"yes";"0";"mu";"nee";"male";"fat";"13/12/1994";0;"no";35;10;7;"0M 3M 0S ";"If I completed all my tasks which I set for the day.";"When I have spoken with/seen at least some friends or relatives that day. "
+"73";"ARTIFICIAL INTELLIGENCE";"3/29/2021 17:56:51";"yes";"0";"mu";"nee";"male";"neither";"05/01/1998";0;"no";0;NA;5;"22H 30M 0S";"Sun";"Food"
+"74";"MEDICAL INFORMATICS";"3/29/2021 17:58:00";"yes";"1";"mu";"ja";"male";"fat";NA;0;"no";10;5;NA;"23H 0M 0S";"sport";"sun"
+"75";"ARTIFICIAL INTELLIGENCE";"3/29/2021 18:02:48";"yes";"1";"mu";"ja";"male";"neither";"15/09/1999";0;"no";10;1;6;"1H 0M 0S";"No obligations";"A good night of sleep"
+"76";"BUSINESS ANALYTICS";"3/29/2021 18:21:02";"yes";"0";"mu";"ja";"female";"fat";"01/07/1998";1;"no";40;50;NA;"22H 30M 0S";"A long walk outside";"Getting things done"
+"77";"MATHEMATICS";"3/29/2021 19:01:05";"yes";"0";"mu";"ja";"female";"neither";NA;0;"no";60;10;7;"23H 0M 0S";"Sun";"Social contacts"
+"78";"BUSINESS ANALYTICS";"3/29/2021 19:35:58";"yes";"unknown";"mu";"ja";"male";"fat";"22/10/1994";0;"no";60;1;NA;"23H 30M 0S";"Sun";"Tennis"
+"79";"BUSINESS ANALYTICS";"3/29/2021 19:56:04";"yes";"0";"mu";"ja";"male";"neither";"23/02/1999";NA;"unknown";99;101;2;"NA  ";"Payday";"The day that I paid my rent and don't have a red valued bank account."
+"80";"HUMAN LANGUAGE TECHNOLOGY";"3/29/2021 19:57:32";"yes";"0";"sigma";"ja";"male";"fat";"06/10/1995";0;"no";40;70;6;"0H 30M 0S ";"Nice weather and a run";"Playing music with friends"
+"81";"BUSINESS ANALYTICS";"3/29/2021 20:04:52";"yes";"0";"mu";"unknown";"female";"fat";"20/01/1997";2;"no";80;50;8;"23H 40M 0S";"weather ";"Being with friends or family"
+"82";"FINANCE AND TECHNOLOGY";"3/29/2021 20:09:38";"yes";"unknown";"unknown";"nee";"male";"fat";"03/12/1996";0;"no";20;NA;6;"23H 10M 0S";"sports";"good food"
+"83";"ARTIFICIAL INTELLIGENCE";"3/29/2021 20:33:29";"yes";"0";"mu";"ja";"male";"fat";"22/02/1996";0;"unknown";10;20;1;"23H 0M 0S";"Sun";"Productivity"
+"84";"BUSINESS ANALYTICS";"3/29/2021 20:53:49";"yes";"0";"mu";"nee";"male";"slim";"10/09/1998";0;"no";5;0;9;"0H 0M 0S  ";"Sport";"Progress towards a goal"
+"85";"COMPUTATIONAL SCIENCE";"3/29/2021 21:09:39";"no";"0";"mu";"nee";"male";"neither";"21/03/1996";0;"no";31;0;3;"23H 59M 0S";"Sun";"Fun"
+"86";"ECONOMETRICS";"3/29/2021 21:16:04";"yes";"unknown";"mu";"nee";"female";"fat";"02/06/1998";2;"no";41;37;NA;"23H 30M 0S";"Sunshine ";"Good food"
+"87";"COMPUTATIONAL SCIENCE";"3/29/2021 21:23:01";"no";"1";"mu";"ja";"female";"fat";"26/03/1998";0;"no";85;5;NA;"0H 36M 0S ";"a nice meal";"the sun"
+"88";"BUSINESS ANALYTICS";"3/29/2021 21:30:30";"yes";"0";"mu";"nee";"female";"neither";"17/09/1996";2;"no";60;60;7;"23H 15M 0S";"Sun";"Happy people/friends"
+"89";"ARTIFICIAL INTELLIGENCE";"3/29/2021 21:53:06";"no";"0";"mu";"nee";"female";"neither";"16/12/1992";0;"no";85;5;9;"3H 0M 0S";"Day off";"Good company"
+"90";"COMPUTATIONAL SCIENCE";"3/29/2021 21:57:42";"no";"0";"mu";"nee";"female";"neither";NA;0;"no";70;50;7;"0H 0M 0S  ";"sunny";"enough sleep"
+"91";"ARTIFICIAL INTELLIGENCE";"3/29/2021 22:11:39";"no";"0";"mu";"ja";"male";"fat";"17/01/1996";3;"no";70;100;NA;"0H 30M 0S ";"get a good grade";"a sunny day"
+"92";"COMPUTATIONAL SCIENCE";"3/29/2021 22:17:34";"no";"0";"mu";"nee";"male";"neither";"11/12/1994";0;"unknown";45;10;NA;"22H 15M 0S";"Talking and being around friends and loved ones";"When $GME goes up 69%      HODL ON"
+"93";"ARTIFICIAL INTELLIGENCE";"3/29/2021 22:39:12";"yes";"1";"mu";"ja";"male";"I have no idea what you are talking about";"27/01/1996";0;"no";45;100;5;"2H 0M 0S";"productivity";"good food"
+"94";"ARTIFICIAL INTELLIGENCE";"3/29/2021 22:50:20";"no";"0";"mu";"nee";"male";"neither";"17/09/1997";0;"no";30;0;1;"23H 30M 0S";"Good sleep";"Meet friends"
+"95";"ARTIFICIAL INTELLIGENCE";"3/29/2021 22:58:34";"no";"unknown";"mu";"nee";"female";"fat";"04/04/1998";0;"no";65;1;10;"1H 0M 0S";"No stressing about deadlines";"Take a nice walk"
+"96";"ARTIFICIAL INTELLIGENCE";"3/29/2021 22:58:38";"no";"0";"mu";"nee";"male";"fat";"15/01/1996";1;"no";25;50;8;"3H 0M 0S";"happy";"productive"
+"97";"ARTIFICIAL INTELLIGENCE";"3/29/2021 23:02:41";"yes";"1";"mu";"ja";"male";"neither";"03/12/1997";0;"unknown";35;70;3;"1H 0M 0S";"good rest";"social"
+"98";"BUSINESS ANALYTICS";"3/29/2021 23:03:17";"yes";"0";"mu";"ja";"female";"fat";"13/10/1998";0;"no";66;NA;7;"0H 30M 0S ";"Nice weather";"Being with my friends"
+"99";"ARTIFICIAL INTELLIGENCE";"3/29/2021 23:24:53";"no";"1";"mu";"ja";"male";"fat";NA;0;"no";30;70;8;"1H 30M 0S";"Low stresslevels";"Hanging out with friends"
+"100";"QUANTITATIVE RISK MANAGEMENT";"3/29/2021 23:27:11";"no";"0";"mu";"nee";"male";"fat";"08/10/1997";1;"no";0;0;NA;"2H 0M 0S";"Good food";"Good mood"
+"101";"FINANCE AND TECHNOLOGY";"3/29/2021 23:32:18";"yes";"0";"mu";"nee";"male";"slim";"17/01/1996";0;"no";50;25;5;"3H 0M 0S";"Ice cream";"No deadlines for the subsequent days"
+"102";"BUSINESS ANALYTICS";"3/29/2021 23:41:02";"yes";"0";"mu";"nee";"male";"neither";NA;0;"no";60;1;7;"0H 15M 0S ";"Enough sleep";"Good food"
+"103";"ECONOMETRICS";"3/29/2021 23:53:22";"no";"0";"mu";"nee";"male";"I have no idea what you are talking about";"29/07/1997";0;"no";21;0,22;5;"22H 55M 0S";"wake up early, be productive and relax with friends in evening";"Learning something new"
+"104";"COMPUTER SCIENCE";"3/30/2021 2:59:37";"no";"0";"sigma";"ja";"male";"neither";"02/05/1999";5;"no";75;0;7;"4H 0M 0S";"no stress";"good weather"
+"105";"BIOINFORMATICS";"3/30/2021 3:36:10";"yes";"0";"mu";"ja";"male";"I have no idea what you are talking about";"07/07/1998";1;"no";65;0;NA;"5H 0M 0S";"1";"2"
+"106";"QUANTITATIVE RISK MANAGEMENT";"3/30/2021 6:33:02";"no";"0";"mu";"ja";"male";"unknown";NA;0;"no";20;0;9;"7H 30M 0S";"no exams or deadlines";"plenty of sleep"
+"107";"BIOINFORMATICS";"3/30/2021 8:20:19";"yes";"0";"mu";"nee";"male";"neither";NA;0;"no";80;1;4;"0H 0M 0S  ";"sunshine";"music"
+"108";"COMPUTER SCIENCE";"3/30/2021 8:44:31";"yes";"1";"mu";"ja";"male";"neither";NA;1;"no";17;65;NA;"22H 45M 0S";"odd jobs";"sports"
+"109";"RESEARCH MASTER HUMAN MOVEMENT SCIENCES (FGB)";"3/30/2021 9:16:58";"no";"0";"mu";"nee";"female";"neither";"08/07/1993";1;"no";10;0;8;"23H 15M 0S";"sun";"exercise"
+"110";"COMPUTATIONAL SCIENCE";"3/30/2021 9:20:47";"no";"0";"mu";"ja";"male";"fat";NA;0;"yes";50;60;7;"1H 0M 0S";"no lecture";"beautiful scenery"
+"111";"MATHEMATICS";"3/30/2021 9:22:43";"no";"0";"mu";"nee";"female";"fat";"27/11/1995";0;"no";67;2;7;"22H 45M 0S";"tea";"icecream"
+"112";"BUSINESS ANALYTICS";"3/30/2021 9:30:43";"yes";"1";"mu";"ja";"unknown";"slim";"01/02/1997";0;"no";50;1;NA;"0H 0M 0S  ";"sun";"no deadlines"
+"113";"ARTIFICIAL INTELLIGENCE";"3/30/2021 9:30:59";"yes";"0";"mu";"nee";"female";"I have no idea what you are talking about";"23/01/1998";1;"no";55;0;NA;"23H 0M 0S";"Playing sports";"Good food"
+"114";"COMPUTER SCIENCE";"3/30/2021 9:40:31";"no";"1";"mu";"ja";"male";"fat";NA;0;"no";60;65;8;"23H 50M 0S";"Free time";"Being outside"
+"115";"FINANCE AND TECHNOLOGY";"3/30/2021 9:44:01";"yes";"0";"mu";"nee";"female";"fat";"26/03/1999";0;"no";60;2;2;"22H 0M 0S";"Sun";"Success"
+"116";"ARTIFICIAL INTELLIGENCE";"3/30/2021 9:48:32";"yes";"1";"sigma";"ja";"male";"neither";"01/12/1996";1;"no";50;63;NA;"23H 30M 0S";"Good weather";"No stress"
+"117";"DATA SCIENCE";"3/30/2021 9:49:36";"yes";"0";"sigma";"nee";"male";"neither";"26/10/1990";0;"no";75;7;2;"23H 45M 0S";"sun";"cycling"
+"118";"MEDICAL INFORMATICS";"3/30/2021 10:00:00";"yes";"0";"mu";"nee";"female";"fat";"01/06/1997";0;"no";75;20;8;"22H 30M 0S";"The sun shines";"Meeting with friends"
+"119";"ECONOMETRICS";"3/30/2021 10:07:28";"no";"0";"mu";"nee";"female";"neither";"02/01/1997";1;"no";60;1;7;"23H 30M 0S";"Good weather";"Good sleep the prior day"
+"120";"ARTIFICIAL INTELLIGENCE";"3/30/2021 10:09:56";"yes";"1";"mu";"nee";"male";"fat";"26/01/1999";0;"no";20;1;NA;"22H 19M 0S";"good night sleep";"nice food"
+"121";"ARTIFICIAL INTELLIGENCE";"3/30/2021 10:13:11";"yes";"1";"mu";"nee";"male";"unknown";"05/07/1995";0;"no";50;0,2;8;"22H 30M 0S";"Sun";"25 degrees celsius"
+"122";"COMPUTER SCIENCE";"3/30/2021 10:31:21";"no";"0";"mu";"ja";"female";"neither";"14/01/1996";0;"no";77;70;3;"23H 0M 0S";"coffee";"fulfill the plan"
+"123";"COMPUTER SCIENCE";"3/30/2021 10:32:04";"yes";"1";"mu";"ja";"male";"fat";"28/08/1998";0;"yes";30;NA;NA;"0H 0M 0S  ";"Sleeping well";"Having a walk with my dog"
+"124";"FINANCE AND TECHNOLOGY";"3/30/2021 10:36:55";"yes";"0";"sigma";"nee";"male";"neither";"28/12/1998";0;"yes";10;5;NA;"23H 54M 0S";"Sun shining";"Chatting with friends"
+"125";"COMPUTER SCIENCE";"3/30/2021 10:37:05";"yes";"1";"mu";"ja";"male";"fat";"28/08/1998";0;"yes";30;10;2;"0H 0M 0S  ";"Sleeping well";"Having a walk with my dog"
+"126";"FINANCE AND TECHNOLOGY";"3/30/2021 10:39:11";"yes";"1";"mu";"nee";"male";"fat";"03/05/1995";1;"no";15;10;NA;"23H 30M 0S";"Sun";"Beer"
+"127";"BIOINFORMATICS";"3/30/2021 10:45:18";"yes";"0";"unknown";"nee";"female";"slim";"08/05/1994";4;"no";20;20;8;"23H 0M 0S";"if the sun is shinning";"Something adventurous took place"
+"128";"BUSINESS ANALYTICS";"3/30/2021 10:49:39";"yes";"1";"mu";"ja";"male";"fat";"01/03/1995";0;"no";40;5;2;"23H 15M 0S";"Good stock returns";"Getting high grades back"
+"129";"BUSINESS ANALYTICS";"3/30/2021 10:49:50";"yes";"1";"mu";"ja";"male";"fat";"17/12/1998";0;"no";10;3;4;"22H 30M 0S";"Zoom meeting";"Teams meeting"
+"130";"BUSINESS ANALYTICS";"3/30/2021 10:53:15";"yes";"unknown";"mu";"ja";"male";"neither";"27/08/1997";0;"unknown";60;1;3;"21H 0M 0S";"Good weather";"Exercise"
+"131";"COMPUTATIONAL SCIENCE";"3/30/2021 10:53:49";"no";"0";"mu";"ja";"female";"fat";"19/04/1997";1;"no";40;100;3;"23H 0M 0S";"drinking cola zero";"sunny weather"
+"132";"ARTIFICIAL INTELLIGENCE";"3/30/2021 10:55:13";"no";"0";"mu";"nee";"male";"neither";"15/01/1996";0;"no";70;5;5;"0H 15M 0S ";"Sun outside and no wind";"Playing basketball"
+"133";"ARTIFICIAL INTELLIGENCE";"3/30/2021 10:55:42";"no";"0";"mu";"nee";"female";"neither";"29/09/1996";0;"no";50;20;2;"14H 0M 0S";"The sun";"Friends"
+"134";"COMPUTER SCIENCE";"3/30/2021 10:55:44";"no";"0";"mu";"nee";"male";"fat";"0000-01-01";0;"no";NA;110;9;"1H 30M 0S";"pizza";"sleeping in"
+"135";"ARTIFICIAL INTELLIGENCE";"3/30/2021 10:58:12";"yes";"0";"mu";"nee";"female";"neither";"11/12/1995";0;"no";30;12;NA;"21H 45M 0S";"Sun";"Good sleep"
+"136";"ECONOMETRICS";"3/30/2021 10:58:32";"yes";"0";"mu";"ja";"female";"I have no idea what you are talking about";"05/06/1996";1;"no";70;20;7;"22H 45M 0S";"When the sun is shining ";"Good night sleep "
+"137";"COMPUTER SCIENCE";"3/30/2021 11:03:33";"yes";"1";"mu";"ja";"male";"unknown";"23/01/1999";3;"no";32;99,99;4;"23H 39M 0S";"A nice suprise";"A feeling of contentness"
+"138";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:08:00";"yes";"0";"mu";"ja";"female";"neither";NA;1;"no";40;70;3;"23H 30M 0S";"when it's sunny";"when I can enjoy nature"
+"139";"BUSINESS ADMINISTRATION";"3/30/2021 11:09:42";"no";"0";"mu";"nee";"male";"fat";"21/08/1998";3;"no";10;10;8;"22H 0M 0S";"Tasteful food";"Good weather"
+"140";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:10:49";"yes";"0";"mu";"nee";"male";"fat";NA;1;"no";80;10;8;"1H 0M 0S";"Sun";"Beauty"
+"141";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:11:47";"no";"0";"mu";"ja";"female";"unknown";NA;1;"no";20;10;5;"23H 0M 0S";"Sun";"Smile"
+"142";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:28:20";"no";"0";"mu";"nee";"female";"neither";NA;1;"no";0;70;5;"23H 0M 0S";"fun";"sun"
+"143";"HUMAN LANGUAGE TECHNOLOGY";"3/30/2021 11:30:10";"yes";"1";"mu";"nee";"female";"neither";"11/11/1997";0;"no";30;25;7;"23H 1M 0S";"sunshine";"love"
+"144";"BUSINESS ANALYTICS";"3/30/2021 11:30:34";"yes";"1";"mu";"ja";"male";"fat";"25/07/1999";0;"no";80;10;7;"23H 0M 0S";"Doing well on study";"Feyenoord winning a game"
+"145";"BIOINFORMATICS";"3/30/2021 11:31:11";"yes";"0";"sigma";"nee";"female";"slim";"08/03/1997";1;"no";0;NA;8;"0H 45M 0S ";"Sun";"My dog"
+"146";"COMPUTATIONAL SCIENCE";"3/30/2021 11:36:30";"no";"0";"mu";"unknown";"male";"neither";"24/06/1999";0;"no";20;1;7;"23H 30M 0S";"Friends";"Sport"
+"147";"MSC STOCHASTICS AND FINANCIAL MATHEMATICS";"3/30/2021 11:40:04";"yes";"0";"mu";"nee";"female";"fat";"26/12/1996";2;"yes";70;0;6;"23H 0M 0S";"sun";"free time"
+"148";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:41:42";"yes";"1";"mu";"nee";"male";"slim";"25/07/1999";4;"no";10;60;2;"0H 30M 0S ";"good night sleep";"things to do"
+"149";"COMPUTATIONAL SCIENCE";"3/30/2021 11:49:20";"no";"1";"mu";"nee";"male";"fat";"27/09/1997";0;"no";70;80;7;"2H 0M 0S";"Good weather";"Good news"
+"150";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:52:45";"no";"1";"mu";"ja";"male";"fat";"05/08/1995";0;"no";30;5;NA;"1H 0M 0S";"productivity";"food"
+"151";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:54:04";"no";"1";"sigma";"nee";"female";"fat";"17/11/1997";0;"no";50;5;8;"23H 59M 0S";"When I see my friends";"Delicious food"
+"152";"ARTIFICIAL INTELLIGENCE";"3/30/2021 11:54:41";"yes";"0";"mu";"ja";"female";"neither";"30/11/1993";3;"no";10;20;8;"1H 15M 0S";"coffee";"sunny weather"
+"153";"ECONOMETRICS";"3/30/2021 11:57:06";"no";"unknown";"mu";"ja";"male";"unknown";NA;2;"unknown";80;NA;NA;"1H 0M 0S";"Progress ";"Happiness "
+"154";"ECONOMETRICS";"3/30/2021 11:58:45";"no";"0";"mu";"ja";"male";"unknown";"06/07/1993";0;"no";25;NA;NA;"0H 0M 0S  ";"Friends";"Fulfillment"
+"155";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:05:21";"no";"1";"unknown";"ja";"male";"neither";"03/02/1998";0;"no";80;50;NA;"23H 10M 0S";"Finishing a lot of work";"Playing video games with friends"
+"156";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:15:56";"no";"1";"mu";"nee";"male";"I have no idea what you are talking about";"12/11/1996";0;"no";20;0;NA;"0H 0M 0S  ";"sun";"soccer"
+"157";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:17:26";"yes";"1";"mu";"ja";"male";"fat";NA;0;"no";20;50;7;"1H 0M 0S";"The sun";"Being together with friends"
+"158";"DATA SCIENCE";"3/30/2021 12:18:44";"yes";"1";"mu";"ja";"female";"neither";"19/02/1993";0;"no";0;50;7;"1H 30M 0S";"surfing";"sun"
+"159";"COMPUTER SCIENCE";"3/30/2021 12:20:44";"yes";"unknown";"mu";"ja";"male";"neither";"09/07/1997";0;"no";99;0,05;NA;"1H 30M 0S";"Xtc";"Weightlifting"
+"160";"INFORMATION SCIENCES";"3/30/2021 12:24:09";"no";"1";"mu";"ja";"male";"neither";NA;0;"no";60;10;NA;"0H 0M 0S  ";"Sunny";"Friends"
+"161";"BUSINESS ANALYTICS";"3/30/2021 12:26:34";"yes";"1";"mu";"nee";"male";"fat";NA;0;"no";60;100;NA;"NA  ";"Doing Data Mining";"Doing more Data Mining"
+"162";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:28:12";"no";"0";"mu";"nee";"unknown";"neither";NA;1;"no";50;5;7;"2H 0M 0S";"sun ";"friends"
+"163";"COMPUTATIONAL SCIENCE";"3/30/2021 12:29:20";"no";"0";"mu";"nee";"male";"neither";"10/02/1999";1;"no";10;0,2;10;"23H 59M 0S";"No obligations";"Being at home"
+"164";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:32:25";"no";"0";"mu";"ja";"male";"fat";"06/08/1996";0;"no";37;5;7;"1H 0M 0S";"snow";"not messing up something"
+"165";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:33:37";"yes";"unknown";"mu";"ja";"female";"fat";NA;0;"no";50;40;8;"0H 20M 0S ";"Hanging out with friend, some good food and a nice drink.";"Riding my horse with some nice weather."
+"166";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:39:07";"no";"unknown";"mu";"nee";"male";"neither";"30/09/1995";1;"no";60;5;6;"23H 30M 0S";"completed todo tasks";"real life social activity with friends"
+"167";"BUSINESS ANALYTICS";"3/30/2021 12:41:22";"yes";"0";"mu";"ja";"female";"neither";"19/05/1999";0;"no";50;75;8;"22H 0M 0S";"1";"2"
+"168";"ECONOMETRICS";"3/30/2021 12:42:26";"no";"0";"mu";"nee";"female";"neither";"14/04/1996";200;"no";20;10;10;"1H 2M 0S";"Nice weather";"Breaks and fun with friends"
+"169";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:43:04";"no";"0";"mu";"nee";"male";"fat";"05/08/1997";0;"no";80;10;9;"22H 0M 0S";"good sleep";"Me time"
+"170";"INFORMATION SCIENCES";"3/30/2021 12:46:03";"no";"unknown";"mu";"ja";"female";"neither";"03/05/1996";8;"no";2;50;3;"22H 30M 0S";"the sun";"finishing the to-do list"
+"171";"DATA SCIENCE";"3/30/2021 12:46:26";"yes";"0";"mu";"nee";"male";"neither";NA;0;"no";70;1;8;"1H 0M 0S";"sleeping well";"nice breakfast"
+"172";"COMPUTER SCIENCE";"3/30/2021 12:48:30";"yes";"0";"mu";"ja";"male";"fat";"05/11/1993";0;"no";30;2,75;NA;"2H 30M 0S";"Drinking coffee";"Programming"
+"173";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:49:50";"no";"0";"mu";"ja";"male";"fat";"19/07/1996";1;"no";10;0;4;"0H 38M 0S ";"sunny";"cool"
+"174";"ECONOMETRICS";"3/30/2021 12:49:57";"no";"0";"sigma";"unknown";"female";"neither";"16/05/1993";2;"no";80;70;NA;"11H 45M 0S";"Shining sun";"when being appreciated"
+"175";"BIOINFORMATICS";"3/30/2021 12:52:26";"yes";"1";"unknown";"ja";"male";"fat";"15/10/1991";2;"yes";70;5;NA;"9H 0M 0S";"Having friends come over";"Spending time wth my brothers"
+"176";"ECONOMETRICS";"3/30/2021 12:53:52";"no";"0";"mu";"ja";"female";"neither";"16/05/1993";2;"no";80;5;NA;"11H 45M 0S";"Shining sun";"being appeciated"
+"177";"ARTIFICIAL INTELLIGENCE";"3/30/2021 12:56:10";"no";"0";"mu";"nee";"female";"slim";"01/05/1997";0;"no";80;2;9;"0H 0M 0S  ";"My friends";"Good grades"
+"178";"ECONOMETRICS";"3/30/2021 12:57:17";"yes";"0";"mu";"nee";"male";"I have no idea what you are talking about";NA;0;"yes";60;69;8;"1H 0M 0S";"memes";"money"
+"179";"COMPUTATIONAL SCIENCE";"3/30/2021 12:58:29";"no";"0";"mu";"ja";"male";"fat";NA;0;"no";77;4321;NA;"2H 0M 0S";"Spend with Girlfriend";"Dinner and game with best friend"
+"180";"ECONOMETRICS";"3/30/2021 12:59:30";"yes";"0";"mu";"ja";"male";"fat";"02/07/1998";2;"no";10;1;7;"0H 30M 0S ";"friends";"beer"
+"181";"BIOINFORMATICS";"3/30/2021 13:06:45";"yes";"0";"unknown";"unknown";"male";"unknown";NA;1;"no";90;101;NA;"0H 0M 0S  ";"21/Apr";"01/Oct"
+"182";"COMPUTATIONAL SCIENCE";"3/30/2021 13:08:15";"yes";"0";"mu";"nee";"male";"fat";"19/06/1995";0;"no";10;10;10;"0H 0M 0S  ";"Football and Beer";"Finalising a large project "
+"183";"MANAGEMENT, POLICY-ANALYSIS AND ENTREPRENEURSHIP IN HEALTH & LIFE SCIENCES";"3/30/2021 13:12:28";"no";"0";"mu";"ja";"female";"neither";"29/01/1996";1;"no";70;50;3;"3H 50M 0S";"Petting a dog ";"Reaching the goals I set for the day"
+"184";"ECONOMETRICS";"3/30/2021 13:16:39";"yes";"0";"mu";"nee";"male";"neither";"09/07/1998";0;"no";80;60;2;"2H 30M 0S";"Sleep";"Sun"
+"185";"COMPUTER SCIENCE";"3/30/2021 13:18:40";"no";"1";"mu";"ja";"male";"neither";NA;1;"no";90;NA;4;"0H 30M 0S ";"family";"exercise"
+"186";"FINANCE AND TECHNOLOGY";"3/30/2021 13:20:00";"yes";"0";"mu";"nee";"male";"slim";"27/06/1996";1;"no";80;50;8;"0H 30M 0S ";"Sunlight";"Nice company"
+"187";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:20:45";"yes";"1";"mu";"nee";"male";"I have no idea what you are talking about";"29/06/1997";6;"no";NA;100;NA;"NA  ";"Filling in a form about data mining";"No ronas"
+"188";"COMPUTATIONAL SCIENCE";"3/30/2021 13:26:16";"no";"0";"mu";"nee";"male";"slim";NA;100;"yes";66;0,8;6;"23H 0M 0S";"Sun";"Sports"
+"189";"COMPUTATIONAL SCIENCE";"3/30/2021 13:30:42";"no";"0";"unknown";"nee";"male";"fat";"22/03/1994";0;"no";50;0;NA;"1H 0M 0S";"Not being tired";"Eating tasty food"
+"190";"COMPUTATIONAL SCIENCE";"3/30/2021 13:33:38";"no";"0";"mu";"nee";"male";"slim";NA;0;"no";1;0;NA;"3H 0M 0S";"productivity";"variety"
+"191";"ECONOMETRICS";"3/30/2021 13:40:00";"no";"0";"mu";"ja";"male";"fat";NA;2;"yes";80;20;7;"3H 30M 0S";"sun";"girls"
+"192";"COMPUTATIONAL SCIENCE";"3/30/2021 13:41:52";"no";"0";"mu";"nee";"male";"slim";"20/07/1991";1;"no";30;10;3;"0H 0M 0S  ";"good food";"plenty of sleep"
+"193";"BIOINFORMATICS";"3/30/2021 13:45:25";"yes";"0";"unknown";"nee";"female";"I have no idea what you are talking about";"09/02/1998";0;"no";55;40;NA;"20H 0M 0S";"Sun";"Cheese"
+"194";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:46:26";"yes";"0";"mu";"nee";"male";"neither";"26/05/1997";0;"yes";15;NA;NA;"23H 59M 0S";"BBQ";"Surf"
+"195";"COMPUTATIONAL SCIENCE";"3/30/2021 13:46:59";"yes";"1";"sigma";"ja";"unknown";"unknown";"28/10/1992";0;"no";99;NA;NA;"22H 15M 0S";"Running";"Social activity"
+"196";"BIOINFORMATICS";"3/30/2021 13:47:18";"yes";"0";"unknown";"nee";"female";"I have no idea what you are talking about";NA;0;"no";19;100;7;"3H 50M 0S";"Weather";"food"
+"197";"COMPUTATIONAL SCIENCE";"3/30/2021 13:47:20";"yes";"0";"mu";"nee";"female";"fat";"17/03/1997";0;"no";50;110;9;"22H 3M 0S";"Kitesurfing";"Sunshine"
+"198";"COMPUTATIONAL SCIENCE";"3/30/2021 13:47:21";"no";"0";"mu";"nee";"male";"neither";NA;0;"no";92;NA;NA;"0H 0M 0S  ";"pizza";"sun"
+"199";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:47:31";"no";"0";"mu";"nee";"female";"neither";"10/01/1998";0;"no";30;NA;7;"23H 30M 0S";"When the sun is out";"Nice plans for the day "
+"200";"HUMAN LANGUAGE TECHNOLOGY";"3/30/2021 13:48:08";"yes";"0";"unknown";"nee";"female";"I have no idea what you are talking about";"01/01/1997";1;"no";60;NA;NA;"1H 0M 0S";"coffee";"sunshine"
+"201";"COMPUTER SCIENCE";"3/30/2021 13:48:10";"no";"1";"mu";"ja";"male";"slim";"08/06/1993";0;"no";78;100;2;"0H 0M 0S  ";"Sunshine";"More sunshine"
+"202";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:48:56";"yes";"1";"mu";"ja";"male";"slim";"04/06/1997";0;"unknown";69;100;7;"12H 0M 0S";"fun";"bright sun"
+"203";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:49:10";"yes";"1";"mu";"ja";"male";"I have no idea what you are talking about";NA;0;"no";10;1;NA;"2H 0M 0S";"Good feelings";"A lot of fun"
+"204";"DATA SCIENCE";"3/30/2021 13:49:13";"yes";"unknown";"unknown";"ja";"male";"slim";"20/05/1996";6;"no";1;100;2;"5H 15M 0S";"Drinking Beer";"Gaming with Friends"
+"205";"BIOINFORMATICS";"3/30/2021 13:49:29";"yes";"0";"mu";"ja";"male";"neither";"04/06/1998";0;"no";45;0,5;3;"23H 0M 0S";"sun";"freedom"
+"206";"DATA SCIENCE";"3/30/2021 13:49:45";"yes";"0";"sigma";"nee";"male";"fat";NA;0;"no";0;NA;2;"1H 0M 0S";"enjoying the sun";"spending time with my sons"
+"207";"COMPUTATIONAL SCIENCE";"3/30/2021 13:49:52";"no";"0";"mu";"nee";"male";"fat";"01/12/1994";0;"no";0;NA;NA;"10H 0M 0S";"Sports";"Beer"
+"208";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:49:54";"yes";"1";"mu";"nee";"male";"fat";"06/05/1998";0;"no";80;NA;NA;"12H 30M 0S";"friday";"saturday"
+"209";"COMPUTATIONAL SCIENCE";"3/30/2021 13:50:06";"no";"0";"mu";"nee";"female";"neither";"20/10/1993";0;"no";35;3;NA;"20H 3M 0S";"Friends";"completing tasks"
+"210";"BUSINESS ANALYTICS";"3/30/2021 13:50:07";"no";"0";"mu";"nee";"male";"neither";"20/02/1999";0;"yes";44;2;5;"1H 0M 0S";"football";"running"
+"211";"BUSINESS ANALYTICS";"3/30/2021 13:50:37";"yes";"unknown";"mu";"ja";"female";"neither";"01/01/1997";4;"yes";8;NA;8;"22H 0M 0S";"Cats";"Sunshine"
+"212";"BUSINESS ANALYTICS";"3/30/2021 13:51:02";"yes";"1";"mu";"ja";"male";"neither";"27/08/1998";1;"no";20;1;NA;"NA  ";"Beer and friends";"No obligations"
+"213";"COMPUTER SCIENCE";"3/30/2021 13:51:08";"yes";"1";"mu";"ja";"female";"I have no idea what you are talking about";"16/12/1996";0;"no";50;100;NA;"22H 0M 0S";"sunshine";"good food"
+"214";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:51:09";"yes";"0";"mu";"nee";"male";"I have no idea what you are talking about";"21/09/1995";0;"no";80;0,3;NA;"20H 0M 0S";"If a spend my day usefull. Learned new things, improving myself";"Good weather"
+"215";"COMPUTATIONAL SCIENCE";"3/30/2021 13:51:23";"yes";"0";"mu";"ja";"male";"slim";"21/02/1990";50;"yes";80;20;NA;"22H 0M 0S";"Ice cream";"double ice cream"
+"216";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:51:33";"no";"0";"mu";"nee";"male";"I have no idea what you are talking about";"24/08/1996";0;"unknown";25;25;NA;"21H 37M 0S";"No work";"No stress"
+"217";"BUSINESS ANALYTICS";"3/30/2021 13:52:11";"yes";"1";"mu";"ja";"male";"I have no idea what you are talking about";NA;0;"no";50;0,69;6;"0H 30M 0S ";"Good grade";"Not filling in excessively long forms"
+"218";"COMPUTER SCIENCE";"3/30/2021 13:53:02";"yes";"0";"sigma";"nee";"male";"fat";NA;0;"no";70;5;NA;"23H 0M 0S";"coffee";"jogging"
+"219";"COMPUTATIONAL SCIENCE";"3/30/2021 13:53:25";"yes";"1";"mu";"ja";"male";"neither";"01/01/1991";0;"yes";60;NA;NA;"2H 0M 0S";"Sunshine";"Warm weather"
+"220";"COMPUTER SCIENCE";"3/30/2021 13:53:30";"yes";"1";"mu";"nee";"female";"I have no idea what you are talking about";NA;1;"no";100;80;9;"NA  ";"Movements";"Food"
+"221";"BUSINESS ANALYTICS";"3/30/2021 13:53:48";"yes";"0";"mu";"nee";"male";"neither";"30/07/1997";0;"no";20;20;NA;"NA  ";"Sun";"Beer"
+"222";"ECONOMETRICS";"3/30/2021 13:54:12";"yes";"0";"sigma";"nee";"male";"neither";"25/03/1995";1;"no";99;50;NA;"11H 11M 0S";"Good company";"Good food"
+"223";"BIOINFORMATICS";"3/30/2021 13:54:28";"yes";"unknown";"unknown";"nee";"female";"fat";NA;2;"no";80;0,5;7;"NA  ";"Nice weather";"Food"
+"224";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:56:54";"no";"0";"mu";"nee";"female";"slim";"07/06/1992";0;"no";60;20;5;"23H 0M 0S";"Doing something meaningful";"sun"
+"225";"DATA SCIENCE";"3/30/2021 13:58:13";"yes";"0";"unknown";"ja";"female";"neither";"02/10/1995";0;"yes";75;10;5;"NA  ";"nothing";"nothing"
+"226";"BIOINFORMATICS";"3/30/2021 13:59:04";"yes";"1";"sigma";"nee";"male";"neither";NA;0;"no";80;50;NA;"24H 0M 0S";"good weather ";"no body dies "
+"227";"ARTIFICIAL INTELLIGENCE";"3/30/2021 13:59:37";"yes";"0";"mu";"nee";"male";"slim";"14/10/1994";0;"no";0;100;7;"23H 34M 0S";"Love";"Happiness"
+"228";NA;"3/30/2021 14:04:42";"yes";"0";"mu";"ja";"male";"I have no idea what you are talking about";"10/02/1996";2;"no";55;1e+06;5;"NA  ";"Productivity";"Fun"
+"229";"DATA SCIENCE";"3/30/2021 14:05:45";"yes";"0";"mu";"ja";"female";"fat";"02/03/1998";0;"no";100;70;NA;"15H 0M 0S";"nice food";"good workout"
+"230";"BUSINESS ANALYTICS";"3/30/2021 14:10:58";"yes";"1";"mu";"ja";"unknown";"neither";NA;1;"yes";40;5;8;"NA  ";"-";"-"
+"231";"BUSINESS ANALYTICS";"3/30/2021 14:24:07";"yes";"1";"mu";"ja";"male";"fat";"09/03/1998";0;"no";20;1000;3;"10H 0M 0S";"Being productive";"Relaxing after being productive"
+"232";"ARTIFICIAL INTELLIGENCE";"3/30/2021 14:24:10";"no";"0";"mu";"ja";"male";"fat";"30/01/1996";1;"no";80;100;NA;"23H 0M 0S";"Good sleep";"No homework"
+"233";"ARTIFICIAL INTELLIGENCE";"3/30/2021 14:24:26";"yes";"0";"mu";"nee";"female";"I have no idea what you are talking about";NA;0;"no";55;5;NA;"10H 0M 0S";"Sun";"Good food"
+"234";"ARTIFICIAL INTELLIGENCE";"3/30/2021 14:24:33";"yes";"1";"mu";"ja";"male";"fat";"27/10/1995";0;"no";70;99,99;NA;"NA  ";"work, friends, play, food, sex";"relaxation, laziness, ice cream"
+"235";"BIOINFORMATICS";"3/30/2021 14:24:51";"yes";"0";"mu";"nee";"male";"fat";"01/01/1901";0;"no";NA;0;1;"8H 0M 0S";"FIFA2020";"FIFA2021"
+"236";"BIOINFORMATICS";"3/30/2021 14:25:10";"yes";"0";"mu";"nee";"male";"fat";"07/02/1999";0;"no";60;5;8;"1H 0M 0S";"Sleeping in";"No mandatory to do's "
+"237";"FINANCE";"3/30/2021 14:26:11";"no";"0";"mu";"nee";"male";"fat";"17/12/1998";0;"yes";25;NA;NA;"11H 31M 0S";"happiness";"general feelings of happiness caused by a multitude of factors"
+"238";"BUSINESS ANALYTICS";"3/30/2021 14:29:48";"yes";"0";"mu";"nee";"male";"I have no idea what you are talking about";"27/06/1966";0;"no";90;100;NA;"23H 45M 0S";"Universe is there";"Universe is still there"
+"239";"ARTIFICIAL INTELLIGENCE";"3/30/2021 14:30:33";"yes";"1";"mu";"ja";"female";"I have no idea what you are talking about";"01/03/1999";0;"no";35;40;8;"23H 45M 0S";"Nice weather";"Being able to do something fun without having to think about anything else "
+"240";"ARTIFICIAL INTELLIGENCE";"3/30/2021 14:32:23";"yes";"1";"mu";"nee";"male";"neither";NA;0;"no";57;100;NA;"5H 0M 0S";"cat 1";"cat 2"
+"241";"BUSINESS ANALYTICS";"3/30/2021 14:32:59";"yes";"0";"mu";"ja";"male";"I have no idea what you are talking about";"17/07/1999";0;"no";33;399;3;"NA  ";"Girlfriend";"Winning"
+"242";"ARTIFICIAL INTELLIGENCE";"3/30/2021 14:35:08";"no";"unknown";"mu";"nee";"female";"I have no idea what you are talking about";"08/03/1995";2;"no";68;13;NA;"0H 30M 0S ";"sleep";"sun"
+"243";"QUANTITATIVE RISK MANAGEMENT";"3/30/2021 14:40:53";"yes";"0";"mu";"nee";"male";"fat";NA;100;"no";50;10;4;"23H 0M 0S";"good weather";"less stress"
+"244";"ECONOMETRICS";"3/30/2021 14:41:07";"no";"0";"sigma";"nee";"female";"fat";"29/06/1997";1;"yes";60;5;7;"1H 0M 0S";"Pancakes ";"Sun"
+"245";"ARTIFICIAL INTELLIGENCE";"3/30/2021 14:44:53";"yes";"0";"mu";"ja";"female";"neither";"23/04/1999";1;"no";20;100;NA;"NA  ";"reading";"no school"
+"246";"BUSINESS ANALYTICS";"3/30/2021 14:51:18";"yes";"1";"mu";"ja";"male";"fat";"19/04/1999";3;"no";75;100;6;"2H 0M 0S";"Good amount of sleep";"Doing something new"
+"247";"BIOINFORMATICS";"3/30/2021 14:56:37";"yes";"0";"sigma";"nee";"female";"I have no idea what you are talking about";"06/02/1988";1;"no";70;30;3;"0H 45M 0S ";"Sunny and dry weather";"having good conversations with friends"
+"248";"FINANCE AND TECHNOLOGY";"3/30/2021 15:01:20";"yes";"0";"mu";"nee";"male";"neither";"05/05/1992";1;"no";90;10;7;"12H 47M 0S";"sun is out";"work out"
+"249";"BIOINFORMATICS";"3/30/2021 15:32:10";"yes";"unknown";"mu";"unknown";"female";"slim";"04/09/1998";0;"no";55;0,1;4;"23H 0M 0S";"Sleep";"Food"
+"250";"BIOINFORMATICS";"3/30/2021 15:45:22";"no";"0";"unknown";"ja";"female";"neither";"01/05/1976";0;"no";50;5;6;"0H 1M 0S ";"Getting stuff done";"Trying something new"
+"251";"COMPUTER SCIENCE";"3/30/2021 15:46:56";"no";"0";"mu";"nee";"female";"fat";"24/11/1995";0;"no";60;20;4;"22H 0M 0S";"Coffee";"Video game"
+"252";"ECONOMETRICS";"3/30/2021 16:00:00";"no";"0";"sigma";"nee";"male";"fat";"30/09/1997";0;"no";27;0,5;8;"0H 30M 0S ";"Gym/sport ";"Drinking "
+"253";"COMPUTATIONAL SCIENCE";"3/30/2021 16:06:45";"no";"unknown";"mu";"nee";"male";"I have no idea what you are talking about";"14/04/1995";4;"no";30;0;NA;"NA  ";"a variety of activities";"what i said before this question"
+"254";"BUSINESS ANALYTICS";"3/30/2021 17:22:43";"yes";"0";"mu";"nee";"female";"neither";"26/11/1996";0;"no";65;25;6;"23H 0M 0S";"Nice weather";"Friends"
+"255";"BIOINFORMATICS";"3/30/2021 17:22:58";"yes";"unknown";"mu";"ja";"female";"fat";NA;2;"no";75;5;7;"23H 30M 0S";"Sunny weather";"Taking medicine"
+"256";"ARTIFICIAL INTELLIGENCE";"3/30/2021 17:31:48";"no";"0";"mu";"nee";"male";"fat";"29/04/1993";2;"no";76;35;3;"0H 0M 0S  ";"Health";"Family"
+"257";"BIOINFORMATICS";"3/30/2021 17:32:22";"yes";"0";"mu";"ja";"male";"fat";NA;0;"yes";65;40;2;"23H 0M 0S";"can relax";"Can do some kind of activity (sports)"
+"258";"BUSINESS ANALYTICS";"3/30/2021 17:32:37";"yes";"1";"mu";"ja";"male";"slim";"06/01/1998";0;"no";10;10;5;"23H 30M 0S";"no stress";"doing sports"
+"259";"COMPUTER SCIENCE";"3/30/2021 17:34:15";"yes";"1";"mu";"ja";"male";"fat";NA;0;"no";50;10;6;"23H 0M 0S";"Free";"Sports"
+"260";"QUANTITATIVE RISK MANAGEMENT";"3/30/2021 17:35:59";"no";"0";"mu";"nee";"male";"neither";"26/02/1998";2;"no";NA;0,25;NA;"2H 0M 0S";"Not filling in pointless surveys";"Seeing loved ones"
+"261";"COMPUTATIONAL SCIENCE";"3/30/2021 17:38:28";"yes";"1";"mu";"ja";"female";"neither";"03/06/1997";0;"unknown";80;30;NA;"22H 15M 0S";"Good food";"Friends "
+"262";"ARTIFICIAL INTELLIGENCE";"3/30/2021 17:45:04";"yes";"0";"mu";"nee";"female";"neither";"23/09/1997";0;"no";80;NA;5;"NA  ";"laughter";"no homework"
+"263";"ARTIFICIAL INTELLIGENCE";"3/30/2021 17:46:28";"yes";"1";"mu";"ja";"male";"fat";"1895-09-30";265;"yes";NA;2,5;NA;"23H 23M 0S";"Sunny weather";"Women with sundresses on"
+"264";"FINANCE AND TECHNOLOGY";"3/30/2021 17:46:38";"yes";"0";"mu";"nee";"male";"neither";"15/04/1988";7;"yes";25;100;NA;"24H 0M 0S";"Fun";"Sleep"
+"265";"ARTIFICIAL INTELLIGENCE";"3/30/2021 17:53:12";"yes";"1";"mu";"ja";"male";"slim";NA;8979937;"unknown";NA;100;NA;"NA  ";"Sex";"Sex * 2"
+"266";"ARTIFICIAL INTELLIGENCE";"3/30/2021 17:57:08";"yes";"1";"mu";"ja";"male";"neither";"03/05/1995";0;"no";99;3,14;NA;"NA  ";"No deadlines";"#ADATOTHEMOON"
+"267";"BUSINESS ANALYTICS";"3/30/2021 17:58:46";"yes";"1";"mu";"ja";"female";"I have no idea what you are talking about";"04/09/1997";0;"no";NA;2;5;"2H 0M 0S";"Hot temperature";"Airco"
+"268";"ARTIFICIAL INTELLIGENCE";"3/30/2021 18:02:16";"yes";"1";"mu";"ja";"male";"fat";"04/01/1995";1;"no";10;0,5;1;"23H 15M 0S";"Good sleep";"Nice people"
+"269";"BIOINFORMATICS";"3/30/2021 18:02:50";"no";"0";"mu";"nee";"male";"neither";"24/10/1995";0;"no";100;10;NA;"0H 0M 0S  ";"Meeting a friend ";"Having a good meal"
+"270";"ARTIFICIAL INTELLIGENCE";"3/30/2021 18:04:36";"no";"1";"mu";"ja";"unknown";"slim";NA;1;"no";30;1e+07;NA;"1H 0M 0S";"Making money and not being with my girlfriend";"Not being with my girlfriend and making money"
+"271";"ARTIFICIAL INTELLIGENCE";"3/30/2021 18:11:57";"yes";"1";"mu";"ja";"female";"slim";"05/08/1998";1;"no";100;0;NA;"23H 0M 0S";"Sun";"Chocolate"
+"272";"ARTIFICIAL INTELLIGENCE";"3/30/2021 18:12:43";"yes";"0";"sigma";"ja";"unknown";"neither";"1337-11-11";7;"no";69;NA;NA;"1H 30M 0S";"Good food";"Lots of sleep"
+"273";"BIOINFORMATICS";"3/30/2021 18:19:03";"no";"0";"sigma";"ja";"female";"fat";"23/01/1997";14;"no";NA;NA;5;"NA  ";"less hmw";"clear instructions to get 10 from hmw!"
+"274";"BIOINFORMATICS";"3/30/2021 18:35:43";"yes";"0";"sigma";"ja";"male";"fat";"20/06/1993";300;"unknown";NA;100;6;"1H 0M 0S";"productive";"funny"
+"275";"ARTIFICIAL INTELLIGENCE";"3/30/2021 18:39:26";"yes";"1";"mu";"nee";"male";"slim";"16/06/2000";1;"no";40;50;NA;"NA  ";"50";"50"
+"276";"BIOINFORMATICS";"3/30/2021 18:39:31";"yes";"0";"mu";"nee";"female";"I have no idea what you are talking about";"06/07/1996";0;"no";100;30;10;"16H 0M 0S";"No homework, no school";"No school, no homework"
+"277";"ECONOMETRICS";"3/30/2021 18:39:35";"yes";"0";"mu";"nee";"male";"fat";"31/08/1997";0;"no";50;50;9;"2H 0M 0S";"Good weather";"No covid"
+"278";NA;"3/30/2021 18:48:33";"yes";"1";"mu";"ja";"unknown";"slim";"01/01/2001";6;"yes";99;NA;NA;"NA  ";"1";"2"
+"279";"ECONOMETRICS";"3/30/2021 18:56:08";"no";"0";"mu";"ja";"male";"I have no idea what you are talking about";"01/01/2001";4;"no";NA;100;NA;"1H 11M 0S";"Puthie";"More puthie"
+"280";"ARTIFICIAL INTELLIGENCE";"3/30/2021 19:03:43";"yes";"0";"mu";"ja";"male";"I have no idea what you are talking about";"28/07/1998";0;"no";35;33;NA;"23H 49M 0S";"weather";"full stomach"
+"281";"QUANTITATIVE RISK MANAGEMENT";"3/30/2021 19:05:48";"yes";"1";"mu";"ja";"female";"I have no idea what you are talking about";"27/06/1996";1;"no";22;75;5;"2H 0M 0S";"Surrounded with family";"Food"
+"282";"ECONOMETRICS";"3/30/2021 19:39:32";"yes";"1";"mu";"ja";"male";"neither";"15/01/1998";2;"yes";60;60;NA;"4H 45M 0S";"Sun";"Girls"
+"283";"COMPUTER SCIENCE";"3/30/2021 19:59:03";"yes";"0";"mu";"ja";"male";"neither";NA;2;"no";60;NA;7;"12H 20M 0S";"delicious food";"relaxing atmosphere "
+"284";"DATA SCIENCE";"3/30/2021 20:05:41";"yes";"0";"mu";"nee";"female";"neither";"26/03/1997";1;"yes";98;0;NA;"23H 30M 0S";"Finishing tasks";"GME go brrrr"
+"285";"BIOINFORMATICS";"3/30/2021 20:05:56";"yes";"1";"sigma";"ja";"male";"slim";"22/01/1996";1;"yes";50;0;NA;"0H 0M 0S  ";"Sun";"Wine"
+"286";"ECONOMETRICS";"3/30/2021 20:19:21";"yes";"0";"mu";"ja";"female";"fat";NA;0;"no";80;100;10;"1H 15M 0S";"Good food";"Sunny day"
+"287";"DATA SCIENCE";"3/30/2021 20:26:14";"yes";"1";"mu";"ja";"male";"fat";NA;0;"no";100;100;NA;"0H 0M 0S  ";"Warhammer";"Warhammer 40.000"
+"288";"MATHEMATICS";"3/30/2021 20:31:27";"yes";"0";"sigma";"nee";"unknown";"I have no idea what you are talking about";"24/08/1997";0;"unknown";45;0;NA;"NA  ";"you";"also you"
+"289";"ECONOMETRICS";"3/30/2021 21:00:15";"yes";"0";"mu";"ja";"male";"neither";NA;3;"yes";10;50;6;"1H 0M 0S";"love";"sex"
+"290";"ARTIFICIAL INTELLIGENCE";"3/30/2021 21:02:22";"no";"0";"sigma";"unknown";"male";"I have no idea what you are talking about";"22/04/1993";0;"unknown";20;2;NA;"NA  ";"5";"5"
+"291";"QUANTITATIVE RISK MANAGEMENT";"3/30/2021 21:06:27";"yes";"0";"mu";"ja";"male";"fat";"08/05/1999";2;"no";75;0,25;5;"NA  ";"Sex";"Good food"
+"292";"ARTIFICIAL INTELLIGENCE";"3/30/2021 21:24:56";"yes";"1";"mu";"ja";"female";"fat";"16/12/1997";1;"no";20;2;NA;"0H 56M 0S ";"Sun";"Boyfriend"
+"293";"BIOINFORMATICS";"3/30/2021 21:25:13";"yes";"0";"mu";"nee";"male";"fat";"02/09/1996";0;"no";77;NA;NA;"1H 30M 0S";"Beer";"Friends"
+"294";"ARTIFICIAL INTELLIGENCE";"3/30/2021 21:27:34";"yes";"1";"mu";"ja";"male";"neither";"16/05/1999";1;"no";10;100;NA;"NA  ";"having breakfast with pancakes and strawberries ";"Chilling at the beach on a sunny day"
+"295";"ECONOMETRICS";"3/30/2021 21:27:46";"yes";"0";"mu";"nee";"male";"neither";"18/02/1995";4;"no";99;17;NA;"0H 0M 0S  ";"what";"when"
+"296";"ECONOMETRICS";"3/30/2021 21:34:48";"yes";"0";"mu";"ja";"female";"fat";"12/12/1995";3;"no";80;0,21;NA;"23H 3M 0S";"A bunch of laughing";"Bingewatching my favourite shows"
+"297";"ECONOMETRICS";"3/30/2021 21:36:33";"yes";"1";"unknown";"nee";"male";"fat";NA;0;"no";30;20;6;"NA  ";"saturday";"sunday"
+"298";"ARTIFICIAL INTELLIGENCE";"3/30/2021 21:54:08";"no";"0";"mu";"ja";"female";"neither";"19/12/1998";1;"no";70;1;8;"1H 0M 0S";"sun";"weekend"
+"299";"FINANCE";"3/30/2021 22:17:11";"yes";"1";"mu";"ja";"male";"I have no idea what you are talking about";"23/11/1989";2;"yes";55;NA;NA;"4H 0M 0S";"Bananas";"Test"
+"300";"ARTIFICIAL INTELLIGENCE";"3/30/2021 22:19:48";"no";"1";"mu";"nee";"male";"neither";"29/11/1987";0;"no";95;10;NA;"1H 30M 0S";"progress";"friends"
+"301";"DATA SCIENCE";"3/30/2021 22:30:34";"yes";"1";"mu";"ja";"female";"I have no idea what you are talking about";"20/12/1989";0;"no";70;99;NA;"23H 30M 0S";"Sunshine";"Family and friends"
+"302";"BIOINFORMATICS";"3/30/2021 22:37:23";"yes";"0";"mu";"ja";"male";"I have no idea what you are talking about";NA;1;"no";80;1;2;"1H 30M 0S";"Sunshine";"Exercise"
+"303";"ARTIFICIAL INTELLIGENCE";"3/30/2021 22:42:18";"yes";"1";"mu";"nee";"female";"fat";NA;0;"no";80;80;10;"11H 0M 0S";"sunshine";"happiness"
+"304";"FINANCE AND TECHNOLOGY";"3/30/2021 22:58:28";"yes";"0";"mu";"nee";"male";"slim";NA;1;"no";87;NA;3;"NA  ";"football";"Sun"
+"305";"FINANCE AND TECHNOLOGY";"3/30/2021 23:12:08";"yes";"1";"sigma";"nee";"female";"fat";"24/11/1994";20;"yes";50;20;NA;"2H 0M 0S";"Weather";"Good news"
+"306";"QUANTITATIVE RISK MANAGEMENT";"3/30/2021 23:14:42";"no";"0";"mu";"nee";"male";"neither";"26/02/1998";3;"no";0;0,25;NA;"1H 0M 0S";"Good food";"Good music"
+"307";"BUSINESS ANALYTICS";"3/30/2021 23:44:58";"yes";"0";"mu";"ja";"male";"I have no idea what you are talking about";"27/05/1998";1;"no";70;1;6;"NA  ";"You";"Me"
