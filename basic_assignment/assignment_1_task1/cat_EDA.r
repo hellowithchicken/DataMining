@@ -2,13 +2,15 @@ library(tidyverse)
 library(rstudioapi)
 # set working directory
 setwd(dirname(getActiveDocumentContext()$path))
-data <- read.csv2("data/final/data_clean.csv", sep=",")
+data <- read.csv2("data/final/data_clean.csv", sep=";", row.names = 1)
 attach(data)
 summary(data)
 dim(data)
 
+
 # univariate EDA
 pie(table(program))
+prop.table(table(program))
 pie(table(ml))
 pie(table(ir))
 pie(table(stats))
@@ -16,6 +18,8 @@ pie(table(db))
 pie(table(gender))
 hist(table(chocolate))
 hist(stress)
+hist(rn)
+hist(gain)
 
 # bivariate EDA
 boxplot(stress~gender)
@@ -27,7 +31,6 @@ boxplot(stress~chocolate)
 
 boxplot(rn~gender)
 summary(aov(rn~gender))
-
 boxplot(rn~ml)
 boxplot(rn~ir)
 boxplot(rn~db)
@@ -36,8 +39,9 @@ boxplot(rn~chocolate)
 plot(table(chocolate, gender))
 
 plot(gain[gain<101], stress[gain<101])
+plot(stress, rn)
 
-hist(bed_time)
+hist(table(bed_time), nclass = 30)
 
 #### Association ####
 library(arules)
@@ -128,6 +132,7 @@ dataset_courses <- data %>%
     stats=="mu"~"yes")) %>% 
   select(ML=ml,IR,DB,Stat, stress_level)
 
+table(dataset_courses$stress_level)
 dataset_courses <- as(dataset_courses, "transactions")
 
 # Fitting model

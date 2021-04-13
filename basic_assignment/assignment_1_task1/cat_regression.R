@@ -56,15 +56,21 @@ plot(pred)
 points(testing$track_popularity, col=2)
 
 
+##### 
+library(rstudioapi)
+# https://www.kaggle.com/mustafaali96/weight-height
+setwd(dirname(getActiveDocumentContext()$path))
+data <- read.csv2("weight-height.csv", sep=",")
+head(data)
+summary(data)
+fit <- lm(as.double(data$Height)~as.double(data$Weight)+data$Gender)
+summary(fit)
+p <- predict(fit)
 
+mean((p-as.double(data$Height))^2)
+mean(abs(p-as.double(data$Height)))
 
-
-
-
-
-
-
-
-
-
+hist(as.double(data$Height))
+mean(as.double(data$Height))
+median(as.double(data$Height))
 
