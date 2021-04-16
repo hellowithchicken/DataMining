@@ -9,6 +9,7 @@ library(tidyverse)
 library(rstudioapi)
 library(lubridate)
 library(arules)
+library(arulesViz)
 
 # set working directory
 setwd(dirname(getActiveDocumentContext()$path))
@@ -17,24 +18,26 @@ data <- read_delim("data/final/data_clean.csv", delim = ",")
 
 data <- data %>% 
   mutate(gain = str_replace(gain, ",", "."),
-         gain = as.numeric(gain))
+         gain = as.numeric(gain)) %>% 
+  mutate(birthday = dmy(birthday))
 ```
 
-```{r}
-# extracting extra information
+# extracting information
 
+```{r}
 # extract hour from the bed time answer
 data <- data %>% 
   mutate(Timestamp = mdy_hms(Timestamp)) %>% 
   mutate(bed_time = hms(bed_time),
          bed_hour = hour(bed_time),
-         bed_minutes = minute(bed_time))
+         bed_minutes = minute(bed_time)) %>% 
+  mutate(hour_survey = hour(Timestamp))
+
 ```
 
+# creating extra variables 
 
 ```{r}
-## creating extra variables 
-
 # time they went to sleep
 extra_var <- data %>% 
   mutate(went_to_bed = case_when(
@@ -45,7 +48,7 @@ extra_var <- data %>%
     TRUE ~ "Other"
   )) %>% 
   # week day of the form
-  mutate(weekday_form = wday(Timestamp, week_start = 1)) %>% 
+  mutate(weekday = as.factor(wday(Timestamp, week_start = 1))) %>% 
   # stress level
   mutate(stress_level = case_when(
     stress >= 0 & stress <=33 ~ "low",
@@ -53,13 +56,78 @@ extra_var <- data %>%
     stress > 66 & stress <=100 ~ "high",
     is.na(stress) ~ "NA",
     TRUE ~ "Other"
-  ))
+  )) %>% 
+  mutate(before_lecture = Timestamp < "2021-03-30 13:30:00") %>% 
+  mutate(birthday_wday = wday(birthday, week_start = getOption("lubridate.week.start", 1)))
 
+```
+
+# filled in form before or after the lecture?
+
+```{r}
+extra_var %>% 
+  group_by(before_lecture, gender) %>% 
+  summarise(n = n()) %>% 
+  group_by(gender) %>% 
+  mutate(n_gender = sum(n)) %>% 
+  ungroup() %>% 
+  mutate(percent = n/n_gender * 100)
+```
+
+#Birthday exploration
+
+```{r}
+filtred <- extra_var %>% 
+  filter(!is.na(birthday),
+         gender != "unknown")
+
+# most common birthday weekday?
+
+filtred %>% 
+  group_by(birthday_wday) %>% 
+  summarise(n = n()) %>% 
+  mutate(n_all = sum(n),
+         percent = n/n_all)
+
+# is there a difference between birtday weekday and gender?
+
+filtred %>% 
+  group_by(birthday_wday, gender) %>% 
+  summarise(n = n())  %>% 
+  group_by(gender) %>%
+  mutate(n_gender = sum(n)) %>% 
+  ungroup() %>% 
+  mutate(percent = n/n_gender * 100)
+
+# are there people sharing the same birhtday
+
+filtred %>% 
+  group_by(birthday) %>% 
+  count() %>% 
+  arrange(-n)
+```
+
+# Association rules
+
+```{r}
+dataset_courses <- extra_var %>%
+  select(program, ml, ir, stats, db, gender, chocolate, went_to_bed, weekday, stress_level) %>% 
+  mutate_all(as.factor)
+transactions <- as(dataset_courses, "transactions")
+
+# apply algorithm
+
+rule_1 = apriori(data = transactions, 
+                        parameter = list(support = 0.02, 
+                                         confidence = 0.5))
 ```
 
 ```{r}
-hist(data$gain)
+inspect(head(sort(rule_1, by = "confidence"), 5))
 ```
+
+
+
 
 
 
