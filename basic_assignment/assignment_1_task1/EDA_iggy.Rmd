@@ -101,11 +101,21 @@ filtred %>%
 
 # are there people sharing the same birhtday
 
-filtred %>% 
+share <- filtred %>% 
   group_by(birthday) %>% 
   count() %>% 
   arrange(-n)
+
+share_1 <- share %>% 
+  filter(n > 1)
+
+sum(share_1$n)
 ```
+
+```{r}
+sum(share_1$n)
+```
+
 
 # Association rules
 
