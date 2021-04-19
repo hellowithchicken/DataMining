@@ -18,7 +18,11 @@ pie(table(db))
 pie(table(gender))
 hist(table(chocolate))
 hist(stress)
+ks.test(stress, "punif", 0,100)
+shapiro.test(stress)
 hist(rn)
+ks.test(rn, "punif", 0,10)
+
 hist(gain)
 
 # bivariate EDA
@@ -30,7 +34,20 @@ boxplot(stress~db)
 boxplot(stress~chocolate)
 
 boxplot(rn~gender)
+library(ggplot2)
+# Basic box plot
+p <- ggplot(data, aes(x=gender, y=rn)) + 
+  geom_boxplot() +
+  xlab("Gender") +
+  ylab("Random number")
+p
 summary(aov(rn~gender))
+pairwise.wilcox.test(rn, gender, p.adjust.method="bonferroni")
+kruskal.test(rn~gender)
+hist(rn[gender=="female"])
+hist(rn[gender=="male"])
+hist(rn[gender=="unknown"])
+
 boxplot(rn~ml)
 boxplot(rn~ir)
 boxplot(rn~db)
