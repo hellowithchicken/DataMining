@@ -1,4 +1,4 @@
-# DataMining
+# Data Mining Techniques
 Data Mining Techniques Assignments
 
 ### Paper (new link for assignment 2!)
