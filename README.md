@@ -1,7 +1,7 @@
-# DataMining
+# Data Mining Techniques
 Data Mining Techniques Assignments
 
-### Paper
+### Paper (new link for assignment 2!)
 
 Link to edit the paper: https://www.overleaf.com/5496841827jtwrkmgqhrjk
 
