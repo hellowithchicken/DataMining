@@ -5,6 +5,8 @@ Data Mining Techniques Assignments
 
 Link to edit the paper: https://www.overleaf.com/5496841827jtwrkmgqhrjk
 
+Link for the process report: https://www.overleaf.com/3526319472hpmykqyfqpyv
+
 ### Requirements
 Note: creating a new virtual environment is recommended.
 
