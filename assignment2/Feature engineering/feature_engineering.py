@@ -99,6 +99,10 @@ def add_historical_booking_click(df):
     """
     creates a column with the percentage of the prop_id booked/clicked rate overall
     """
+    # there are more prop_id in the test data than in train. 
+    # Maybe we could still use this but would need to impute
+    # with -1 for new prop_id? but then the model won't be trained on missing data
+    
     historical = df.groupby("prop_id")[["click_bool", "booking_bool"]].mean().reset_index()
     historical.columns = [historical.columns[0]] + [x + "_rate" for x in historical.columns[1:]]
     df = pd.merge(df, historical, on="prop_id")
