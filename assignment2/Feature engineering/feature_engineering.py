@@ -63,7 +63,7 @@ def new_historical_price(df):
     """
     'unlogs' prop_log_historical_price column
     """
-    df["prop_historical_price"] = (np.e ** df.prop_log_historical_price).replace(1.0, 10000)
+    df["prop_historical_price"] = (np.e ** df.prop_log_historical_price).replace(1.0, 0)
     df.drop("prop_log_historical_price", axis=1, inplace=True)
 
 def add_price_position(df, rank_type = "dense"):
