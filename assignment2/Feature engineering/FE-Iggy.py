@@ -49,18 +49,22 @@ def average_numerical_features(df, group_by = ["prop_id"], columns = ["prop_star
     means = df.groupby(group_by)[columns].mean().reset_index()
     means.columns = [means.columns[0]] + [x + "_mean" for x in means.columns[1:]]
     # caulcate median and rename columns
-    median = df.groupby(group_by)[columns].median().reset_index()
+    medians = df.groupby(group_by)[columns].median().reset_index()
     medians.columns = [medians.columns[0]] + [x + "_median" for x in medians.columns[1:]]
     # caulcate means and rename columns
     stds = df.groupby(group_by)[columns].std().reset_index()
     stds.columns = [stds.columns[0]] + [x + "_std" for x in stds.columns[1:]]
     ## attach aggregated data to the df
+    df = pd.merge(df, means, on=group_by)
+    df = pd.merge(df, medians, on=group_by)
+    df = pd.merge(df, stds, on=group_by)
+    return df
 
     
     
 ## other
 
-def remove_weird_positions(df, positions = [5, 11, 17, 23]):
+def remove_positions(df, positions = [5, 11, 17, 23]):
     """
     removes hotels with specified positions 
     (based on the fact that hotels in those positions were not as booked)
