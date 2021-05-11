@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import random
 
 ### reading and sampling the data
@@ -94,6 +95,13 @@ def average_numerical_features(df, group_by = ["prop_id"], columns = ["prop_star
     df = pd.merge(df, stds, on=group_by)
     return df
 
+def add_historical_booking_click(df):
+    """
+    creates a column with the percentage of the prop_id booked/clicked rate overall
+    """
+    historical = df.groupby("prop_id")[["click_bool", "booking_bool"]].mean().reset_index()
+    historical.columns = [historical.columns[0]] + [x + "_rate" for x in historical.columns[1:]]
+    df = pd.merge(df, historical, on="prop_id")
     
     
 ## other ----------------------------------
