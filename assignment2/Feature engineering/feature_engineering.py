@@ -28,9 +28,43 @@ def sample_on_srch_id(df, frac = 0.1):
 
 ## missing data ----------------------------------
 
-# deal with missing values here
+def remove_missing_values(df):
+    """
+    removes columns with more than 50 percent missing data
+    """
+    missing_values = df.isna().mean().round(4) * 100
+    missing_values = pd.DataFrame(missing_values).reset_index()
+    missing_values.columns = ["column", "missing"]
+    # filter where there are missing values
+    missing_values.query("missing > 50", inplace=True)  # remove columns with more than 50 % of missing values
+    missing_values.sort_values("missing", inplace=True)
+    #print(missing_values)
+    df.drop(missing_values.column, axis=1, inplace=True)
+
+def replace_missing_values(df):
+    """
+    imputes missing values with -1
+    """
+    df.fillna(value=-1, inplace=True) 
 
 ## new features ----------------------------------
+
+def extract_time(df):
+    """ 
+    month, week, day of the week and hour of search
+    """
+    df_datetime = pd.DatetimeIndex(df.date_time)
+    df["month"] = df_datetime.month
+    df["week"] = df_datetime.week
+    df["day"] = df_datetime.dayofweek + 1
+    df["hour"] = df_datetime.hour
+
+def new_historical_price(df):
+    """
+    'unlogs' prop_log_historical_price column
+    """
+    df["prop_historical_price"] = (np.e ** df.prop_log_historical_price).replace(1.0, 10000)
+    df.drop("prop_log_historical_price", axis=1, inplace=True)
 
 def add_price_position(df, rank_type = "dense"):
     """
@@ -62,7 +96,7 @@ def average_numerical_features(df, group_by = ["prop_id"], columns = ["prop_star
 
     
     
-## other
+## other ----------------------------------
 
 def remove_positions(df, positions = [5, 11, 17, 23]):
     """
@@ -71,6 +105,16 @@ def remove_positions(df, positions = [5, 11, 17, 23]):
     """
     df = df[df["position"].isin(positions) == False]
     
+### Feature engineering function -----------
+
+def feature_engineering(df):
+    extract_time(df)
+    remove_missing_values(df)
+    replace_missing_values(df)
+    new_historical_price(df)
+    add_price_position(df)
+    average_numerical_features(df)
+
     
 
 
