@@ -19,11 +19,11 @@ def sample_on_srch_id(df, frac = 0.1):
     # get unique srch_ids
     srch_ids = np.unique(df.srch_id)
     # calculate how many ids to return
-    chosen_k = int(len(srch_id) * frac)
+    chosen_k = int(len(srch_ids) * frac)
     # sample ids
     chosen_ids = random.sample(srch_ids, k = chosen_k)
     # filter the df to only have sampled ids
-    return df[df['srch_id'].isin(srch_ids)]
+    return df[df['srch_id'].isin(chosen_ids)]
 
 ### Feature Engineering --------------------------
 
