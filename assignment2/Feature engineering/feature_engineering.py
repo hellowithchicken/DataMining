@@ -130,4 +130,9 @@ def feature_engineering(df):
 
     
 
-
+def create_df_queries_freq(df):
+    df_queries = pd.DataFrame()
+    df_queries = pd.crosstab(index=df['srch_id'], columns='count', colnames=['srch_id'])
+    df_queries.head()
+    df_queries.to_csv("../df_queries.csv")
+    return pd.read_csv("../df_queries.csv")
