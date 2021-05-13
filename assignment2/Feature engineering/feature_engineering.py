@@ -21,7 +21,7 @@ def sample_on_srch_id(df, frac = 0.1):
     # calculate how many ids to return
     chosen_k = int(len(srch_ids) * frac)
     # sample ids
-    chosen_ids = random.sample(srch_ids, k = chosen_k)
+    chosen_ids = random.sample(list(srch_ids), k = chosen_k)
     # filter the df to only have sampled ids
     return df[df['srch_id'].isin(chosen_ids)]
 
@@ -106,6 +106,7 @@ def add_historical_booking_click(df):
     historical = df.groupby("prop_id")[["click_bool", "booking_bool"]].mean().reset_index()
     historical.columns = [historical.columns[0]] + [x + "_rate" for x in historical.columns[1:]]
     df = pd.merge(df, historical, on="prop_id")
+    return df
     
     
 ## other ----------------------------------
