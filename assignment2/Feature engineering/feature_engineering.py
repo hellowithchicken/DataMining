@@ -117,6 +117,22 @@ def remove_positions(df, positions = [5, 11, 17, 23]):
     (based on the fact that hotels in those positions were not as booked)
     """
     df = df[df["position"].isin(positions) == False]
+
+def add_score(df):
+    """
+    adds 'score' column to the df: 5 for booked, 1 for clicked
+    """
+    score = []
+    for book, click in zip(df.booking_bool, df.click_bool):
+        if book == 1:
+            score.append(5)
+            continue
+        if click == 1:
+            score.append(1)
+            continue
+        else:
+            score.append(0)
+    df["score"] = score
     
 ### Feature engineering function -----------
 
