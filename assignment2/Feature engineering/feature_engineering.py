@@ -145,7 +145,6 @@ def feature_engineering(df):
     average_numerical_features(df)
 
     
-
 def create_df_queries_freq(df):
     df_queries = pd.DataFrame()
     df_queries = pd.crosstab(index=df['srch_id'], columns='count', colnames=['srch_id'])
