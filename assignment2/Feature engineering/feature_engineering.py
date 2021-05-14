@@ -118,6 +118,7 @@ def join_historical_data(df, path = "hist_click_book.csv"):
     """
     to_join = pd.read_csv(path)
     joined = pd.merge(df, to_join, on="prop_id")
+    joined = joined.sort_values(by = "srch_id")
     return joined
 
 def remove_positions(df, positions = [5, 11, 17, 23]):
