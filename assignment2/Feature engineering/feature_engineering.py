@@ -111,6 +111,15 @@ def add_historical_booking_click(df):
     
 ## other ----------------------------------
 
+def join_historical_data(df, path = "hist_click_book.csv"):
+    """
+    joins historical data according to prop_id. 
+    path - location of historical data csv file
+    """
+    to_join = pd.read_csv(path)
+    joined = pd.merge(df, to_join, on="prop_id")
+    return joined
+
 def remove_positions(df, positions = [5, 11, 17, 23]):
     """
     removes hotels with specified positions 
