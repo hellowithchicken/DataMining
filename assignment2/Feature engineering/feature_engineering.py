@@ -4,6 +4,8 @@ import random
 
 ### reading and sampling the data
 
+### reading and sampling the data
+
 def read_file(path):
     """
     reads the file in pandas df and converts the date_time column to datetime type
@@ -107,7 +109,8 @@ def add_historical_booking_click(df):
     historical = df.groupby("prop_id")[["click_bool", "booking_bool"]].mean().reset_index()
     historical.columns = [historical.columns[0]] + [x + "_rate" for x in historical.columns[1:]]
     df = pd.merge(df, historical, on="prop_id")
-    return df.sort_values("srch_id")
+    df.sort_values("srch_id", inplace = True)
+    return df
 
 def join_historical_data(df, path = "hist_click_book.csv"):
     """
@@ -122,7 +125,7 @@ def join_historical_data(df, path = "hist_click_book.csv"):
     
 ## other ----------------------------------
 
-def remove_cols(df, cols = ["position, prop_id"]):
+def remove_cols(df, cols = ["position", "prop_id"]):
     df.drop(cols, axis=1, inplace=True)
 
 def remove_positions(df, positions = [5, 11, 17, 23]):
@@ -161,16 +164,16 @@ def onehot(df, cols):
 ### Feature engineering function -----------
 
 def feature_engineering_train(df):
-
+    
     extract_time(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
-    average_numerical_features(df)
-    add_score(df)
+    df = average_numerical_features(df)
     df = add_historical_booking_click(df)
-    remove_cols(df)
+    add_score(df)
+    #remove_cols(df)
     return df
 
 def feature_engineering_test(df):
@@ -181,7 +184,6 @@ def feature_engineering_test(df):
     new_historical_price(df)
     add_price_position(df)
     average_numerical_features(df)
-
     
 def create_df_queries_freq(df):
     df_queries = pd.DataFrame()
