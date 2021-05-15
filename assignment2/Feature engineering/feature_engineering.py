@@ -54,10 +54,11 @@ def extract_time(df):
     """ 
     month, week, day of the week and hour of search
     """
-    df["month"] = df.month
-    df["week"] = df.week
-    df["day"] = df.dayofweek + 1
-    df["hour"] = df.hour
+    df_datetime = pd.DatetimeIndex(df.date_time)
+    df["month"] = df_datetime.month
+    df["week"] = df_datetime.week
+    df["day"] = df_datetime.dayofweek + 1
+    df["hour"] = df_datetime.hour
     del df['date_time']
 
 def new_historical_price(df):
