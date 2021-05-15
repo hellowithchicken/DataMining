@@ -183,7 +183,8 @@ def feature_engineering_test(df):
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
-    average_numerical_features(df)
+    df = average_numerical_features(df)
+    return df
     
 def create_df_queries_freq(df):
     df_queries = pd.DataFrame()
