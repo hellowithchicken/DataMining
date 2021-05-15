@@ -54,10 +54,10 @@ def extract_time(df):
     """ 
     month, week, day of the week and hour of search
     """
-    df["month"] = df_datetime.month
-    df["week"] = df_datetime.week
-    df["day"] = df_datetime.dayofweek + 1
-    df["hour"] = df_datetime.hour
+    df["month"] = df.month
+    df["week"] = df.week
+    df["day"] = df.dayofweek + 1
+    df["hour"] = df.hour
     del df['date_time']
 
 def new_historical_price(df):
@@ -121,6 +121,9 @@ def join_historical_data(df, path = "hist_click_book.csv"):
     
 ## other ----------------------------------
 
+def remove_cols(df, cols = ["position, prop_id"]):
+    df.drop(cols, axis=1, inplace=True)
+
 def remove_positions(df, positions = [5, 11, 17, 23]):
     """
     removes hotels with specified positions 
@@ -166,6 +169,7 @@ def feature_engineering_train(df):
     average_numerical_features(df)
     add_score(df)
     df = add_historical_booking_click
+    remove_cols(df)
     return df
 
 def feature_engineering_test(df):
