@@ -8,12 +8,14 @@ def NDCG(predictions, df, path_idcg = "idcg.csv"):
     # reset index 
     predictions.reset_index(drop = True, inplace = True)
     # add position + 1
-    predictions["position"] = predictions.groupby(by = ['srch_id']).cumcount()+2
+    predictions["position"] = predictions.groupby(by = ['srch_id']).cumcount()+1
+    # filter to only have positions up to 5
+    predictions = predictions[predictions.position < 6]
     # attach scores to predictions
     predictions = pd.merge(predictions, df[["srch_id", "prop_id", "score"]], on = ["srch_id", "prop_id"])
-    # calculate dcg
-    predictions["numerator"] = np.power(2, predictions["score"]) - 1
+    predictions["numerator"] = predictions["score"]
     predictions["denominator"] = np.log2(predictions["position"])
+    predictions.loc[predictions.position == 1, "denominator"] = 1
     predictions["intermediate_dcg"] = predictions["numerator"]/predictions["denominator"]
     dcg = predictions.groupby("srch_id")["intermediate_dcg"].sum().reset_index()
     dcg.columns = ["scrh_id", "DCG"]
@@ -25,4 +27,3 @@ def NDCG(predictions, df, path_idcg = "idcg.csv"):
     joined["NDCG"] = joined["DCG"]/joined["iDCG"]
     # calculate mean NDCG
     return joined["NDCG"].mean()
-
