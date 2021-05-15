@@ -54,11 +54,11 @@ def extract_time(df):
     """ 
     month, week, day of the week and hour of search
     """
-    df_datetime = pd.DatetimeIndex(df.date_time)
     df["month"] = df_datetime.month
     df["week"] = df_datetime.week
     df["day"] = df_datetime.dayofweek + 1
     df["hour"] = df_datetime.hour
+    del df['date_time']
 
 def new_historical_price(df):
     """
@@ -106,20 +106,20 @@ def add_historical_booking_click(df):
     historical = df.groupby("prop_id")[["click_bool", "booking_bool"]].mean().reset_index()
     historical.columns = [historical.columns[0]] + [x + "_rate" for x in historical.columns[1:]]
     df = pd.merge(df, historical, on="prop_id")
-    return df
-    
-    
-## other ----------------------------------
+    return df.sort_values("srch_id")
 
 def join_historical_data(df, path = "hist_click_book.csv"):
     """
     joins historical data according to prop_id. 
     path - location of historical data csv file
+    
     """
     to_join = pd.read_csv(path)
     joined = pd.merge(df, to_join, on="prop_id")
-    joined = joined.sort_values(by = "srch_id")
-    return joined
+    return joined.sort_values("srch_id")
+    
+    
+## other ----------------------------------
 
 def remove_positions(df, positions = [5, 11, 17, 23]):
     """
@@ -143,10 +143,33 @@ def add_score(df):
         else:
             score.append(0)
     df["score"] = score
+    del df['booking_bool']
+    del df['click_bool']
+
+def onehot(df, cols):
+    """ 
+    returns a df with one-hot encoded columns (cols)
+    """
     
+    return pd.get_dummies(df, columns=cols)
+
+
 ### Feature engineering function -----------
 
-def feature_engineering(df):
+def feature_engineering_train(df):
+    
+    extract_time(df)
+    remove_missing_values(df)
+    replace_missing_values(df)
+    new_historical_price(df)
+    add_price_position(df)
+    average_numerical_features(df)
+    add_score(df)
+    df = add_historical_booking_click
+    return df
+
+def feature_engineering_test(df):
+    
     extract_time(df)
     remove_missing_values(df)
     replace_missing_values(df)
