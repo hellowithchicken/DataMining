@@ -1,7 +1,5 @@
 def tuning_model(df, learning_rate, max_depth, n_estimators, objective, train_frac = 0.3):
     
-    # data
-    #del df['position']
     gss = GroupShuffleSplit(test_size= train_frac, n_splits=1, random_state = 7).split(df, groups=df['srch_id'])
 
     X_train_inds, X_test_inds = next(gss)
@@ -10,7 +8,6 @@ def tuning_model(df, learning_rate, max_depth, n_estimators, objective, train_fr
     properties = test_data['prop_id']
     del train_data['prop_id']
     del test_data['prop_id']
-    #del df['prop_id']
 
 
     X_train = train_data.loc[:, ~train_data.columns.isin(['srch_id','score'])]
@@ -57,8 +54,9 @@ def tuning_model(df, learning_rate, max_depth, n_estimators, objective, train_fr
     
     out = output.groupby('srch_id').apply(pd.DataFrame.sort_values, 'pred_scores', ascending=False)
     del out["pred_scores"]
-    #out.to_csv('../data/submission_cate.csv', index=False)
     
     return NDCG(out, df, path_idcg = "idcg.csv")
+    
+    
     
     
