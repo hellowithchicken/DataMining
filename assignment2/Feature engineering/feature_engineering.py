@@ -1,9 +1,3 @@
-import pandas as pd
-import numpy as np
-import random
-
-### reading and sampling the data
-
 ### reading and sampling the data
 
 def read_file(path):
@@ -222,6 +216,7 @@ def feature_engineering_train(df):
     add_score(df)
     remove_cols(df)
     return df
+
 
 def feature_engineering_test(df):
     
