@@ -123,7 +123,7 @@ def create_comp_rate_mode(df, fillna_ = -100):
     #subset comp_rate
     comp_rate_cols = [col for col in df.columns if col.endswith("_rate")]
     df["comp_rate_mode"] = df[comp_rate_cols].mode(axis = 1, dropna = True)[0]
-    df_sample["comp_rate_mode"].fillna(fillna_ , inplace = True)
+    df["comp_rate_mode"].fillna(fillna_ , inplace = True)
 
 def create_comp_inv_mode(df, fillna_ = -100):
     """
@@ -217,6 +217,19 @@ def feature_engineering_train(df):
     remove_cols(df)
     return df
 
+def feature_engineering_train_2(df):
+    
+    extract_time(df)
+    remove_missing_values(df)
+    replace_missing_values(df)
+    new_historical_price(df)
+    add_price_position(df)
+    #df = average_numerical_features(df)
+    #df = add_historical_booking_click(df)
+    df = add_normalisation(df)
+    add_score(df)
+    remove_cols(df)
+    return df
 
 def feature_engineering_test(df):
     
