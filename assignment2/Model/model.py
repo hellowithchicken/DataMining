@@ -1,8 +1,6 @@
-def tuning_model(df, learning_rate, colsample_bytree, eta, max_depth, n_estimators):
+def tuning_model(df, learning_rate, max_depth, n_estimators, objective, train_frac = 0.3):
     
-    # data
-    del df['position']
-    gss = GroupShuffleSplit(test_size=.3, n_splits=1, random_state = 7).split(df, groups=df['srch_id'])
+    gss = GroupShuffleSplit(test_size= train_frac, n_splits=1, random_state = 7).split(df, groups=df['srch_id'])
 
     X_train_inds, X_test_inds = next(gss)
     train_data= df.iloc[X_train_inds]
@@ -10,7 +8,6 @@ def tuning_model(df, learning_rate, colsample_bytree, eta, max_depth, n_estimato
     properties = test_data['prop_id']
     del train_data['prop_id']
     del test_data['prop_id']
-    #del df['prop_id']
 
 
     X_train = train_data.loc[:, ~train_data.columns.isin(['srch_id','score'])]
@@ -29,15 +26,13 @@ def tuning_model(df, learning_rate, colsample_bytree, eta, max_depth, n_estimato
     model = xgb.XGBRanker(  
     tree_method='hist',
     booster='gbtree',
-    objective='rank:pairwise',
-    #eval_metric = ["ndcg", "map"],
+    objective=objective,
     random_state=42,    
     learning_rate=learning_rate,
-    colsample_bytree=colsample_bytree, 
-    eta=eta, 
+    colsample_bytree=0.9,  
     max_depth=max_depth, 
     n_estimators=n_estimators, 
-    subsample=subsample 
+    subsample=0.75 
     )
     
     model.fit(X_train, y_train, group=groups, verbose=True)
@@ -60,7 +55,8 @@ def tuning_model(df, learning_rate, colsample_bytree, eta, max_depth, n_estimato
     out = output.groupby('srch_id').apply(pd.DataFrame.sort_values, 'pred_scores', ascending=False)
     del out["pred_scores"]
     
-    
     return NDCG(out, df, path_idcg = "idcg.csv")
+    
+    
     
     
