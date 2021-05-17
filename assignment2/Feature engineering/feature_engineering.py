@@ -139,7 +139,28 @@ def create_comp_inv_mode(df, fillna_ = -100):
     df["comp_inv_mode"] = df[comp_inv].mode(axis = 1, dropna = True)[0]
     df["comp_inv_mode"].fillna(fillna_ , inplace = True)
 
-    
+def normalize_features(df_mod, normalizing_var, column):
+    # df_mod = dataframe
+    # normalizing_var = variable that will be used for normalizing
+    # column = variable that will be normalized
+
+    methods = ["mean", "std"]
+
+    df = df_mod.groupby(normalizing_var).agg({column: methods})
+
+    df.columns = df.columns.droplevel()
+    col = {}
+    for method in methods:
+        col[method] = column + "_" + method
+
+    df.rename(columns=col, inplace=True)
+    df_merge = df_mod.merge(df.reset_index(), on=normalizing_var)
+    df_merge[column + "_norm_by_" + normalizing_var] = (
+        df_merge[column] - df_merge[column + "_mean"]
+    ) / df_merge[column + "_std"]
+    df_merge = df_merge.drop(labels=[col["mean"], col["std"]], axis=1)
+
+    return df_merge    
     
 ## other ----------------------------------
 
@@ -204,9 +225,3 @@ def feature_engineering_test(df):
     df = average_numerical_features(df)
     return df
     
-def create_df_queries_freq(df):
-    df_queries = pd.DataFrame()
-    df_queries = pd.crosstab(index=df['srch_id'], columns='count', colnames=['srch_id'])
-    df_queries.head()
-    df_queries.to_csv("../df_queries.csv")
-    return pd.read_csv("../df_queries.csv")
