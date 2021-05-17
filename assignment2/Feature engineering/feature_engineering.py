@@ -121,6 +121,24 @@ def join_historical_data(df, path = "hist_click_book.csv"):
     to_join = pd.read_csv(path)
     joined = pd.merge(df, to_join, on="prop_id")
     return joined.sort_values("srch_id")
+
+def create_comp_rate_mode(df, fillna_ = -100):
+    """
+    creates a column with the mode of comp_rate columns and fills the rest with -100 (default)
+    """
+    #subset comp_rate
+    comp_rate_cols = [col for col in df.columns if col.endswith("_rate")]
+    df["comp_rate_mode"] = df[comp_rate_cols].mode(axis = 1, dropna = True)[0]
+    df_sample["comp_rate_mode"].fillna(fillna_ , inplace = True)
+
+def create_comp_inv_mode(df, fillna_ = -100):
+    """
+    creates a column with the mode of comp_inv columns and fills the rest with -100 (default)
+    """
+    comp_inv = [col for col in df.columns if col.endswith("_inv")]
+    df["comp_inv_mode"] = df[comp_inv].mode(axis = 1, dropna = True)[0]
+    df["comp_inv_mode"].fillna(fillna_ , inplace = True)
+
     
     
 ## other ----------------------------------
