@@ -164,7 +164,7 @@ def normalize_features(df_mod, normalizing_var, column):
 
 def add_normalisation(df, target_list = ["prop_starrating", "prop_review_score", "prop_location_score1", "prop_location_score2"]):
     for column in target_list:
-        df = normalize_features(df, group_key="srch_id", target_column=column)
+        df = normalize_features(df, normalizing_var="srch_id", column=column)
     return df 
     
 ## other ----------------------------------
