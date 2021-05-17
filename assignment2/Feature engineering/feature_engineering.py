@@ -217,19 +217,6 @@ def feature_engineering_train(df):
     remove_cols(df)
     return df
 
-def feature_engineering_train_2(df):
-    
-    extract_time(df)
-    remove_missing_values(df)
-    replace_missing_values(df)
-    new_historical_price(df)
-    add_price_position(df)
-    #df = average_numerical_features(df)
-    #df = add_historical_booking_click(df)
-    df = add_normalisation(df)
-    add_score(df)
-    remove_cols(df)
-    return df
 
 def feature_engineering_test(df):
     
