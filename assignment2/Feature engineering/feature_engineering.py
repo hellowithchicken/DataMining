@@ -164,7 +164,8 @@ def normalize_features(df_mod, normalizing_var, column):
 
 def add_normalisation(df, target_list = ["prop_starrating", "prop_review_score", "prop_location_score1", "prop_location_score2"]):
     for column in target_list:
-        df = normalize_features(df, group_key="srch_id", target_column=column) 
+        df = normalize_features(df, group_key="srch_id", target_column=column)
+    return df 
     
 ## other ----------------------------------
 
@@ -209,23 +210,29 @@ def onehot(df, cols):
 def feature_engineering_train(df):
     
     extract_time(df)
+    create_comp_rate_mode(df)
+    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
-    df = average_numerical_features(df)
-    df = add_historical_booking_click(df)
+    #df = average_numerical_features(df)
+    #df = add_historical_booking_click(df)
+    df = add_normalisation(df)
     add_score(df)
-    #remove_cols(df)
+    remove_cols(df)
     return df
 
 def feature_engineering_test(df):
     
     extract_time(df)
+    create_comp_rate_mode(df)
+    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
-    df = average_numerical_features(df)
+    #df = average_numerical_features(df)
+    df = add_normalisation(df)
     return df
     
