@@ -1,9 +1,3 @@
-import pandas as pd
-import numpy as np
-import random
-
-### reading and sampling the data
-
 ### reading and sampling the data
 
 def read_file(path):
@@ -129,7 +123,7 @@ def create_comp_rate_mode(df, fillna_ = -100):
     #subset comp_rate
     comp_rate_cols = [col for col in df.columns if col.endswith("_rate")]
     df["comp_rate_mode"] = df[comp_rate_cols].mode(axis = 1, dropna = True)[0]
-    df_sample["comp_rate_mode"].fillna(fillna_ , inplace = True)
+    df["comp_rate_mode"].fillna(fillna_ , inplace = True)
 
 def create_comp_inv_mode(df, fillna_ = -100):
     """
@@ -160,7 +154,12 @@ def normalize_features(df_mod, normalizing_var, column):
     ) / df_merge[column + "_std"]
     df_merge = df_merge.drop(labels=[col["mean"], col["std"]], axis=1)
 
-    return df_merge    
+    return df_merge   
+
+def add_normalisation(df, target_list = ["prop_starrating", "prop_review_score", "prop_location_score1", "prop_location_score2"]):
+    for column in target_list:
+        df = normalize_features(df, normalizing_var="srch_id", column=column)
+    return df 
     
 ## other ----------------------------------
 
@@ -205,23 +204,30 @@ def onehot(df, cols):
 def feature_engineering_train(df):
     
     extract_time(df)
+    create_comp_rate_mode(df)
+    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
-    df = average_numerical_features(df)
-    df = add_historical_booking_click(df)
+    #df = average_numerical_features(df)
+    #df = add_historical_booking_click(df)
+    df = add_normalisation(df)
     add_score(df)
-    #remove_cols(df)
+    remove_cols(df)
     return df
+
 
 def feature_engineering_test(df):
     
     extract_time(df)
+    create_comp_rate_mode(df)
+    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
-    df = average_numerical_features(df)
+    #df = average_numerical_features(df)
+    df = add_normalisation(df)
     return df
     
