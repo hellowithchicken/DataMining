@@ -160,7 +160,11 @@ def normalize_features(df_mod, normalizing_var, column):
     ) / df_merge[column + "_std"]
     df_merge = df_merge.drop(labels=[col["mean"], col["std"]], axis=1)
 
-    return df_merge    
+    return df_merge   
+
+def add_normalisation(df, target_list = ["prop_starrating", "prop_review_score", "prop_location_score1", "prop_location_score2"]):
+    for column in target_list:
+        df = normalize_features(df, group_key="srch_id", target_column=column) 
     
 ## other ----------------------------------
 
