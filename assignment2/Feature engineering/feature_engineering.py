@@ -214,7 +214,7 @@ def feature_engineering_train(df):
     #df = add_historical_booking_click(df)
     df = add_normalisation(df)
     add_score(df)
-    remove_cols(df)
+    #remove_cols(df)
     return df
 
 
