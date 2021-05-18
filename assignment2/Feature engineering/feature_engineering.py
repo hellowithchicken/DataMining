@@ -135,10 +135,11 @@ def create_comp_inv_mode(df, fillna_ = -100):
 
 def create_comp_rate_precent_mean(df, fillna_ = -100):
     """
+    DO NOT USE - creates a column with > 60 percent missing values
     creates a column with the mean of comp_rate_precent columns and fills the rest with -100 (default)
     """
     comp_rate_precent = [col for col in df.columns if col.endswith("_rate_percent_diff")]
-    df["comp_rate_precent_mean"] = df[comp_rate_precent].mean(axis = 1, skipna = True)[0]
+    df["comp_rate_precent_mean"] = df[comp_rate_precent].mean(axis = 1, skipna = True)
     #df["comp_rate_precent_mean"].fillna(fillna_ , inplace = True)
 
 def join_comp_mode_data(df, path):
@@ -231,7 +232,6 @@ def feature_engineering_train(df):
     df = add_normalisation(df)
     add_score(df)
     df = join_comp_mode_data(df, "mode_columns_train.csv")
-    create_comp_rate_precent_mean(df)
     #remove_cols(df)
     return df
 
@@ -246,6 +246,5 @@ def feature_engineering_test(df):
     #df = average_numerical_features(df)
     df = add_normalisation(df)
     df = join_comp_mode_data(df, "mode_columns_test.csv")
-    create_comp_rate_precent_mean(df)
     return df
     
