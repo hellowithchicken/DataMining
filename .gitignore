@@ -11,3 +11,5 @@ assignment2/Model/.ipynb_checkpoints/
 assignment2/Model/data/
 assignment2/Model/engineered_test_data.csv
 assignment2/Model/engineered_training_data.csv
+assignment2/Feature engineering/mode_columns_test.csv
+assignment2/Feature engineering/mode_columns_train.csv

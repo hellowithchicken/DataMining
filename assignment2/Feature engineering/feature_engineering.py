@@ -138,8 +138,18 @@ def create_comp_rate_precent_mean(df, fillna_ = -100):
     creates a column with the mean of comp_rate_precent columns and fills the rest with -100 (default)
     """
     comp_rate_precent = [col for col in df.columns if col.endswith("_rate_percent_diff")]
-    df["comp_rate_precent_mean"] = df[comp_rate_precent].mean(axis = 1, dropna = True)[0]
-    #df["comp_rate_precent_mean"].fillna(fillna_ , inplace = True)  
+    df["comp_rate_precent_mean"] = df[comp_rate_precent].mean(axis = 1, skipna = True)[0]
+    #df["comp_rate_precent_mean"].fillna(fillna_ , inplace = True)
+
+def join_comp_mode_data(df, path):
+    """
+    joins competitors mode data according to prop_id and srch_id. 
+    path - location of the train/test mode columns csv file
+    
+    """
+    to_join = pd.read_csv(path)
+    joined = pd.merge(df, to_join, on=["prop_id", "srch_id")
+    return joined.sort_values("srch_id")  
 
 def normalize_features(df_mod, normalizing_var, column):
     # df_mod = dataframe
