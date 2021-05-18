@@ -148,7 +148,7 @@ def join_comp_mode_data(df, path):
     
     """
     to_join = pd.read_csv(path)
-    joined = pd.merge(df, to_join, on=["prop_id", "srch_id")
+    joined = pd.merge(df, to_join, on=["prop_id", "srch_id"])
     return joined.sort_values("srch_id")  
 
 def normalize_features(df_mod, normalizing_var, column):
@@ -222,8 +222,6 @@ def onehot(df, cols):
 def feature_engineering_train(df):
     
     extract_time(df)
-    create_comp_rate_mode(df)
-    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
@@ -232,6 +230,8 @@ def feature_engineering_train(df):
     #df = add_historical_booking_click(df)
     df = add_normalisation(df)
     add_score(df)
+    df = join_comp_mode_data(df, "mode_columns_train.csv")
+    create_comp_rate_precent_mean(df)
     #remove_cols(df)
     return df
 
@@ -239,13 +239,13 @@ def feature_engineering_train(df):
 def feature_engineering_test(df):
     
     extract_time(df)
-    create_comp_rate_mode(df)
-    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
     #df = average_numerical_features(df)
     df = add_normalisation(df)
+    df = join_comp_mode_data(df, "mode_columns_test.csv")
+    create_comp_rate_precent_mean(df)
     return df
     
