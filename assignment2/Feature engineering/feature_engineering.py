@@ -135,11 +135,22 @@ def create_comp_inv_mode(df, fillna_ = -100):
 
 def create_comp_rate_precent_mean(df, fillna_ = -100):
     """
+    DO NOT USE - creates a column with > 60 percent missing values
     creates a column with the mean of comp_rate_precent columns and fills the rest with -100 (default)
     """
     comp_rate_precent = [col for col in df.columns if col.endswith("_rate_percent_diff")]
-    df["comp_rate_precent_mean"] = df[comp_rate_precent].mean(axis = 1, dropna = True)[0]
-    #df["comp_rate_precent_mean"].fillna(fillna_ , inplace = True)  
+    df["comp_rate_precent_mean"] = df[comp_rate_precent].mean(axis = 1, skipna = True)
+    #df["comp_rate_precent_mean"].fillna(fillna_ , inplace = True)
+
+def join_comp_mode_data(df, path):
+    """
+    joins competitors mode data according to prop_id and srch_id. 
+    path - location of the train/test mode columns csv file
+    
+    """
+    to_join = pd.read_csv(path)
+    joined = pd.merge(df, to_join, on=["prop_id", "srch_id"])
+    return joined.sort_values("srch_id")  
 
 def normalize_features(df_mod, normalizing_var, column):
     # df_mod = dataframe
@@ -212,8 +223,6 @@ def onehot(df, cols):
 def feature_engineering_train(df):
     
     extract_time(df)
-    create_comp_rate_mode(df)
-    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
@@ -222,6 +231,7 @@ def feature_engineering_train(df):
     #df = add_historical_booking_click(df)
     df = add_normalisation(df)
     add_score(df)
+    df = join_comp_mode_data(df, "mode_columns_train.csv")
     #remove_cols(df)
     return df
 
@@ -229,13 +239,12 @@ def feature_engineering_train(df):
 def feature_engineering_test(df):
     
     extract_time(df)
-    create_comp_rate_mode(df)
-    create_comp_inv_mode(df)
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
     add_price_position(df)
     #df = average_numerical_features(df)
     df = add_normalisation(df)
+    df = join_comp_mode_data(df, "mode_columns_test.csv")
     return df
     
