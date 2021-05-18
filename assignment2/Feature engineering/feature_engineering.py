@@ -133,6 +133,14 @@ def create_comp_inv_mode(df, fillna_ = -100):
     df["comp_inv_mode"] = df[comp_inv].mode(axis = 1, dropna = True)[0]
     df["comp_inv_mode"].fillna(fillna_ , inplace = True)
 
+def create_comp_rate_precent_mean(df, fillna_ = -100):
+    """
+    creates a column with the mean of comp_rate_precent columns and fills the rest with -100 (default)
+    """
+    comp_rate_precent = [col for col in df.columns if col.endswith("_rate_percent_diff")]
+    df["comp_rate_precent_mean"] = df[comp_rate_precent].mean(axis = 1, dropna = True)[0]
+    #df["comp_rate_precent_mean"].fillna(fillna_ , inplace = True)  
+
 def normalize_features(df_mod, normalizing_var, column):
     # df_mod = dataframe
     # normalizing_var = variable that will be used for normalizing
