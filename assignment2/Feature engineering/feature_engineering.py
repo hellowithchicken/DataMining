@@ -64,12 +64,12 @@ def new_historical_price(df):
     df["prop_historical_price"] = (np.e ** df.prop_log_historical_price).replace(1.0, 0)
     df.drop("prop_log_historical_price", axis=1, inplace=True)
 
-def add_price_position(df, rank_type = "dense"):
+def add_rank(df, rank_by, rank_type = "dense"):
     """
-    adds hotel price position ("price_position") inside "srch_id" column
+    adds hotel price position ("..._position") inside rank_by column
     """
-    ranks = df.groupby('srch_id')['price_usd'].rank(ascending=True, method = rank_type)
-    df["price_position"] = ranks
+    ranks = df.groupby('srch_id')[rank_by].rank(ascending=True, method = rank_type)
+    df[rank_by + "_position"] = ranks
 
 
 def average_numerical_features(df, group_by = ["prop_id"], columns = ["prop_starrating", "prop_review_score", "prop_location_score1", "prop_location_score2"]):
@@ -191,6 +191,7 @@ def remove_positions(df, positions = [5, 11, 17, 23]):
     (based on the fact that hotels in those positions were not as booked)
     """
     df = df[df["position"].isin(positions) == False]
+    return df
 
 def add_score(df):
     """
@@ -226,7 +227,7 @@ def feature_engineering_train(df):
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
-    add_price_position(df)
+    add_rank(df, "price_usd")
     #df = average_numerical_features(df)
     #df = add_historical_booking_click(df)
     df = add_normalisation(df)
@@ -242,7 +243,7 @@ def feature_engineering_test(df):
     remove_missing_values(df)
     replace_missing_values(df)
     new_historical_price(df)
-    add_price_position(df)
+    add_rank(df, "price_usd")
     #df = average_numerical_features(df)
     df = add_normalisation(df)
     df = join_comp_mode_data(df, "mode_columns_test.csv")

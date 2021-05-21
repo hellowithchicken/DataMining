@@ -1,4 +1,4 @@
-def tuning_model(df, learning_rate, max_depth, n_estimators, objective, train_frac = 0.3):
+def tuning_model(df, learning_rate = 0.35, max_depth = 6, n_estimators = 300, objective = "rank:pairwise", train_frac = 0.3):
     
     gss = GroupShuffleSplit(test_size= train_frac, n_splits=1, random_state = 7).split(df, groups=df['srch_id'])
 
@@ -29,10 +29,10 @@ def tuning_model(df, learning_rate, max_depth, n_estimators, objective, train_fr
     objective=objective,
     random_state=42,    
     learning_rate=learning_rate,
-    colsample_bytree=0.9,  
+    #colsample_bytree=0.9,  
     max_depth=max_depth, 
     n_estimators=n_estimators, 
-    subsample=0.75 
+    #subsample=0.75 
     )
     
     model.fit(X_train, y_train, group=groups, verbose=True)
@@ -56,7 +56,4 @@ def tuning_model(df, learning_rate, max_depth, n_estimators, objective, train_fr
     del out["pred_scores"]
     
     return NDCG(out, df, path_idcg = "idcg.csv")
-    
-    
-    
     
