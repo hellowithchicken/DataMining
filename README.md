@@ -2,7 +2,10 @@
 
 ### Caterina Buranelli, Ignas Krikstaponis, Lotte Felius
 
-Data Mining Techniques Assignments
+Assigments for Data Mining Techniques course at VU Amsterdam
+
+* Basic Assignemtns - EDA, Kaggle's Titanic competition, basic NLP
+* Assignment 2 - Building a hotel ranking algorithm with Expedia's data
 
 ### Requirements
 Note: creating a new virtual environment is recommended.
