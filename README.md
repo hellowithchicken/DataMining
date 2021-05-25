@@ -1,7 +1,8 @@
 # Data Mining Techniques
-Data Mining Techniques Assignments
 
-### Caterina Buranelli, Ignas Krikstaponis, Lotte Feliu
+### Caterina Buranelli, Ignas Krikstaponis, Lotte Felius
+
+Data Mining Techniques Assignments
 
 ### Requirements
 Note: creating a new virtual environment is recommended.
