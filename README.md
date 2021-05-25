@@ -4,7 +4,7 @@
 
 Assigments for Data Mining Techniques course at VU Amsterdam
 
-* Basic Assignemtns - EDA, Kaggle's Titanic competition, basic NLP
+* Basic Assignment - EDA, Kaggle's Titanic competition, basic NLP
 * Assignment 2 - Building a hotel ranking algorithm with Expedia's data
 
 ### Requirements
